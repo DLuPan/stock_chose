@@ -11,7 +11,7 @@ current_file_path = os.path.abspath(__file__)
 
 # 获取当前文件的父目录
 root_dir = os.path.dirname(os.path.dirname(current_file_path))
-os.makedirs(root_dir, exist_ok=True)
+os.makedirs(f"{root_dir}/data/chose", exist_ok=True)
 
 
 # %% sma算法
@@ -50,36 +50,36 @@ filtered_data.to_csv(
 )
 # %% 数据下载
 adjust = "hfq"
-for symbol in filtered_data["代码"]:
-    print(f"采集当前代码:{symbol}")
-    try:
-        # 可能会发生错误的代码块
-        # 执行一些操作
-        stock_zh_a_hist_df = ak.stock_zh_a_hist(
-            symbol=f"{symbol}", period="daily", adjust=adjust
-        )
-        # 处理字段命名，以符合 Backtrader 的要求
-        stock_zh_a_hist_df.columns = [
-            "datetime",
-            "sec_code",
-            "open",
-            "close",
-            "high",
-            "low",
-            "volume",
-            "turnover",
-            "amplitude",
-            "price_change_percentage",
-            "price_change_amount",
-            "turnover_rate",
-        ]
-        stock_zh_a_hist_df.to_csv(
-            f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
-        )
-    except Exception as e:
-        # 错误发生时的处理代码
-        # SomeError 是捕获的异常类型
-        print(f"发生错误: {e}")
+# for symbol in filtered_data["代码"]:
+#     print(f"采集当前代码:{symbol}")
+#     try:
+#         # 可能会发生错误的代码块
+#         # 执行一些操作
+#         stock_zh_a_hist_df = ak.stock_zh_a_hist(
+#             symbol=f"{symbol}", period="daily", adjust=adjust
+#         )
+#         # 处理字段命名，以符合 Backtrader 的要求
+#         stock_zh_a_hist_df.columns = [
+#             "datetime",
+#             "sec_code",
+#             "open",
+#             "close",
+#             "high",
+#             "low",
+#             "volume",
+#             "turnover",
+#             "amplitude",
+#             "price_change_percentage",
+#             "price_change_amount",
+#             "turnover_rate",
+#         ]
+#         stock_zh_a_hist_df.to_csv(
+#             f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
+#         )
+#     except Exception as e:
+#         # 错误发生时的处理代码
+#         # SomeError 是捕获的异常类型
+#         print(f"发生错误: {e}")
 
 
 # %% 算法定义
@@ -138,7 +138,7 @@ stock_info["成交量2倍增长"] = stock_info.apply(CHOSE_TURNOVER, axis=1)
 # 筛选条件：signal2 == True
 filtered_data = stock_info[stock_info["均线250"]]
 filtered_data.to_csv(
-    f"{root_dir}/data/stock_chose_100亿{datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/chose/stock_chose_100亿{datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 # %%
