@@ -31,7 +31,9 @@ jobs:
       run: |
         git config --global user.name "DINGLUPAN"
         git config --global user.email "wingsgod@outlook.com"
-        git add .  # 例如，如果你的脚本生成了一个 `output.txt` 文件
+        git status
+        git add .
+        git status
         git commit -m "Add daily generated file for weekdays"
         git push
       env:
