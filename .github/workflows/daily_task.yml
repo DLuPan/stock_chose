@@ -29,6 +29,7 @@ jobs:
 
     - name: Commit and push generated files
       run: |
+        pwd
         ls -la
         git config --global user.name "DLuPan"
         git config --global user.email "wingsgod@outlook.com"
