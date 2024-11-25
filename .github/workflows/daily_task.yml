@@ -27,7 +27,6 @@ jobs:
       run: |
         pwd
         ls -la
-        cd stock_chose
         python backtrader_chose.py  # 运行你的 Python 脚本，生成输出文件
  
     - name: Commit and push generated files

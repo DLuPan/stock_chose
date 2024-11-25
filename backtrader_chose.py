@@ -10,7 +10,7 @@ import akshare as ak
 current_file_path = os.path.abspath(__file__)
 
 # 获取当前文件的父目录
-root_dir = os.path.dirname(os.path.dirname(current_file_path))
+root_dir = os.path.dirname(current_file_path)
 os.makedirs(f"{root_dir}/data/chose", exist_ok=True)
 
 
