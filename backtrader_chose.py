@@ -46,7 +46,7 @@ filtered_data = stock_zh_a_spot_em_df[
     & (stock_zh_a_spot_em_df["流通市值"] < 20000000000)
 ]
 filtered_data.to_csv(
-    f"{root_dir}/data/stock_100亿{datetime.now().strftime('%Y_%m_%d')}.csv", index=False
+    f"{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv", index=False
 )
 # %% 数据下载
 adjust = "hfq"
@@ -129,7 +129,7 @@ def CHOSE_TURNOVER(row):
 # 2、连续15日收盘价在250日均线上下
 
 stock_info = pd.read_csv(
-    f"{root_dir}/data/stock_100亿{datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     dtype={"代码": str},
 )
 # 计算
@@ -138,7 +138,7 @@ stock_info["成交量2倍增长"] = stock_info.apply(CHOSE_TURNOVER, axis=1)
 # 筛选条件：signal2 == True
 filtered_data = stock_info[stock_info["均线250"]]
 filtered_data.to_csv(
-    f"{root_dir}/data/chose/stock_chose_100亿{datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/chose/stock_chose_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 # %%
