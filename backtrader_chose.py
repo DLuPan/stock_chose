@@ -45,8 +45,12 @@ filtered_data = stock_zh_a_spot_em_df[
     (stock_zh_a_spot_em_df["流通市值"] > 10000000000)
     & (stock_zh_a_spot_em_df["流通市值"] < 20000000000)
 ]
+print(
+    f"保存100-200亿流通市值股票:{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
+)
 filtered_data.to_csv(
-    f"{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv", index=False
+    f"{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    index=False,
 )
 # %% 数据下载
 adjust = "hfq"
