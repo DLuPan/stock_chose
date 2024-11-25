@@ -29,7 +29,8 @@ jobs:
 
     - name: Commit and push generated files
       run: |
-        git config --global user.name "DINGLUPAN"
+        ls -la
+        git config --global user.name "DLuPan"
         git config --global user.email "wingsgod@outlook.com"
         git status
         git add .
