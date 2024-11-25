@@ -46,44 +46,44 @@ filtered_data = stock_zh_a_spot_em_df[
     & (stock_zh_a_spot_em_df["流通市值"] < 20000000000)
 ]
 print(
-    f"保存100-200亿流通市值股票:{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
+    f"保存100-200亿流通市值股票:{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
 )
 filtered_data.to_csv(
-    f"{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 # %% 数据下载
 adjust = "hfq"
-# for symbol in filtered_data["代码"]:
-#     print(f"采集当前代码:{symbol}")
-#     try:
-#         # 可能会发生错误的代码块
-#         # 执行一些操作
-#         stock_zh_a_hist_df = ak.stock_zh_a_hist(
-#             symbol=f"{symbol}", period="daily", adjust=adjust
-#         )
-#         # 处理字段命名，以符合 Backtrader 的要求
-#         stock_zh_a_hist_df.columns = [
-#             "datetime",
-#             "sec_code",
-#             "open",
-#             "close",
-#             "high",
-#             "low",
-#             "volume",
-#             "turnover",
-#             "amplitude",
-#             "price_change_percentage",
-#             "price_change_amount",
-#             "turnover_rate",
-#         ]
-#         stock_zh_a_hist_df.to_csv(
-#             f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
-#         )
-#     except Exception as e:
-#         # 错误发生时的处理代码
-#         # SomeError 是捕获的异常类型
-#         print(f"发生错误: {e}")
+for symbol in filtered_data["代码"]:
+    print(f"采集当前代码:{symbol}")
+    try:
+        # 可能会发生错误的代码块
+        # 执行一些操作
+        stock_zh_a_hist_df = ak.stock_zh_a_hist(
+            symbol=f"{symbol}", period="daily", adjust=adjust
+        )
+        # 处理字段命名，以符合 Backtrader 的要求
+        stock_zh_a_hist_df.columns = [
+            "datetime",
+            "sec_code",
+            "open",
+            "close",
+            "high",
+            "low",
+            "volume",
+            "turnover",
+            "amplitude",
+            "price_change_percentage",
+            "price_change_amount",
+            "turnover_rate",
+        ]
+        stock_zh_a_hist_df.to_csv(
+            f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
+        )
+    except Exception as e:
+        # 错误发生时的处理代码
+        # SomeError 是捕获的异常类型
+        print(f"发生错误: {e}")
 
 
 # %% 算法定义
@@ -133,7 +133,7 @@ def CHOSE_TURNOVER(row):
 # 2、连续15日收盘价在250日均线上下
 
 stock_info = pd.read_csv(
-    f"{root_dir}/data/stock_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     dtype={"代码": str},
 )
 # 计算
@@ -142,7 +142,7 @@ stock_info["成交量2倍增长"] = stock_info.apply(CHOSE_TURNOVER, axis=1)
 # 筛选条件：signal2 == True
 filtered_data = stock_info[stock_info["均线250"]]
 filtered_data.to_csv(
-    f"{root_dir}/data/chose/stock_chose_100亿{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/chose/stock_chose_rule1_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 # %%
