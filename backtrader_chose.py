@@ -5,6 +5,7 @@ import datetime
 from copy import deepcopy
 import os
 import akshare as ak
+import concurrent.futures
 
 # 获取当前文件所在的绝对路径
 current_file_path = os.path.abspath(__file__)
@@ -41,24 +42,39 @@ def SMA(data, window_size):
 stock_zh_a_spot_em_df = ak.stock_zh_a_spot_em()
 stock_zh_a_spot_em_df.to_csv(f"{root_dir}/data/stock_info.csv", index=False)
 # 筛选市值大于100亿的数据
-filtered_data = stock_zh_a_spot_em_df[
+filtered_data_rule1 = stock_zh_a_spot_em_df[
     (stock_zh_a_spot_em_df["流通市值"] > 10000000000)
     & (stock_zh_a_spot_em_df["流通市值"] < 20000000000)
 ]
 print(
     f"保存100-200亿流通市值股票:{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
 )
-filtered_data.to_csv(
+filtered_data_rule1.to_csv(
     f"{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    index=False,
+)
+
+# 筛选市值200-500亿的数据
+filtered_data_rule2 = stock_zh_a_spot_em_df[
+    (stock_zh_a_spot_em_df["流通市值"] > 20000000000)
+    & (stock_zh_a_spot_em_df["流通市值"] < 50000000000)
+]
+print(
+    f"保存200-500亿流通市值股票:{root_dir}/data/stock_rule2{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
+)
+filtered_data_rule2.to_csv(
+    f"{root_dir}/data/stock_rule2{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 # %% 数据下载
 adjust = "hfq"
-for symbol in filtered_data["代码"]:
+
+
+def process_symbol(symbol, adjust, root_dir):
+    """处理单个股票代码的数据采集和保存"""
     print(f"采集当前代码:{symbol}")
     try:
-        # 可能会发生错误的代码块
-        # 执行一些操作
+        # 获取历史数据
         stock_zh_a_hist_df = ak.stock_zh_a_hist(
             symbol=f"{symbol}", period="daily", adjust=adjust
         )
@@ -77,13 +93,61 @@ for symbol in filtered_data["代码"]:
             "price_change_amount",
             "turnover_rate",
         ]
+        # 保存到 CSV 文件
         stock_zh_a_hist_df.to_csv(
             f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
         )
     except Exception as e:
-        # 错误发生时的处理代码
-        # SomeError 是捕获的异常类型
         print(f"发生错误: {e}")
+
+
+# 合并所有规则集的代码列表
+all_symbols = filtered_data_rule1["代码"] + filtered_data_rule2["代码"]
+# 创建线程池
+with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+
+    # 提交任务到线程池
+    futures = [
+        executor.submit(process_symbol, symbol, adjust, root_dir)
+        for symbol in all_symbols
+    ]
+    # 等待所有线程完成
+    for future in concurrent.futures.as_completed(futures):
+        try:
+            future.result()  # 检查是否有异常
+        except Exception as exc:
+            print(f"线程执行中发生异常: {exc}")
+
+# for symbol in filtered_data_rule1["代码"]:
+#     print(f"采集当前代码:{symbol}")
+#     try:
+#         # 可能会发生错误的代码块
+#         # 执行一些操作
+#         stock_zh_a_hist_df = ak.stock_zh_a_hist(
+#             symbol=f"{symbol}", period="daily", adjust=adjust
+#         )
+#         # 处理字段命名，以符合 Backtrader 的要求
+#         stock_zh_a_hist_df.columns = [
+#             "datetime",
+#             "sec_code",
+#             "open",
+#             "close",
+#             "high",
+#             "low",
+#             "volume",
+#             "turnover",
+#             "amplitude",
+#             "price_change_percentage",
+#             "price_change_amount",
+#             "turnover_rate",
+#         ]
+#         stock_zh_a_hist_df.to_csv(
+#             f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
+#         )
+#     except Exception as e:
+#         # 错误发生时的处理代码
+#         # SomeError 是捕获的异常类型
+#         print(f"发生错误: {e}")
 
 
 # %% 算法定义
@@ -132,17 +196,32 @@ def CHOSE_TURNOVER(row):
 # 1、流通市值在100~200亿之间
 # 2、连续15日收盘价在250日均线上下
 
-stock_info = pd.read_csv(
+stock_info_rule1 = pd.read_csv(
     f"{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     dtype={"代码": str},
 )
 # 计算
-stock_info["均线250"] = stock_info.apply(CHOSE_SMA250, axis=1)
-stock_info["成交量2倍增长"] = stock_info.apply(CHOSE_TURNOVER, axis=1)
+stock_info_rule1["均线250"] = stock_info_rule1.apply(CHOSE_SMA250, axis=1)
+stock_info_rule1["成交量2倍增长"] = stock_info_rule1.apply(CHOSE_TURNOVER, axis=1)
 # 筛选条件：signal2 == True
-filtered_data = stock_info[stock_info["均线250"]]
-filtered_data.to_csv(
+filtered_data_rule1 = stock_info_rule1[stock_info_rule1["均线250"]]
+filtered_data_rule1.to_csv(
     f"{root_dir}/data/chose/stock_chose_rule1_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    index=False,
+)
+
+# 同样条件但是股则rule2
+stock_info_rule2 = pd.read_csv(
+    f"{root_dir}/data/stock_rule2{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    dtype={"代码": str},
+)
+# 计算
+stock_info_rule2["均线250"] = stock_info_rule2.apply(CHOSE_SMA250, axis=1)
+stock_info_rule2["成交量2倍增长"] = stock_info_rule2.apply(CHOSE_TURNOVER, axis=1)
+# 筛选条件：signal2 == True
+filtered_data_rule2 = stock_info_rule2[stock_info_rule2["均线250"]]
+filtered_data_rule2.to_csv(
+    f"{root_dir}/data/chose/stock_chose_rule2_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 # %%
