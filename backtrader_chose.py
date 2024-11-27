@@ -102,9 +102,12 @@ def process_symbol(symbol, adjust, root_dir):
 
 
 # 合并所有规则集的代码列表
-all_symbols = filtered_data_rule1["代码"] + filtered_data_rule2["代码"]
+# 合并所有规则集的代码列表
+all_symbols = pd.concat([filtered_data_rule1, filtered_data_rule2])["代码"].tolist()
+
+
 # 创建线程池
-with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
 
     # 提交任务到线程池
     futures = [
