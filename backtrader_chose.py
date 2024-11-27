@@ -107,7 +107,7 @@ all_symbols = pd.concat([filtered_data_rule1, filtered_data_rule2])["代码"].to
 
 
 # 创建线程池
-with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
 
     # 提交任务到线程池
     futures = [
