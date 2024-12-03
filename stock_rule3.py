@@ -97,10 +97,6 @@ class Rule3(Rule):
         # 250+趋势过滤
         print(stock_info)
         stock_info["rule3_sinal"] = stock_info.apply(Rule3._chose, axis=1)
-        stock_info.to_csv(
-            f"{root_dir}/data/chose/stock_chose_rule3_{c_date}_temp.csv",
-            index=False,
-        )
         filter_stock_info = stock_info[stock_info["rule3_sinal"]]
         filter_stock_info.to_csv(
             f"{root_dir}/data/chose/stock_chose_rule3_{c_date}.csv",

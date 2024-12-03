@@ -86,11 +86,19 @@ def stock_savefig(symbol, rule, adjust="hfq", tail_size=60):
         ),
     ]
 
+    # 创建自定义样式
+    custom_style = mpf.make_mpf_style(
+        base_mpf_style="classic",
+        marketcolors=mpf.make_marketcolors(
+            up="r", down="g", edge="inherit", wick="inherit", volume="inherit"
+        ),
+    )
+
     # 绘制图表
     fig, axes = mpf.plot(
         df_last_60,
         type="candle",  # K线图
-        style="yahoo",  # 图表样式
+        style=custom_style,  # 图表样式
         addplot=apds,
         volume=True,  # 显示交易量
         title=f"Stock K-line {symbol} with {rule} (Last 60 days)",
