@@ -30,5 +30,6 @@ stock_spider(all_symbols=stock_zh_a_spot_em_df["代码"].to_list())
 # 执行规则
 filter_rule3_stock_info = Rule3().chose()
 # 执行绘图
+os.makedirs(f"{root_dir}/data/chose/{c_date}/rule3", exist_ok=True)
 for symbol in filter_rule3_stock_info["代码"].to_list():
     stock_savefig(symbol=symbol, rule="rule3")

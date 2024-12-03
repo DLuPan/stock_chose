@@ -44,6 +44,8 @@ root_dir = os.path.dirname(current_file_path)
 # 当前时间
 c_date = datetime.datetime.now().strftime("%Y_%m_%d")
 
+os.makedirs(f"{root_dir}/data/chose/{c_date}", exist_ok=True)
+
 
 def stock_savefig(symbol, rule, adjust="hfq", tail_size=60):
     daily_price = pd.read_csv(
@@ -110,7 +112,7 @@ def stock_savefig(symbol, rule, adjust="hfq", tail_size=60):
     # 设置x轴主刻度为每周
     # axes[0].xaxis.set_major_locator(WeekdayLocator())
     fig.savefig(
-        f"{root_dir}/data/chose/{rule}/{symbol}_{c_date}.png",
+        f"{root_dir}/data/chose/{c_date}/{rule}/{symbol}_{c_date}.png",
         dpi=300,
         bbox_inches="tight",
     )  # 保存为高分辨率图片

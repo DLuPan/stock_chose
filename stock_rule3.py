@@ -72,13 +72,13 @@ class Rule3(Rule):
             ) & (daily_price["close"] <= daily_price["positive2"])
             trend_window_size = 5
             recent_sma10_up = Rule3._is_increasing(
-                daily_price["SMA10"], trend_window_size
+                daily_price["sma10"], trend_window_size
             )
             recent_sma20_up = Rule3._is_increasing(
-                daily_price["SMA20"], trend_window_size
+                daily_price["sma20"], trend_window_size
             )
             recent_sma30_up = Rule3._is_increasing(
-                daily_price["SMA30"], trend_window_size
+                daily_price["sma30"], trend_window_size
             )
             # 从最后一行开始，检查是否连续 15 行都满足条件
             return (
@@ -93,9 +93,14 @@ class Rule3(Rule):
 
     def chose(self):
         # 15天内持续收盘价在250日均线上下&10\20\30线趋势向上
-        stock_info = pd.read_csv(f"{root_dir}/data/stock_info.csv")
+        stock_info = pd.read_csv(f"{root_dir}/data/stock_info.csv", dtype={"代码": str})
         # 250+趋势过滤
+        print(stock_info)
         stock_info["rule3_sinal"] = stock_info.apply(Rule3._chose, axis=1)
+        stock_info.to_csv(
+            f"{root_dir}/data/chose/stock_chose_rule3_{c_date}_temp.csv",
+            index=False,
+        )
         filter_stock_info = stock_info[stock_info["rule3_sinal"]]
         filter_stock_info.to_csv(
             f"{root_dir}/data/chose/stock_chose_rule3_{c_date}.csv",
