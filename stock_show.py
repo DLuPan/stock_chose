@@ -47,7 +47,7 @@ c_date = datetime.datetime.now().strftime("%Y_%m_%d")
 
 def stock_savefig(symbol, rule, adjust="hfq", tail_size=60):
     daily_price = pd.read_csv(
-        f"{root_dir}/data/stock_{adjust}_{symbol}.csv", parse_dates=["datetime"]
+        f"{root_dir}/data/info/stock_{adjust}_{symbol}.csv", parse_dates=["datetime"]
     )
     # 转换为绘制K线所需的格式
     daily_price["datetime"] = pd.to_datetime(daily_price["datetime"])
