@@ -6,6 +6,8 @@ from copy import deepcopy
 import os
 import akshare as ak
 import concurrent.futures
+import matplotlib.pyplot as plt
+import mplfinance as mpf
 
 # 获取当前文件所在的绝对路径
 current_file_path = os.path.abspath(__file__)
@@ -47,10 +49,10 @@ filtered_data_rule1 = stock_zh_a_spot_em_df[
     & (stock_zh_a_spot_em_df["流通市值"] < 20000000000)
 ]
 print(
-    f"保存100-200亿流通市值股票:{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
+    f"保存100-200亿流通市值股票:{root_dir}/data/stock_rule1_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
 )
 filtered_data_rule1.to_csv(
-    f"{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_rule1_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
 
@@ -60,12 +62,14 @@ filtered_data_rule2 = stock_zh_a_spot_em_df[
     & (stock_zh_a_spot_em_df["流通市值"] < 50000000000)
 ]
 print(
-    f"保存200-500亿流通市值股票:{root_dir}/data/stock_rule2{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
+    f"保存200-500亿流通市值股票:{root_dir}/data/stock_rule2_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv"
 )
 filtered_data_rule2.to_csv(
-    f"{root_dir}/data/stock_rule2{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_rule2_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
+
+# 选股股则3 根据热点选股
 # %% 数据下载
 adjust = "hfq"
 
@@ -121,37 +125,6 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         except Exception as exc:
             print(f"线程执行中发生异常: {exc}")
 
-# for symbol in filtered_data_rule1["代码"]:
-#     print(f"采集当前代码:{symbol}")
-#     try:
-#         # 可能会发生错误的代码块
-#         # 执行一些操作
-#         stock_zh_a_hist_df = ak.stock_zh_a_hist(
-#             symbol=f"{symbol}", period="daily", adjust=adjust
-#         )
-#         # 处理字段命名，以符合 Backtrader 的要求
-#         stock_zh_a_hist_df.columns = [
-#             "datetime",
-#             "sec_code",
-#             "open",
-#             "close",
-#             "high",
-#             "low",
-#             "volume",
-#             "turnover",
-#             "amplitude",
-#             "price_change_percentage",
-#             "price_change_amount",
-#             "turnover_rate",
-#         ]
-#         stock_zh_a_hist_df.to_csv(
-#             f"{root_dir}/data/stock_{adjust}_{symbol}.csv", index=False
-#         )
-#     except Exception as e:
-#         # 错误发生时的处理代码
-#         # SomeError 是捕获的异常类型
-#         print(f"发生错误: {e}")
-
 
 # %% 算法定义
 def CHOSE_SMA250(row):
@@ -200,7 +173,7 @@ def CHOSE_TURNOVER(row):
 # 2、连续15日收盘价在250日均线上下
 
 stock_info_rule1 = pd.read_csv(
-    f"{root_dir}/data/stock_rule1{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_rule1_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     dtype={"代码": str},
 )
 # 计算
@@ -215,7 +188,7 @@ filtered_data_rule1.to_csv(
 
 # 同样条件但是股则rule2
 stock_info_rule2 = pd.read_csv(
-    f"{root_dir}/data/stock_rule2{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    f"{root_dir}/data/stock_rule2_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     dtype={"代码": str},
 )
 # 计算
@@ -227,4 +200,37 @@ filtered_data_rule2.to_csv(
     f"{root_dir}/data/chose/stock_chose_rule2_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
     index=False,
 )
-# %%
+
+
+# %% 这里进行规则可视化
+# 检查最近5天是否上升
+def IS_INCREASING(series):
+    return series.tail(5).is_monotonic_increasing
+
+
+def SHOW(symbol, window_size):
+    daily_price = pd.read_csv(
+        f"{root_dir}/data/stock_{adjust}_{symbol}.csv", parse_dates=["datetime"]
+    )
+    daily_price["SMA10"] = SMA(daily_price.close, window_size=10)
+    daily_price["SMA20"] = SMA(daily_price.close, window_size=20)
+    daily_price["SMA30"] = SMA(daily_price.close, window_size=30)
+    recent_sma10_up = IS_INCREASING(daily_price["SMA10"])
+    recent_sma20_up = IS_INCREASING(daily_price["SMA20"])
+    recent_sma30_up = IS_INCREASING(daily_price["SMA30"])
+    # 输出结果
+    print(f"SMA10 最近5天是否上升: {recent_sma10_up}")
+    print(f"SMA20 最近5天是否上升: {recent_sma20_up}")
+    print(f"SMA30 最近5天是否上升: {recent_sma30_up}")
+
+
+# 规则
+show_rule1 = pd.read_csv(
+    f"{root_dir}/data/stock_rule1_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    dtype={"代码": str},
+)
+show_rule2 = pd.read_csv(
+    f"{root_dir}/data/stock_rule2_{datetime.datetime.now().strftime('%Y_%m_%d')}.csv",
+    dtype={"代码": str},
+)
+show_symbols = pd.concat([filtered_data_rule1, filtered_data_rule2])["代码"].tolist()
