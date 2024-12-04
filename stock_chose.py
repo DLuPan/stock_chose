@@ -21,11 +21,11 @@ os.makedirs(f"{root_dir}/data/chose", exist_ok=True)
 c_date = datetime.datetime.now().strftime("%Y_%m_%d")
 
 # # 下载股票简介
-# stock_zh_a_spot_em_df = ak.stock_zh_a_spot_em()
-# stock_zh_a_spot_em_df.to_csv(f"{root_dir}/data/stock_info.csv", index=False)
+stock_zh_a_spot_em_df = ak.stock_zh_a_spot_em()
+stock_zh_a_spot_em_df.to_csv(f"{root_dir}/data/stock_info.csv", index=False)
 
 # # 下载股票详情
-# stock_spider(all_symbols=stock_zh_a_spot_em_df["代码"].to_list())
+stock_spider(all_symbols=stock_zh_a_spot_em_df["代码"].to_list())
 
 # 执行规则
 filter_rule3_stock_info = Rule3().chose()
