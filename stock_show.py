@@ -11,6 +11,8 @@ import concurrent.futures
 import matplotlib.pyplot as plt
 import mplfinance as mpf
 from matplotlib.dates import DateFormatter, DayLocator, WeekdayLocator
+from matplotlib import font_manager
+import matplotlib
 import pytz  # 用于处理时区
 
 
@@ -41,13 +43,14 @@ current_file_path = os.path.abspath(__file__)
 # 获取当前文件的父目录
 root_dir = os.path.dirname(current_file_path)
 
+
 # 当前时间
 c_date = datetime.datetime.now().strftime("%Y_%m_%d")
 
 os.makedirs(f"{root_dir}/data/chose/{c_date}", exist_ok=True)
 
 
-def stock_savefig(symbol, rule, adjust="hfq", tail_size=60):
+def stock_savefig(symbol, name, rule, adjust="hfq", tail_size=60):
     daily_price = pd.read_csv(
         f"{root_dir}/data/info/stock_{adjust}_{symbol}.csv", parse_dates=["datetime"]
     )
@@ -107,7 +110,6 @@ def stock_savefig(symbol, rule, adjust="hfq", tail_size=60):
         figsize=(14, 8),
         returnfig=True,  # 返回fig和axes
     )
-
     # # 设置日期格式（东八区）
     # date_format = DateFormatter("%m-%d")
     # # date_format.tz = pytz.timezone("Asia/Shanghai")  # 设置时区为东八区
