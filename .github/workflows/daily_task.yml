@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: '0 10 * * 1-5'  # 每个工作日（周一至周五）每天的 18 点触发
   workflow_dispatch:  # 允许手动触发工作流
-env:
-# Setting an environment variable with the value of a configuration variable
-  tg_group1: ${{ vars.TG_GROUP1 }}
-  tg_group2: ${{ vars.TG_GROUP2 }}
-  tg_token: ${{ vars.TG_TOKEN }}
 
 jobs:
   run_weekday_task:
@@ -29,6 +24,11 @@ jobs:
         pip install -r requirements.txt  # 安装依赖项，假设你已经在 requirements.txt 文件中列出了所有依赖（包括 backtrader）
 
     - name: Run Python script
+      env:
+      # Setting an environment variable with the value of a configuration variable
+        tg_group1: ${{ vars.TG_GROUP1 }}
+        tg_group2: ${{ vars.TG_GROUP2 }}
+        tg_token: ${{ vars.TG_TOKEN }}
       run: |
         pwd
         ls -la
