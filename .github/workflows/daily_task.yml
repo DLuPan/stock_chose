@@ -24,16 +24,13 @@ jobs:
         pip install -r requirements.txt  # 安装依赖项，假设你已经在 requirements.txt 文件中列出了所有依赖（包括 backtrader）
 
     - name: Run Python script
-      env:
-      # Setting an environment variable with the value of a configuration variable
-        tg_group1: ${{ vars.TG_GROUP1 }}
-        tg_group2: ${{ vars.TG_GROUP2 }}
-        tg_token: ${{ secrets.TG_TOKEN }}
+      env: # 将 secrets 作为环境变量传递
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}  
       run: |
         pwd
         ls -la
         echo "$tg_group1 和 $tg_token"
-        python stock_chose.py --download ALL --chose rule3 --group -1002260508200 -1002254488578 --token $tg_token   # 运行你的 Python 脚本，生成输出文件
+        python stock_chose.py --download ALL --chose rule3 --group -1002260508200 -1002254488578 --token $TG_TOKEN   # 运行你的 Python 脚本，生成输出文件
  
     - name: Commit and push generated files
       run: |
