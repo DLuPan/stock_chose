@@ -28,11 +28,11 @@ jobs:
       # Setting an environment variable with the value of a configuration variable
         tg_group1: ${{ vars.TG_GROUP1 }}
         tg_group2: ${{ vars.TG_GROUP2 }}
-        tg_token: ${{ vars.TG_TOKEN }}
+        tg_token: ${{ secrets.TG_TOKEN }}
       run: |
         pwd
         ls -la
-        echo "$tg_group1 和 $tg_group2"
+        echo "$tg_group1 和 $tg_token"
         python stock_chose.py --download ALL --chose rule3 --group $tg_group1 $tg_group2 --token $tg_token   # 运行你的 Python 脚本，生成输出文件
  
     - name: Commit and push generated files
