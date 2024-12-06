@@ -27,7 +27,7 @@ jobs:
       run: |
         pwd
         ls -la
-        python stock_chose.py --download ALL --chose rule3 --group ${{ secrets.TG_GROUPS }} --token ${{ secrets.TG_TOKEN }}   # 运行你的 Python 脚本，生成输出文件
+        python stock_chose.py --download ALL --chose rule3 --group ${{ secrets.TG_GROUP1 }} ${{ secrets.TG_GROUP2 }} --token ${{ secrets.TG_TOKEN }}   # 运行你的 Python 脚本，生成输出文件
  
     - name: Commit and push generated files
       run: |
