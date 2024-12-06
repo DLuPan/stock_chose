@@ -6,10 +6,12 @@ from copy import deepcopy
 import os
 import akshare as ak
 
+from bot import send_to_group
 from stock_data_spider import stock_spider
 from stock_rule3 import Rule3
 from stock_show import stock_savefig
 import argparse
+import asyncio
 
 # 获取当前文件所在的绝对路径
 current_file_path = os.path.abspath(__file__)
@@ -62,6 +64,8 @@ if __name__ == "__main__":
         help="执行下载功能并指定股票代码（留空下载所有）",
     )
     parser.add_argument("--chose", type=str, help="执行指定策略")
+    parser.add_argument("--group", type=str, nargs="+", help="绘制图形")
+    parser.add_argument("--token", type=str, help="绘制图形")
 
     # 解析参数
     args = parser.parse_args()
@@ -73,7 +77,22 @@ if __name__ == "__main__":
     if args.download:
         if args.download == "ALL":
             download()
+            pass
         else:
             download(args.download)
     if args.chose:
         chose(args.chose)
+        # 创建事件循环
+        loop = asyncio.get_event_loop()
+
+        # 创建协程任务
+
+        for item in args.group:
+            task = loop.create_task(send_to_group(args.chose, args.token, item))
+
+            # 运行事件循环，直到任务完成
+            loop.run_until_complete(task)
+
+        # 主动关闭事件循环
+        loop.stop()
+        print("Event loop stopped")
