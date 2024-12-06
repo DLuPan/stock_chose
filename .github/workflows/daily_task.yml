@@ -33,7 +33,7 @@ jobs:
         pwd
         ls -la
         echo "$tg_group1 和 $tg_token"
-        python stock_chose.py --download ALL --chose rule3 --group $tg_group1 $tg_group2 --token $tg_token   # 运行你的 Python 脚本，生成输出文件
+        python stock_chose.py --download ALL --chose rule3 --group -1002260508200 -1002254488578 --token $tg_token   # 运行你的 Python 脚本，生成输出文件
  
     - name: Commit and push generated files
       run: |
