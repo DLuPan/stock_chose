@@ -51,9 +51,15 @@ async def send_to_group(rule, token, grup_chat_id):
         )
         # 发送图片和文字
         with open(image_path, "rb") as img:
-            await bot.send_photo(
-                chat_id=grup_chat_id, photo=img, caption=message, parse_mode="Markdown"
-            )
+            try:
+                await bot.send_photo(
+                    chat_id=grup_chat_id,
+                    photo=img,
+                    caption=message,
+                    parse_mode="Markdown",
+                )
+            except Exception as e:
+                print("执行异常", e)
 
 
 # 确保主函数是异步的

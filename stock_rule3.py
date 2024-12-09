@@ -83,9 +83,6 @@ class Rule3(Rule):
             # 从最后一行开始，检查是否连续 15 行都满足条件
             return (
                 daily_price["250_signal"].iloc[-15:].all()
-                and recent_sma10_up
-                and recent_sma20_up
-                and recent_sma30_up
             )
         except Exception as e:
             print(f"异常:{e}")
