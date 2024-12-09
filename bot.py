@@ -58,6 +58,8 @@ async def send_to_group(rule, token, grup_chat_id):
                     caption=message,
                     parse_mode="Markdown",
                 )
+                # 休眠1s便于
+                time.sleep(1)
             except Exception as e:
                 print("执行异常", e)
 
