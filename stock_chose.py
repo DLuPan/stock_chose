@@ -23,11 +23,36 @@ os.makedirs(f"{root_dir}/data/chose", exist_ok=True)
 # 当前时间
 c_date = datetime.datetime.now().strftime("%Y_%m_%d")
 
+stock_board_map = {}
+
+
+def assign_board(symbol):
+    if symbol in stock_board_map:
+        return stock_board_map[symbol]
+    else:
+        return "Other"
+
 
 def download(symbol=None):
-    # # 下载股票简介
+    # 下载股票简介
     stock_zh_a_spot_em_df = ak.stock_zh_a_spot_em()
+    stock_board_industry_name_em_df = ak.stock_board_industry_name_em()
+    for index, row in stock_board_industry_name_em_df.iterrows():
+        stock_board_industry_cons_em_df = ak.stock_board_industry_cons_em(
+            symbol=f"{row['板块名称']}"
+        )
+        for df_index, df_row in stock_board_industry_cons_em_df.iterrows():
+            if df_row["代码"] in stock_board_map:
+                stock_board_map[df_row["代码"]] = (
+                    stock_board_map.get(df_row["代码"]) + "," + row["板块名称"]
+                )
+            else:
+                stock_board_map[df_row["代码"]] = row["板块名称"]
+    stock_zh_a_spot_em_df["板块信息"] = stock_zh_a_spot_em_df["代码"].apply(
+        assign_board
+    )
     stock_zh_a_spot_em_df.to_csv(f"{root_dir}/data/stock_info.csv", index=False)
+    # 下载股票
     if symbol is None:
         # # 下载股票详情
         stock_spider(all_symbols=stock_zh_a_spot_em_df["代码"].to_list())
