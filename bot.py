@@ -35,7 +35,7 @@ async def send_to_group(rule, token, grup_chat_id):
         image_path = f"{root_dir}/data/chose/{c_date}/{rule}/{data['代码']}_{c_date}.png"  # 替换为您的本地图片路径
         # 格式化消息
         message = (
-            f"**{data['名称']} ({data['代码']})**\n"
+            f"**#{data['名称']} (#{data['代码']})**\n"
             f"最新价: {data['最新价']} 元\n"
             f"涨跌幅: {data['涨跌幅']} | 涨跌额: {data['涨跌额']} 元\n"
             f"成交量: {data['成交量']} 股 | 成交额: {data['成交额']} 元\n"
@@ -47,7 +47,7 @@ async def send_to_group(rule, token, grup_chat_id):
             f"总市值: {data['总市值']} 元 | 流通市值: {data['流通市值']} 元\n"
             f"涨速: {data['涨速']} | 5分钟涨跌: {data['5分钟涨跌']}\n"
             f"60日涨跌幅: {data['60日涨跌幅']} | 年初至今涨跌幅: {data['年初至今涨跌幅']}\n"
-            f"所属板块: {data['板块信息']}\n"
+            f"所属板块: #{data['板块信息']}\n"
             f"Rule3 信号: {'是' if data['rule3_sinal'] else '否'}"
         )
         # 发送图片和文字
