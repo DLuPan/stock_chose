@@ -1,0 +1,3 @@
+datetime,sec_code,open,close,high,low,volume,turnover,amplitude,price_change_percentage,price_change_amount,turnover_rate
+2024-12-30,001391,10.0,9.3,12.5,9.11,6131617,6210293647.37,147.39,304.35,7.0,73.09
+2024-12-31,001391,8.13,9.21,9.97,7.22,5206308,4252485152.44,29.57,-0.97,-0.09,62.06
