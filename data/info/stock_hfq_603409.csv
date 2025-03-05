@@ -1,2 +1,3 @@
 datetime,sec_code,open,close,high,low,volume,turnover,amplitude,price_change_percentage,price_change_amount,turnover_rate
 2025-03-04,603409,48.5,50.81,77.77,45.68,232895,1266359196.0,132.71,110.13,26.63,75.43
+2025-03-05,603409,46.0,45.55,49.07,44.88,166187,770775169.0,8.25,-10.35,-5.26,53.82
