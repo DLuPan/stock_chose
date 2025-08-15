@@ -22,6 +22,12 @@ def get_db():
         db.close()
 
 
+def get_db_session():
+    """Get a database session for direct use (非依赖式)"""
+    db = SessionLocal()
+    return db
+
+
 def init_db():
     """Initialize database tables"""
     Base.metadata.create_all(bind=engine)
