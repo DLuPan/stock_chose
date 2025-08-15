@@ -4,10 +4,15 @@ packages/bot/src/bot/__init__.py
 packages/core/src/core/__init__.py
 packages/core/src/core/cli.py
 packages/core/src/core/database.py
+packages/core/src/core/logger.py
 packages/core/src/core/version.py
 packages/core/src/core/models/__init__.py
+packages/core/src/core/models/_rule.py
 packages/core/src/core/models/_stock.py
 packages/core/src/core/models/base.py
+packages/core/src/core/rule/__init__.py
+packages/core/src/core/rule/base.py
+packages/core/src/core/rule/stock_chose_rule4.py
 packages/core/src/core/sync/__init__.py
 packages/core/src/core/sync/sync_stock.py
 stock_chose.egg-info/PKG-INFO

@@ -11,6 +11,10 @@ dependencies = []
 
 [project.scripts]
 core = "core:main"
+version = "core.cli:version"
+sync-all = "core.cli:sync_all"
+sync-hist = "core.cli:main"
+cli = "core.cli:app"
 
 [build-system]
 requires = ["hatchling"]

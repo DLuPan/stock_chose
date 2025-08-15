@@ -42,7 +42,9 @@ def sync_hist(
     """
     from core.sync import sync_stock_zh_a_hist
 
+    typer.echo(f"Starting historical data synchronization for symbol: {symbol}...")
     sync_stock_zh_a_hist(symbol, period, start_date, end_date, adjust)
+    typer.echo("Historical data synchronization completed.")
 
 
 @app.command()
