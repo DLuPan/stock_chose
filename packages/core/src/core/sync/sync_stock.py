@@ -20,15 +20,17 @@ def sync_stock_zh_a_hist_all(
     start_date: str = "19700101",
     end_date: str = "20500101",
     adjust: str = "hfq",
-) -> List[Dict]:
+):
     db = next(get_db())
     try:
         symbols = db.query(StockSpotDB.symbol).all()
         symbols = [s[0] for s in symbols if s[0]]  # 提取 symbol 字符串
     finally:
         db.close()
-    all_hist = []
-    for symbol in symbols:
+    total = len(symbols)
+    success = 0
+    fail = 0
+    for idx, symbol in enumerate(symbols, 1):
         log.info(f"Syncing historical data for symbol: {symbol}")
         try:
             hist = sync_stock_zh_a_hist(
@@ -38,11 +40,16 @@ def sync_stock_zh_a_hist_all(
                 end_date=end_date,
                 adjust=adjust,
             )
-            all_hist.extend(hist)
+            success += 1
         except Exception as e:
             log.error(f"Error syncing {symbol}: {e}")
+            fail += 1
+        remaining = total - idx
+        # 使用loguru的log.info打印进度条
+        log.info(
+            f"[{idx}/{total}] 成功:{success} 失败:{fail} 剩余:{remaining} | 当前:{symbol}"
+        )
         time.sleep(random.uniform(1, 5))  # 每次调用休眠1-5s随机
-    return all_hist
 
 
 def sync_stock_zh_a_hist(

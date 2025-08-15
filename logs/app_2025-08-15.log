@@ -1,2 +1,9 @@
 2025-08-15 14:45:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:32 - Syncing historical data for symbol: 000001
 2025-08-15 14:45:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:32 - Syncing historical data for symbol: 000002
+2025-08-15 16:02:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - Syncing historical data for symbol: 000001
+2025-08-15 16:02:19 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:49 - [1/5739] <green>成功:1</green> <red>失败:0</red> <yellow>剩余:5738</yellow> | <blue>当前:000001</blue>
+2025-08-15 16:02:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - Syncing historical data for symbol: 000002
+2025-08-15 16:02:25 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:49 - [2/5739] <green>成功:2</green> <red>失败:0</red> <yellow>剩余:5737</yellow> | <blue>当前:000002</blue>
+2025-08-15 16:02:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - Syncing historical data for symbol: 000001
+2025-08-15 16:02:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:49 - [1/5739] 成功:1 失败:0 剩余:5738 | 当前:000001
+2025-08-15 16:02:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - Syncing historical data for symbol: 000002
