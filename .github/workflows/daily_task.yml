@@ -33,8 +33,8 @@ jobs:
         echo Starting script...
         CUR_DATE=$(date +"%Y%m%d")
         echo "Current date: $CUR_DATE"
-        uv run .\\packages\\core\\src\\core\\cli.py sync-all
-        uv run .\\packages\\core\\src\\core\\cli.py sync-hist-all --end-date $CUR_DATE --adjust hfq
+        uv run ./packages/core/src/core/cli.py sync-all
+        uv run ./packages/core/src/core\cli.py sync-hist-all --end-date $CUR_DATE --adjust hfq
     - name: Commit and push generated files
       run: |
         pwd
