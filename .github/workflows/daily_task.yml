@@ -23,6 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install uv
         uv sync  # 同步 uv 环境
+        uv build  # 构建 uv 环境
 
     - name: Run Python script
       env: # 将 secrets 作为环境变量传递
