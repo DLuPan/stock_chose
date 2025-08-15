@@ -22,7 +22,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install uv
-        uv init  # 初始化 uv 环境
         uv sync  # 同步 uv 环境
 
     - name: Run Python script
