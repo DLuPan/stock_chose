@@ -1,0 +1,5 @@
+akshare>=1.17.34
+loguru>=0.7.3
+pydantic>=2.11.7
+sqlalchemy>=2.0.43
+typer>=0.16.0

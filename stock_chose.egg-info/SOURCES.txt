@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+packages/bot/src/bot/__init__.py
+packages/core/src/core/__init__.py
+packages/core/src/core/cli.py
+packages/core/src/core/database.py
+packages/core/src/core/version.py
+packages/core/src/core/models/__init__.py
+packages/core/src/core/models/_stock.py
+packages/core/src/core/models/base.py
+packages/core/src/core/sync/__init__.py
+packages/core/src/core/sync/sync_stock.py
+stock_chose.egg-info/PKG-INFO
+stock_chose.egg-info/SOURCES.txt
+stock_chose.egg-info/dependency_links.txt
+stock_chose.egg-info/requires.txt
+stock_chose.egg-info/top_level.txt

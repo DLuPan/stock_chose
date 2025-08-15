@@ -21,7 +21,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # 安装依赖项，假设你已经在 requirements.txt 文件中列出了所有依赖（包括 backtrader）
+        pip install uv
+        uv init  # 初始化 uv 环境
+        uv sync  # 同步 uv 环境
 
     - name: Run Python script
       env: # 将 secrets 作为环境变量传递
@@ -29,9 +31,11 @@ jobs:
       run: |
         pwd
         ls -la
-        echo "$tg_group1 和 $tg_token"
-        python stock_chose.py --download ALL --chose rule3 --group -1002260508200 -1002254488578 --token 7768339431:AAF45qXufPN0cRb-V5qF5RJldXncLmJoCgk   # 运行你的 Python 脚本，生成输出文件
- 
+        echo Starting script...
+        CUR_DATE=$(date +"%Y%m%d")
+        echo "Current date: $CUR_DATE"
+        uv run .\packages\core\src\core\cli.py sync-all
+        uv run .\packages\core\src\core\cli.py sync-hist-all --end-date $CUR_DATE --adjust hfq
     - name: Commit and push generated files
       run: |
         pwd

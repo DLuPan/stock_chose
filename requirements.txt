@@ -1,7 +1,0 @@
-pandas
-numpy
-akshare
-matplotlib 
-mplfinance
-python-telegram-bot
-python-dotenv

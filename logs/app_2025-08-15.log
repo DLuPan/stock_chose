@@ -1,0 +1,2 @@
+2025-08-15 14:45:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:32 - Syncing historical data for symbol: 000001
+2025-08-15 14:45:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:32 - Syncing historical data for symbol: 000002

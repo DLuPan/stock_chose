@@ -1,9 +1,20 @@
+Metadata-Version: 2.4
+Name: stock-chose
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: akshare>=1.17.34
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: pydantic>=2.11.7
+Requires-Dist: sqlalchemy>=2.0.43
+Requires-Dist: typer>=0.16.0
+
 # 全自动策略选股
 交易日每天18点自动按指定规则筛选符合条件的A股股票
 # 更新说明
 2024-12-09：取消规则3的10、20、30趋势选择，不稳定，没有意义
 2024-12-03：取消规则1、规则2新增规则3的全量股票选股
-2025-08-13：改用sqllite存储数据提高数据的复用性和可以只执行，使用uv作为项目依赖管理工具
 
 # 命名规则
 - 选股结果：stock_chose_[股则]_[日期].csv
@@ -12,15 +23,9 @@
 ## 数据存储目录/data
 ## 运行规则如下
  - ~~rule1:100-200亿流通市值&15天内持续收盘价在250日均线上下~~
- - ~~rule2:200-500亿流通市值&15天内持续收盘价在250日均线上下~~
- - ~~rule3:15天内持续收盘价在250日均线上下~~
- - rule4:取月柱的最高点，近三个月 && 当日收盘价，比月柱的最高价，回调了30%～40%
+ - rule2:~~200-500亿流通市值&15天内持续收盘价在250日均线上下~~
+ - rule3:15天内持续收盘价在250日均线上下
 
 ## rule1:100-200亿流通市值&15天内持续收盘价在250日均线上下数据
 [2024-11-26](data/chose/stock_chose_rule1_2024_11_26.csv)
 [2024-11-25](data/chose/stock_chose_rule1_2024_11_25.csv)
-
-
-## 项目结构
-- core:核心，提供数据同步&数据采集&规则定义的所有内容
-- bot:机器人，这个主要是将结果同步到telegram
