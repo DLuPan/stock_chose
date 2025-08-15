@@ -30,14 +30,17 @@ def sync_stock_zh_a_hist_all(
     all_hist = []
     for symbol in symbols:
         log.info(f"Syncing historical data for symbol: {symbol}")
-        hist = sync_stock_zh_a_hist(
-            symbol=symbol,
-            period=period,
-            start_date=start_date,
-            end_date=end_date,
-            adjust=adjust,
-        )
-        all_hist.extend(hist)
+        try:
+            hist = sync_stock_zh_a_hist(
+                symbol=symbol,
+                period=period,
+                start_date=start_date,
+                end_date=end_date,
+                adjust=adjust,
+            )
+            all_hist.extend(hist)
+        except Exception as e:
+            log.error(f"Error syncing {symbol}: {e}")
         time.sleep(random.uniform(1, 5))  # 每次调用休眠1-5s随机
     return all_hist
 
