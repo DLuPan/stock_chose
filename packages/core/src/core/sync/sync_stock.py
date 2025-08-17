@@ -4,6 +4,7 @@ import numpy as np
 import datetime
 import time
 import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from core.database import get_db, init_db
 from core.models import (
     StockSpotDB,
@@ -20,18 +21,23 @@ def sync_stock_zh_a_hist_all(
     start_date: str = "19700101",
     end_date: str = "20500101",
     adjust: str = "hfq",
+    max_workers: int = 5,
 ):
     db = next(get_db())
     try:
         symbols = db.query(StockSpotDB.symbol).all()
-        symbols = [s[0] for s in symbols if s[0]]  # 提取 symbol 字符串
+        symbols = [s[0] for s in symbols if s[0]]
     finally:
         db.close()
     total = len(symbols)
     success = 0
     fail = 0
-    for idx, symbol in enumerate(symbols, 1):
-        log.info(f"Syncing historical data for symbol: {symbol}")
+
+    log.info(f"准备同步 {total} 个股票历史数据，最大并发数: {max_workers}")
+
+    def worker(symbol):
+        start_time = time.time()
+        log.info(f"[{symbol}] 开始同步历史数据")
         try:
             hist = sync_stock_zh_a_hist(
                 symbol=symbol,
@@ -40,16 +46,35 @@ def sync_stock_zh_a_hist_all(
                 end_date=end_date,
                 adjust=adjust,
             )
-            success += 1
+            elapsed = time.time() - start_time
+            log.info(f"[{symbol}] 同步完成，耗时: {elapsed:.2f}s")
+            time.sleep(random.uniform(1, 5))  # 每个任务休眠1-5s
+            return (symbol, True, None, elapsed)
         except Exception as e:
-            log.error(f"Error syncing {symbol}: {e}")
-            fail += 1
-        remaining = total - idx
-        # 使用loguru的log.info打印进度条
-        log.info(
-            f"[{idx}/{total}] 成功:{success} 失败:{fail} 剩余:{remaining} | 当前:{symbol}"
-        )
-        time.sleep(random.uniform(1, 5))  # 每次调用休眠1-5s随机
+            elapsed = time.time() - start_time
+            log.error(f"[{symbol}] 同步失败，耗时: {elapsed:.2f}s，错误: {e}")
+            time.sleep(random.uniform(1, 5))  # 每个任务休眠1-5s
+            return (symbol, False, str(e), elapsed)
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_symbol = {
+            executor.submit(worker, symbol): symbol for symbol in symbols
+        }
+        for idx, future in enumerate(as_completed(future_to_symbol), 1):
+            symbol = future_to_symbol[future]
+            try:
+                symbol, ok, err, elapsed = future.result()
+                if ok:
+                    success += 1
+                else:
+                    fail += 1
+            except Exception as e:
+                fail += 1
+                log.error(f"[{symbol}] 未知异常: {e}")
+            remaining = total - idx
+            log.info(
+                f"进度 [{idx}/{total}] | 成功:{success} 失败:{fail} 剩余:{remaining} | 当前:{symbol}"
+            )
 
 
 def sync_stock_zh_a_hist(
@@ -177,4 +202,5 @@ def sync_stock_zh_a_spot_em():
     finally:
         db.close()
 
+    return stocks
     return stocks

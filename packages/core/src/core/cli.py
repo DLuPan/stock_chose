@@ -52,7 +52,8 @@ def sync_hist_all(
     period: str = "daily",
     start_date: str = "19700101",
     end_date: str = "20500101",
-    adjust: str = "",
+    adjust: str = "hfq",
+    max_workers: int = 5,  # 新增参数，默认并发数为5
 ):
     """
     Sync historical stock data.
@@ -60,7 +61,7 @@ def sync_hist_all(
     from core.sync import sync_stock_zh_a_hist_all
 
     typer.echo("Starting historical stock data synchronization...")
-    sync_stock_zh_a_hist_all(period, start_date, end_date, adjust)
+    sync_stock_zh_a_hist_all(period, start_date, end_date, adjust, max_workers)
     typer.echo("Historical stock data synchronization completed.")
 
 
