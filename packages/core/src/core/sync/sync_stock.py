@@ -4,13 +4,17 @@ import numpy as np
 import datetime
 import time
 import random
+import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from core.database import get_db, init_db
+from core.database import get_db, init_db, get_hist_db_session
 from core.models import (
     StockSpotDB,
     StockHistoryDB,
 )  # Make sure StockSpotDB's __table_args__ includes {'extend_existing': True}
 from core.logger import log
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from core.models import Base
 
 # Initialize database on first run
 init_db()
@@ -128,8 +132,8 @@ def sync_stock_zh_a_hist(
             elif isinstance(value, np.floating):
                 stock_item[key] = float(value)
 
-    # Save to database
-    db = next(get_db())
+    # Save to database (new file per symbol/adjust)
+    db = get_hist_db_session(symbol)
     try:
         for stock_item in stock_hist:
             db_stock = StockHistoryDB(**stock_item)
@@ -202,5 +206,4 @@ def sync_stock_zh_a_spot_em():
     finally:
         db.close()
 
-    return stocks
     return stocks

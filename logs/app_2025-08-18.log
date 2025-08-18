@@ -1,0 +1,138 @@
+2025-08-18 14:53:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:39 - 准备同步 5739 个股票历史数据，最大并发数: 5
+2025-08-18 14:53:59 | INFO     | core.sync.sync_stock:worker:43 - [000001] 开始同步历史数据
+2025-08-18 14:53:59 | INFO     | core.sync.sync_stock:worker:43 - [000002] 开始同步历史数据
+2025-08-18 14:53:59 | INFO     | core.sync.sync_stock:worker:43 - [000003] 开始同步历史数据
+2025-08-18 14:53:59 | INFO     | core.sync.sync_stock:worker:43 - [000004] 开始同步历史数据
+2025-08-18 14:53:59 | INFO     | core.sync.sync_stock:worker:43 - [000005] 开始同步历史数据
+2025-08-18 14:53:59 | ERROR    | core.sync.sync_stock:worker:58 - [000001] 同步失败，耗时: 0.26s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.000001&beg=19700101&end=20250818 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-18 14:53:59 | ERROR    | core.sync.sync_stock:worker:58 - [000003] 同步失败，耗时: 0.59s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:00 | ERROR    | core.sync.sync_stock:worker:58 - [000004] 同步失败，耗时: 0.87s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:00 | ERROR    | core.sync.sync_stock:worker:58 - [000002] 同步失败，耗时: 0.94s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:00 | ERROR    | core.sync.sync_stock:worker:58 - [000005] 同步失败，耗时: 0.95s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:02 | INFO     | core.sync.sync_stock:worker:43 - [000006] 开始同步历史数据
+2025-08-18 14:54:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [1/5739] | 成功:0 失败:1 剩余:5738 | 当前:000002
+2025-08-18 14:54:02 | INFO     | core.sync.sync_stock:worker:43 - [000007] 开始同步历史数据
+2025-08-18 14:54:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [2/5739] | 成功:0 失败:2 剩余:5737 | 当前:000005
+2025-08-18 14:54:03 | INFO     | core.sync.sync_stock:worker:43 - [000008] 开始同步历史数据
+2025-08-18 14:54:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [3/5739] | 成功:0 失败:3 剩余:5736 | 当前:000004
+2025-08-18 14:54:03 | ERROR    | core.sync.sync_stock:worker:58 - [000007] 同步失败，耗时: 1.17s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:03 | ERROR    | core.sync.sync_stock:worker:58 - [000006] 同步失败，耗时: 1.33s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:03 | ERROR    | core.sync.sync_stock:worker:58 - [000008] 同步失败，耗时: 0.93s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:04 | INFO     | core.sync.sync_stock:worker:43 - [000009] 开始同步历史数据
+2025-08-18 14:54:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [4/5739] | 成功:0 失败:4 剩余:5735 | 当前:000003
+2025-08-18 14:54:04 | INFO     | core.sync.sync_stock:worker:43 - [000010] 开始同步历史数据
+2025-08-18 14:54:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [5/5739] | 成功:0 失败:5 剩余:5734 | 当前:000001
+2025-08-18 14:54:04 | ERROR    | core.sync.sync_stock:worker:58 - [000009] 同步失败，耗时: 0.75s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:05 | ERROR    | core.sync.sync_stock:worker:58 - [000010] 同步失败，耗时: 0.79s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:05 | INFO     | core.sync.sync_stock:worker:43 - [000011] 开始同步历史数据
+2025-08-18 14:54:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [6/5739] | 成功:0 失败:6 剩余:5733 | 当前:000007
+2025-08-18 14:54:05 | INFO     | core.sync.sync_stock:worker:43 - [000012] 开始同步历史数据
+2025-08-18 14:54:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [7/5739] | 成功:0 失败:7 剩余:5732 | 当前:000008
+2025-08-18 14:54:05 | ERROR    | core.sync.sync_stock:worker:58 - [000011] 同步失败，耗时: 0.82s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:06 | ERROR    | core.sync.sync_stock:worker:58 - [000012] 同步失败，耗时: 0.92s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:07 | INFO     | core.sync.sync_stock:worker:43 - [000013] 开始同步历史数据
+2025-08-18 14:54:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [8/5739] | 成功:0 失败:8 剩余:5731 | 当前:000010
+2025-08-18 14:54:07 | ERROR    | core.sync.sync_stock:worker:58 - [000013] 同步失败，耗时: 0.59s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:07 | INFO     | core.sync.sync_stock:worker:43 - [000014] 开始同步历史数据
+2025-08-18 14:54:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 进度 [9/5739] | 成功:0 失败:9 剩余:5730 | 当前:000011
+2025-08-18 14:54:08 | INFO     | core.sync.sync_stock:worker:43 - [000015] 开始同步历史数据
+2025-08-18 14:54:09 | ERROR    | core.sync.sync_stock:worker:58 - [000014] 同步失败，耗时: 1.51s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:09 | ERROR    | core.sync.sync_stock:worker:58 - [000015] 同步失败，耗时: 0.88s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:09 | INFO     | core.sync.sync_stock:worker:43 - [000016] 开始同步历史数据
+2025-08-18 14:54:10 | INFO     | core.sync.sync_stock:worker:43 - [000017] 开始同步历史数据
+2025-08-18 14:54:10 | INFO     | core.sync.sync_stock:worker:43 - [000018] 开始同步历史数据
+2025-08-18 14:54:10 | ERROR    | core.sync.sync_stock:worker:58 - [000016] 同步失败，耗时: 0.88s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:10 | INFO     | core.sync.sync_stock:worker:43 - [000019] 开始同步历史数据
+2025-08-18 14:54:11 | ERROR    | core.sync.sync_stock:worker:58 - [000018] 同步失败，耗时: 0.71s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:11 | ERROR    | core.sync.sync_stock:worker:58 - [000019] 同步失败，耗时: 0.83s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:11 | ERROR    | core.sync.sync_stock:worker:58 - [000017] 同步失败，耗时: 1.66s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:13 | INFO     | core.sync.sync_stock:worker:43 - [000020] 开始同步历史数据
+2025-08-18 14:54:14 | INFO     | core.sync.sync_stock:worker:43 - [000021] 开始同步历史数据
+2025-08-18 14:54:14 | INFO     | core.sync.sync_stock:worker:43 - [000023] 开始同步历史数据
+2025-08-18 14:54:14 | INFO     | core.sync.sync_stock:worker:43 - [000024] 开始同步历史数据
+2025-08-18 14:54:14 | INFO     | core.sync.sync_stock:worker:43 - [000025] 开始同步历史数据
+2025-08-18 14:54:14 | ERROR    | core.sync.sync_stock:worker:58 - [000020] 同步失败，耗时: 0.90s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:14 | ERROR    | core.sync.sync_stock:worker:58 - [000021] 同步失败，耗时: 0.85s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:15 | ERROR    | core.sync.sync_stock:worker:58 - [000023] 同步失败，耗时: 0.84s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:15 | ERROR    | core.sync.sync_stock:worker:58 - [000024] 同步失败，耗时: 1.35s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:17 | INFO     | core.sync.sync_stock:worker:43 - [000026] 开始同步历史数据
+2025-08-18 14:54:17 | ERROR    | core.sync.sync_stock:worker:58 - [000025] 同步失败，耗时: 2.93s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:17 | INFO     | core.sync.sync_stock:worker:43 - [000027] 开始同步历史数据
+2025-08-18 14:54:18 | ERROR    | core.sync.sync_stock:worker:58 - [000026] 同步失败，耗时: 0.73s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:18 | ERROR    | core.sync.sync_stock:worker:58 - [000027] 同步失败，耗时: 0.94s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:18 | INFO     | core.sync.sync_stock:worker:43 - [000028] 开始同步历史数据
+2025-08-18 14:54:19 | INFO     | core.sync.sync_stock:worker:43 - [000029] 开始同步历史数据
+2025-08-18 14:54:19 | INFO     | core.sync.sync_stock:worker:43 - [000030] 开始同步历史数据
+2025-08-18 14:54:19 | INFO     | core.sync.sync_stock:worker:43 - [000031] 开始同步历史数据
+2025-08-18 14:54:19 | ERROR    | core.sync.sync_stock:worker:58 - [000028] 同步失败，耗时: 0.91s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:20 | ERROR    | core.sync.sync_stock:worker:58 - [000029] 同步失败，耗时: 0.88s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:20 | ERROR    | core.sync.sync_stock:worker:58 - [000031] 同步失败，耗时: 0.93s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:21 | ERROR    | core.sync.sync_stock:worker:58 - [000030] 同步失败，耗时: 1.43s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:21 | INFO     | core.sync.sync_stock:worker:43 - [000032] 开始同步历史数据
+2025-08-18 14:54:22 | ERROR    | core.sync.sync_stock:worker:58 - [000032] 同步失败，耗时: 0.81s，错误: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-18 14:54:22 | INFO     | core.sync.sync_stock:worker:43 - [000033] 开始同步历史数据
+2025-08-18 15:01:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:40 - 准备同步 5740 个股票历史数据，最大并发数: 5
+2025-08-18 15:01:03 | INFO     | core.sync.sync_stock:worker:44 - [000001] 开始同步历史数据
+2025-08-18 15:01:03 | INFO     | core.sync.sync_stock:worker:44 - [000002] 开始同步历史数据
+2025-08-18 15:01:03 | INFO     | core.sync.sync_stock:worker:44 - [000003] 开始同步历史数据
+2025-08-18 15:01:03 | INFO     | core.sync.sync_stock:worker:44 - [000004] 开始同步历史数据
+2025-08-18 15:01:03 | INFO     | core.sync.sync_stock:worker:44 - [000005] 开始同步历史数据
+2025-08-18 15:01:11 | INFO     | core.sync.sync_stock:worker:54 - [000003] 同步完成，耗时: 8.57s
+2025-08-18 15:01:15 | INFO     | core.sync.sync_stock:worker:44 - [000006] 开始同步历史数据
+2025-08-18 15:01:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [1/5740] | 成功:1 失败:0 剩余:5739 | 当前:000003
+2025-08-18 15:01:26 | INFO     | core.sync.sync_stock:worker:54 - [000005] 同步完成，耗时: 23.02s
+2025-08-18 15:01:26 | INFO     | core.sync.sync_stock:worker:54 - [000004] 同步完成，耗时: 23.27s
+2025-08-18 15:01:26 | INFO     | core.sync.sync_stock:worker:54 - [000002] 同步完成，耗时: 23.36s
+2025-08-18 15:01:27 | INFO     | core.sync.sync_stock:worker:54 - [000001] 同步完成，耗时: 23.62s
+2025-08-18 15:01:29 | INFO     | core.sync.sync_stock:worker:44 - [000007] 开始同步历史数据
+2025-08-18 15:01:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [2/5740] | 成功:2 失败:0 剩余:5738 | 当前:000004
+2025-08-18 15:01:29 | INFO     | core.sync.sync_stock:worker:54 - [000006] 同步完成，耗时: 14.20s
+2025-08-18 15:01:30 | INFO     | core.sync.sync_stock:worker:44 - [000008] 开始同步历史数据
+2025-08-18 15:01:30 | INFO     | core.sync.sync_stock:worker:44 - [000009] 开始同步历史数据
+2025-08-18 15:01:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [3/5740] | 成功:3 失败:0 剩余:5737 | 当前:000001
+2025-08-18 15:01:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [4/5740] | 成功:4 失败:0 剩余:5736 | 当前:000002
+2025-08-18 15:01:31 | INFO     | core.sync.sync_stock:worker:44 - [000010] 开始同步历史数据
+2025-08-18 15:01:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [5/5740] | 成功:5 失败:0 剩余:5735 | 当前:000005
+2025-08-18 15:01:34 | INFO     | core.sync.sync_stock:worker:44 - [000011] 开始同步历史数据
+2025-08-18 15:01:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [6/5740] | 成功:6 失败:0 剩余:5734 | 当前:000006
+2025-08-18 15:01:51 | INFO     | core.sync.sync_stock:worker:54 - [000007] 同步完成，耗时: 22.01s
+2025-08-18 15:01:51 | INFO     | core.sync.sync_stock:worker:54 - [000010] 同步完成，耗时: 20.37s
+2025-08-18 15:01:51 | INFO     | core.sync.sync_stock:worker:54 - [000008] 同步完成，耗时: 21.04s
+2025-08-18 15:01:51 | INFO     | core.sync.sync_stock:worker:54 - [000009] 同步完成，耗时: 21.46s
+2025-08-18 15:01:53 | INFO     | core.sync.sync_stock:worker:54 - [000011] 同步完成，耗时: 18.83s
+2025-08-18 15:01:54 | INFO     | core.sync.sync_stock:worker:44 - [000012] 开始同步历史数据
+2025-08-18 15:01:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [7/5740] | 成功:7 失败:0 剩余:5733 | 当前:000009
+2025-08-18 15:01:54 | INFO     | core.sync.sync_stock:worker:44 - [000013] 开始同步历史数据
+2025-08-18 15:01:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [8/5740] | 成功:8 失败:0 剩余:5732 | 当前:000007
+2025-08-18 15:01:54 | INFO     | core.sync.sync_stock:worker:44 - [000014] 开始同步历史数据
+2025-08-18 15:01:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:79 - 进度 [9/5740] | 成功:9 失败:0 剩余:5731 | 当前:000010
