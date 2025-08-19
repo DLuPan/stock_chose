@@ -8,7 +8,7 @@ import akshare as ak
 from core.logger import log
 from sqlalchemy.orm import Session
 from core.models._stock import StockHistoryDB
-from core.database import get_db_session
+from core.database import get_db_session, get_hist_db_session
 from core.logger import log
 import concurrent.futures
 
@@ -86,7 +86,7 @@ class Rule4(Rule):
             symbol = row.symbol
             adjust = "hfq"
 
-            session: Session = get_db_session()
+            session: Session = get_hist_db_session(symbol)
             daily_price_df = pd.read_sql(
                 session.query(StockHistoryDB)
                 .filter(
@@ -96,6 +96,10 @@ class Rule4(Rule):
                 .statement,
                 session.bind,
             )
+            if daily_price_df.empty:
+                log.info(f"没有找到 {symbol} 的历史数据")
+                session.close()
+                return False
             daily_price_df["datetime"] = pd.to_datetime(daily_price_df["date"])
             daily_price_df.set_index("datetime", inplace=True)
 
@@ -152,7 +156,7 @@ class Rule4(Rule):
         session.close()
 
         # 多线程应用选股规则，指定线程数
-        THREAD_NUM = 20  # 可根据实际情况调整
+        THREAD_NUM = 200  # 可根据实际情况调整
 
         def apply_rule(row):
             return Rule4._chose(row)
