@@ -1,4 +1,4 @@
-name: 同步当日实时全量股票数据
+name: 同步所有历史数据
 
 on:
   schedule:
