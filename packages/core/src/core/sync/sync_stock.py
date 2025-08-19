@@ -10,6 +10,7 @@ from core.database import get_db, init_db, get_hist_db_session
 from core.models import (
     StockSpotDB,
     StockHistoryDB,
+    StockSyncTaskDB
 )  # Make sure StockSpotDB's __table_args__ includes {'extend_existing': True}
 from core.logger import log
 from sqlalchemy import create_engine
@@ -27,17 +28,58 @@ def sync_stock_zh_a_hist_all(
     adjust: str = "hfq",
     max_workers: int = 5,
 ):
+    # Convert end_date to a date object for querying
+    end_date_obj = datetime.datetime.strptime(end_date, "%Y%m%d").date()
+
+    # Step 1: Initialize tasks for all symbols
     db = next(get_db())
     try:
+        # Fetch all symbols
         symbols = db.query(StockSpotDB.symbol).all()
         symbols = [s[0] for s in symbols if s[0]]
+
+        # Insert tasks for symbols that don't already have a task
+        for symbol in symbols:
+            existing_task = db.query(StockSyncTaskDB).filter(
+                StockSyncTaskDB.date == end_date_obj,
+                StockSyncTaskDB.symbol == symbol,
+            ).first()
+
+            if not existing_task:
+                new_task = StockSyncTaskDB(
+                    date=end_date_obj,
+                    symbol=symbol,
+                    status="start",
+                    message="Initial sync task created",
+                    start_time=datetime.datetime.now(),
+                )
+                db.add(new_task)
+        db.commit()
     finally:
         db.close()
-    total = len(symbols)
+
+    # Step 2: Fetch the first 500 pending or failed tasks
+    db = next(get_db())
+    try:
+        tasks = db.query(StockSyncTaskDB).filter(
+            StockSyncTaskDB.date == end_date_obj,
+            StockSyncTaskDB.status.in_(["start", "failed"]),
+        ).limit(500).all()
+
+        if not tasks:
+            log.info(f"No pending or failed tasks found for date: {end_date}")
+            return
+
+        symbols = [task.symbol for task in tasks if task.symbol]
+    finally:
+        db.close()
+
+    total_symbols = len(symbols)
+    log.info(f"准备同步 {total_symbols} 个股票历史数据，最大并发数: {max_workers}")
+
+    # Execute tasks in parallel
     success = 0
     fail = 0
-
-    log.info(f"准备同步 {total} 个股票历史数据，最大并发数: {max_workers}")
 
     def worker(symbol):
         start_time = time.time()
@@ -72,12 +114,27 @@ def sync_stock_zh_a_hist_all(
                     success += 1
                 else:
                     fail += 1
+                # Update task status immediately after execution
+                db = next(get_db())
+                try:
+                    task = db.query(StockSyncTaskDB).filter(
+                        StockSyncTaskDB.date == end_date_obj,
+                        StockSyncTaskDB.symbol == symbol,
+                    ).first()
+                    if task:
+                        task.status = "completed" if ok else "failed"
+                        task.message = f"Sync {'completed' if ok else 'failed'}"
+                        task.end_time = datetime.datetime.now()
+                        task.duration = elapsed if ok else None
+                        db.commit()
+                finally:
+                    db.close()
             except Exception as e:
                 fail += 1
                 log.error(f"[{symbol}] 未知异常: {e}")
-            remaining = total - idx
+            remaining = total_symbols - idx
             log.info(
-                f"进度 [{idx}/{total}] | 成功:{success} 失败:{fail} 剩余:{remaining} | 当前:{symbol}"
+                f"进度 [{idx}/{total_symbols}] | 成功:{success} 失败:{fail} 剩余:{remaining} | 当前:{symbol}"
             )
 
 

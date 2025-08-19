@@ -1,4 +1,4 @@
-name: 全自动选股策略
+name: 同步当日实时全量股票数据
 
 on:
   schedule:
@@ -32,10 +32,7 @@ jobs:
         pwd
         ls -la
         echo Starting script...
-        CUR_DATE=$(date +"%Y%m%d")
-        echo "Current date: $CUR_DATE"
         uv run --package core cli sync-all
-        uv run --package core cli sync-hist-all --end-date $CUR_DATE --adjust hfq --max-workers 5
     - name: Commit and push generated files
       run: |
         pwd

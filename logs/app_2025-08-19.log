@@ -1,0 +1,45 @@
+2025-08-19 13:53:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:78 - 准备同步 500 个股票历史数据，最大并发数: 5
+2025-08-19 13:53:47 | INFO     | core.sync.sync_stock:worker:86 - [000001] 开始同步历史数据
+2025-08-19 13:53:47 | INFO     | core.sync.sync_stock:worker:86 - [000002] 开始同步历史数据
+2025-08-19 13:53:47 | INFO     | core.sync.sync_stock:worker:86 - [000003] 开始同步历史数据
+2025-08-19 13:53:47 | INFO     | core.sync.sync_stock:worker:86 - [000004] 开始同步历史数据
+2025-08-19 13:53:47 | INFO     | core.sync.sync_stock:worker:86 - [000005] 开始同步历史数据
+2025-08-19 13:53:53 | INFO     | core.sync.sync_stock:worker:96 - [000003] 同步完成，耗时: 5.50s
+2025-08-19 13:53:56 | INFO     | core.sync.sync_stock:worker:86 - [000006] 开始同步历史数据
+2025-08-19 13:53:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [1/500] | 成功:1 失败:0 剩余:499 | 当前:000003
+2025-08-19 13:54:05 | INFO     | core.sync.sync_stock:worker:96 - [000005] 同步完成，耗时: 17.67s
+2025-08-19 13:54:07 | INFO     | core.sync.sync_stock:worker:96 - [000002] 同步完成，耗时: 19.14s
+2025-08-19 13:54:07 | INFO     | core.sync.sync_stock:worker:96 - [000001] 同步完成，耗时: 19.33s
+2025-08-19 13:54:07 | INFO     | core.sync.sync_stock:worker:96 - [000004] 同步完成，耗时: 19.65s
+2025-08-19 13:54:08 | INFO     | core.sync.sync_stock:worker:86 - [000007] 开始同步历史数据
+2025-08-19 13:54:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [2/500] | 成功:2 失败:0 剩余:498 | 当前:000004
+2025-08-19 13:54:09 | INFO     | core.sync.sync_stock:worker:96 - [000006] 同步完成，耗时: 12.78s
+2025-08-19 13:54:09 | INFO     | core.sync.sync_stock:worker:86 - [000008] 开始同步历史数据
+2025-08-19 13:54:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [3/500] | 成功:3 失败:0 剩余:497 | 当前:000001
+2025-08-19 13:54:09 | INFO     | core.sync.sync_stock:worker:86 - [000009] 开始同步历史数据
+2025-08-19 13:54:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [4/500] | 成功:4 失败:0 剩余:496 | 当前:000005
+2025-08-19 13:54:10 | INFO     | core.sync.sync_stock:worker:86 - [000010] 开始同步历史数据
+2025-08-19 13:54:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [5/500] | 成功:5 失败:0 剩余:495 | 当前:000002
+2025-08-19 13:54:12 | INFO     | core.sync.sync_stock:worker:86 - [000011] 开始同步历史数据
+2025-08-19 13:54:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [6/500] | 成功:6 失败:0 剩余:494 | 当前:000006
+2025-08-19 13:54:24 | INFO     | core.sync.sync_stock:worker:96 - [000007] 同步完成，耗时: 15.34s
+2025-08-19 13:54:25 | INFO     | core.sync.sync_stock:worker:96 - [000010] 同步完成，耗时: 15.13s
+2025-08-19 13:54:26 | INFO     | core.sync.sync_stock:worker:96 - [000008] 同步完成，耗时: 17.16s
+2025-08-19 13:54:27 | INFO     | core.sync.sync_stock:worker:96 - [000009] 同步完成，耗时: 18.04s
+2025-08-19 13:54:28 | INFO     | core.sync.sync_stock:worker:96 - [000011] 同步完成，耗时: 16.10s
+2025-08-19 13:54:28 | INFO     | core.sync.sync_stock:worker:86 - [000012] 开始同步历史数据
+2025-08-19 13:54:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [7/500] | 成功:7 失败:0 剩余:493 | 当前:000010
+2025-08-19 13:54:29 | INFO     | core.sync.sync_stock:worker:86 - [000013] 开始同步历史数据
+2025-08-19 13:54:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [8/500] | 成功:8 失败:0 剩余:492 | 当前:000007
+2025-08-19 13:54:29 | INFO     | core.sync.sync_stock:worker:86 - [000014] 开始同步历史数据
+2025-08-19 13:54:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [9/500] | 成功:9 失败:0 剩余:491 | 当前:000008
+2025-08-19 13:54:29 | INFO     | core.sync.sync_stock:worker:86 - [000015] 开始同步历史数据
+2025-08-19 13:54:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [10/500] | 成功:10 失败:0 剩余:490 | 当前:000009
+2025-08-19 13:54:30 | INFO     | core.sync.sync_stock:worker:86 - [000016] 开始同步历史数据
+2025-08-19 13:54:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [11/500] | 成功:11 失败:0 剩余:489 | 当前:000011
+2025-08-19 13:54:34 | INFO     | core.sync.sync_stock:worker:96 - [000015] 同步完成，耗时: 4.84s
+2025-08-19 13:54:35 | INFO     | core.sync.sync_stock:worker:96 - [000013] 同步完成，耗时: 6.40s
+2025-08-19 13:54:36 | INFO     | core.sync.sync_stock:worker:86 - [000017] 开始同步历史数据
+2025-08-19 13:54:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [12/500] | 成功:12 失败:0 剩余:488 | 当前:000015
+2025-08-19 13:54:37 | INFO     | core.sync.sync_stock:worker:86 - [000018] 开始同步历史数据
+2025-08-19 13:54:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:136 - 进度 [13/500] | 成功:13 失败:0 剩余:487 | 当前:000013
