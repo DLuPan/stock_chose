@@ -2,7 +2,7 @@ name: 同步全量股票数据
 
 on:
   schedule:
-    - cron: '0 0/30 * * *'  # 每天的 30分钟触发一次
+    - cron: '0/30 0-17 * * *'  # 每天的 30分钟触发一次
   workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
