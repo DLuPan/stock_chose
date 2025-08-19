@@ -62,7 +62,7 @@ def sync_stock_zh_a_hist_all(
     finally:
         db.close()
 
-    # Step 2: Fetch the first 200 pending or failed tasks
+    # Step 2: Fetch the first 500 pending or failed tasks
     db = next(get_db())
     try:
         tasks = (
@@ -71,7 +71,7 @@ def sync_stock_zh_a_hist_all(
                 StockSyncTaskDB.date == end_date_obj,
                 StockSyncTaskDB.status.in_(["start", "failed"]),
             )
-            .limit(2000)
+            .limit(500)
             .all()
         )
 
