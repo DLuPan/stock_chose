@@ -31,6 +31,8 @@ jobs:
         pwd
         ls -la
         echo Starting script...
+        CUR_DATE=$(date +"%Y%m%d")
+        echo "Current date: $CUR_DATE"
         uv run --package core cli sync-hist-all --end-date $CUR_DATE --adjust hfq --max-workers 10
     - name: Commit and push generated files
       run: |
