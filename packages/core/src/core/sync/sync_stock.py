@@ -10,7 +10,7 @@ from core.database import get_db, init_db, get_hist_db_session
 from core.models import (
     StockSpotDB,
     StockHistoryDB,
-    StockSyncTaskDB
+    StockSyncTaskDB,
 )  # Make sure StockSpotDB's __table_args__ includes {'extend_existing': True}
 from core.logger import log
 from sqlalchemy import create_engine
@@ -40,10 +40,14 @@ def sync_stock_zh_a_hist_all(
 
         # Insert tasks for symbols that don't already have a task
         for symbol in symbols:
-            existing_task = db.query(StockSyncTaskDB).filter(
-                StockSyncTaskDB.date == end_date_obj,
-                StockSyncTaskDB.symbol == symbol,
-            ).first()
+            existing_task = (
+                db.query(StockSyncTaskDB)
+                .filter(
+                    StockSyncTaskDB.date == end_date_obj,
+                    StockSyncTaskDB.symbol == symbol,
+                )
+                .first()
+            )
 
             if not existing_task:
                 new_task = StockSyncTaskDB(
@@ -58,13 +62,18 @@ def sync_stock_zh_a_hist_all(
     finally:
         db.close()
 
-    # Step 2: Fetch the first 500 pending or failed tasks
+    # Step 2: Fetch the first 200 pending or failed tasks
     db = next(get_db())
     try:
-        tasks = db.query(StockSyncTaskDB).filter(
-            StockSyncTaskDB.date == end_date_obj,
-            StockSyncTaskDB.status.in_(["start", "failed"]),
-        ).limit(500).all()
+        tasks = (
+            db.query(StockSyncTaskDB)
+            .filter(
+                StockSyncTaskDB.date == end_date_obj,
+                StockSyncTaskDB.status.in_(["start", "failed"]),
+            )
+            .limit(2000)
+            .all()
+        )
 
         if not tasks:
             log.info(f"No pending or failed tasks found for date: {end_date}")
@@ -117,10 +126,14 @@ def sync_stock_zh_a_hist_all(
                 # Update task status immediately after execution
                 db = next(get_db())
                 try:
-                    task = db.query(StockSyncTaskDB).filter(
-                        StockSyncTaskDB.date == end_date_obj,
-                        StockSyncTaskDB.symbol == symbol,
-                    ).first()
+                    task = (
+                        db.query(StockSyncTaskDB)
+                        .filter(
+                            StockSyncTaskDB.date == end_date_obj,
+                            StockSyncTaskDB.symbol == symbol,
+                        )
+                        .first()
+                    )
                     if task:
                         task.status = "completed" if ok else "failed"
                         task.message = f"Sync {'completed' if ok else 'failed'}"
