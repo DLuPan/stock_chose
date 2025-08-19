@@ -2,7 +2,7 @@ name: 同步当日实时全量股票数据
 
 on:
   schedule:
-    - cron: '0 10 * * 1-5'  # 每个工作日（周一至周五）每天的 18 点触发
+    - cron: '0 4,6,8 * * *'  # 每个工作日（周一至周五）每天的 12 14 16 点触发
   workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
         pwd
         ls -la
         echo Starting script...
-        uv run --package core cli sync-all
+        uv run --package core cli sync-hist-all --end-date $CUR_DATE --adjust hfq --max-workers 10
     - name: Commit and push generated files
       run: |
         pwd
