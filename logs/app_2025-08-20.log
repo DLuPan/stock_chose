@@ -1,0 +1,1501 @@
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:87 - 准备同步 500 个股票历史数据，最大并发数: 10
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [000508] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002653] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002654] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002655] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002656] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002657] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002658] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002659] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002660] 开始同步历史数据
+2025-08-20 09:36:28 | INFO     | core.sync.sync_stock:worker:95 - [002661] 开始同步历史数据
+2025-08-20 09:36:28 | ERROR    | core.sync.sync_stock:worker:110 - [000508] 同步失败，耗时: 0.34s，错误: Length mismatch: Expected axis has 0 elements, new values have 12 elements
+2025-08-20 09:36:31 | INFO     | core.sync.sync_stock:worker:95 - [002662] 开始同步历史数据
+2025-08-20 09:36:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [1/500] | 成功:0 失败:1 剩余:499 | 当前:000508
+2025-08-20 09:36:48 | INFO     | core.sync.sync_stock:worker:105 - [002656] 同步完成，耗时: 19.72s
+2025-08-20 09:36:48 | INFO     | core.sync.sync_stock:worker:105 - [002654] 同步完成，耗时: 19.92s
+2025-08-20 09:36:49 | INFO     | core.sync.sync_stock:worker:105 - [002655] 同步完成，耗时: 20.93s
+2025-08-20 09:36:49 | INFO     | core.sync.sync_stock:worker:105 - [002660] 同步完成，耗时: 21.14s
+2025-08-20 09:36:50 | INFO     | core.sync.sync_stock:worker:105 - [002659] 同步完成，耗时: 21.43s
+2025-08-20 09:36:50 | INFO     | core.sync.sync_stock:worker:105 - [002661] 同步完成，耗时: 21.96s
+2025-08-20 09:36:50 | INFO     | core.sync.sync_stock:worker:105 - [002657] 同步完成，耗时: 22.22s
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:worker:105 - [002653] 同步完成，耗时: 22.43s
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:worker:105 - [002658] 同步完成，耗时: 22.75s
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:worker:95 - [002663] 开始同步历史数据
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [2/500] | 成功:1 失败:1 剩余:498 | 当前:002656
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:worker:105 - [002662] 同步完成，耗时: 20.58s
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:worker:95 - [002664] 开始同步历史数据
+2025-08-20 09:36:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [3/500] | 成功:2 失败:1 剩余:497 | 当前:002654
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:worker:95 - [002665] 开始同步历史数据
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [4/500] | 成功:3 失败:1 剩余:496 | 当前:002657
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:worker:95 - [002666] 开始同步历史数据
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:worker:95 - [002667] 开始同步历史数据
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [5/500] | 成功:4 失败:1 剩余:495 | 当前:002661
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [6/500] | 成功:5 失败:1 剩余:494 | 当前:002659
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:worker:95 - [002668] 开始同步历史数据
+2025-08-20 09:36:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [7/500] | 成功:6 失败:1 剩余:493 | 当前:002653
+2025-08-20 09:36:53 | INFO     | core.sync.sync_stock:worker:95 - [002669] 开始同步历史数据
+2025-08-20 09:36:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [8/500] | 成功:7 失败:1 剩余:492 | 当前:002660
+2025-08-20 09:36:54 | INFO     | core.sync.sync_stock:worker:95 - [002670] 开始同步历史数据
+2025-08-20 09:36:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [9/500] | 成功:8 失败:1 剩余:491 | 当前:002655
+2025-08-20 09:36:55 | INFO     | core.sync.sync_stock:worker:95 - [002671] 开始同步历史数据
+2025-08-20 09:36:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [10/500] | 成功:9 失败:1 剩余:490 | 当前:002662
+2025-08-20 09:36:56 | INFO     | core.sync.sync_stock:worker:95 - [002672] 开始同步历史数据
+2025-08-20 09:36:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [11/500] | 成功:10 失败:1 剩余:489 | 当前:002658
+2025-08-20 09:37:15 | INFO     | core.sync.sync_stock:worker:105 - [002665] 同步完成，耗时: 23.03s
+2025-08-20 09:37:16 | INFO     | core.sync.sync_stock:worker:105 - [002664] 同步完成，耗时: 24.25s
+2025-08-20 09:37:16 | INFO     | core.sync.sync_stock:worker:105 - [002663] 同步完成，耗时: 25.31s
+2025-08-20 09:37:18 | INFO     | core.sync.sync_stock:worker:95 - [002673] 开始同步历史数据
+2025-08-20 09:37:18 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [12/500] | 成功:11 失败:1 剩余:488 | 当前:002664
+2025-08-20 09:37:18 | INFO     | core.sync.sync_stock:worker:105 - [002668] 同步完成，耗时: 25.74s
+2025-08-20 09:37:19 | INFO     | core.sync.sync_stock:worker:105 - [002670] 同步完成，耗时: 25.70s
+2025-08-20 09:37:19 | INFO     | core.sync.sync_stock:worker:95 - [002674] 开始同步历史数据
+2025-08-20 09:37:19 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [13/500] | 成功:12 失败:1 剩余:487 | 当前:002663
+2025-08-20 09:37:19 | INFO     | core.sync.sync_stock:worker:95 - [002675] 开始同步历史数据
+2025-08-20 09:37:20 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [14/500] | 成功:13 失败:1 剩余:486 | 当前:002665
+2025-08-20 09:37:20 | INFO     | core.sync.sync_stock:worker:105 - [002667] 同步完成，耗时: 27.49s
+2025-08-20 09:37:20 | INFO     | core.sync.sync_stock:worker:105 - [002669] 同步完成，耗时: 26.28s
+2025-08-20 09:37:20 | INFO     | core.sync.sync_stock:worker:105 - [002666] 同步完成，耗时: 27.88s
+2025-08-20 09:37:21 | INFO     | core.sync.sync_stock:worker:105 - [002671] 同步完成，耗时: 25.78s
+2025-08-20 09:37:21 | INFO     | core.sync.sync_stock:worker:95 - [002676] 开始同步历史数据
+2025-08-20 09:37:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [15/500] | 成功:14 失败:1 剩余:485 | 当前:002669
+2025-08-20 09:37:22 | INFO     | core.sync.sync_stock:worker:95 - [002677] 开始同步历史数据
+2025-08-20 09:37:22 | INFO     | core.sync.sync_stock:worker:105 - [002672] 同步完成，耗时: 26.62s
+2025-08-20 09:37:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [16/500] | 成功:15 失败:1 剩余:484 | 当前:002667
+2025-08-20 09:37:23 | INFO     | core.sync.sync_stock:worker:95 - [002678] 开始同步历史数据
+2025-08-20 09:37:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [17/500] | 成功:16 失败:1 剩余:483 | 当前:002666
+2025-08-20 09:37:23 | INFO     | core.sync.sync_stock:worker:95 - [002679] 开始同步历史数据
+2025-08-20 09:37:23 | INFO     | core.sync.sync_stock:worker:95 - [002680] 开始同步历史数据
+2025-08-20 09:37:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [18/500] | 成功:17 失败:1 剩余:482 | 当前:002668
+2025-08-20 09:37:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [19/500] | 成功:18 失败:1 剩余:481 | 当前:002670
+2025-08-20 09:37:24 | INFO     | core.sync.sync_stock:worker:95 - [002681] 开始同步历史数据
+2025-08-20 09:37:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [20/500] | 成功:19 失败:1 剩余:480 | 当前:002671
+2025-08-20 09:37:26 | INFO     | core.sync.sync_stock:worker:95 - [002682] 开始同步历史数据
+2025-08-20 09:37:26 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [21/500] | 成功:20 失败:1 剩余:479 | 当前:002672
+2025-08-20 09:37:36 | INFO     | core.sync.sync_stock:worker:105 - [002680] 同步完成，耗时: 13.56s
+2025-08-20 09:37:39 | INFO     | core.sync.sync_stock:worker:95 - [002683] 开始同步历史数据
+2025-08-20 09:37:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [22/500] | 成功:21 失败:1 剩余:478 | 当前:002680
+2025-08-20 09:37:42 | INFO     | core.sync.sync_stock:worker:105 - [002675] 同步完成，耗时: 22.13s
+2025-08-20 09:37:43 | INFO     | core.sync.sync_stock:worker:105 - [002673] 同步完成，耗时: 25.13s
+2025-08-20 09:37:44 | INFO     | core.sync.sync_stock:worker:95 - [002684] 开始同步历史数据
+2025-08-20 09:37:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [23/500] | 成功:22 失败:1 剩余:477 | 当前:002675
+2025-08-20 09:37:45 | INFO     | core.sync.sync_stock:worker:105 - [002674] 同步完成，耗时: 25.36s
+2025-08-20 09:37:45 | INFO     | core.sync.sync_stock:worker:95 - [002685] 开始同步历史数据
+2025-08-20 09:37:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [24/500] | 成功:23 失败:1 剩余:476 | 当前:002673
+2025-08-20 09:37:45 | INFO     | core.sync.sync_stock:worker:105 - [002676] 同步完成，耗时: 24.07s
+2025-08-20 09:37:48 | INFO     | core.sync.sync_stock:worker:95 - [002686] 开始同步历史数据
+2025-08-20 09:37:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [25/500] | 成功:24 失败:1 剩余:475 | 当前:002676
+2025-08-20 09:37:49 | INFO     | core.sync.sync_stock:worker:95 - [002687] 开始同步历史数据
+2025-08-20 09:37:49 | INFO     | core.sync.sync_stock:worker:105 - [002679] 同步完成，耗时: 25.63s
+2025-08-20 09:37:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [26/500] | 成功:25 失败:1 剩余:474 | 当前:002674
+2025-08-20 09:37:49 | INFO     | core.sync.sync_stock:worker:105 - [002678] 同步完成，耗时: 26.61s
+2025-08-20 09:37:50 | INFO     | core.sync.sync_stock:worker:105 - [002681] 同步完成，耗时: 25.75s
+2025-08-20 09:37:50 | INFO     | core.sync.sync_stock:worker:105 - [002677] 同步完成，耗时: 27.64s
+2025-08-20 09:37:50 | INFO     | core.sync.sync_stock:worker:95 - [002688] 开始同步历史数据
+2025-08-20 09:37:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [27/500] | 成功:26 失败:1 剩余:473 | 当前:002679
+2025-08-20 09:37:52 | INFO     | core.sync.sync_stock:worker:95 - [002689] 开始同步历史数据
+2025-08-20 09:37:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [28/500] | 成功:27 失败:1 剩余:472 | 当前:002677
+2025-08-20 09:37:53 | INFO     | core.sync.sync_stock:worker:105 - [002682] 同步完成，耗时: 26.91s
+2025-08-20 09:37:53 | INFO     | core.sync.sync_stock:worker:95 - [002690] 开始同步历史数据
+2025-08-20 09:37:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [29/500] | 成功:28 失败:1 剩余:471 | 当前:002678
+2025-08-20 09:37:54 | INFO     | core.sync.sync_stock:worker:95 - [002691] 开始同步历史数据
+2025-08-20 09:37:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [30/500] | 成功:29 失败:1 剩余:470 | 当前:002681
+2025-08-20 09:37:55 | INFO     | core.sync.sync_stock:worker:95 - [002692] 开始同步历史数据
+2025-08-20 09:37:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [31/500] | 成功:30 失败:1 剩余:469 | 当前:002682
+2025-08-20 09:38:02 | INFO     | core.sync.sync_stock:worker:105 - [002684] 同步完成，耗时: 17.80s
+2025-08-20 09:38:05 | INFO     | core.sync.sync_stock:worker:105 - [002683] 同步完成，耗时: 25.83s
+2025-08-20 09:38:07 | INFO     | core.sync.sync_stock:worker:95 - [002693] 开始同步历史数据
+2025-08-20 09:38:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [32/500] | 成功:31 失败:1 剩余:468 | 当前:002684
+2025-08-20 09:38:08 | INFO     | core.sync.sync_stock:worker:95 - [002694] 开始同步历史数据
+2025-08-20 09:38:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [33/500] | 成功:32 失败:1 剩余:467 | 当前:002683
+2025-08-20 09:38:09 | INFO     | core.sync.sync_stock:worker:105 - [002685] 同步完成，耗时: 23.87s
+2025-08-20 09:38:13 | INFO     | core.sync.sync_stock:worker:105 - [002686] 同步完成，耗时: 24.55s
+2025-08-20 09:38:13 | INFO     | core.sync.sync_stock:worker:95 - [002695] 开始同步历史数据
+2025-08-20 09:38:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [34/500] | 成功:33 失败:1 剩余:466 | 当前:002685
+2025-08-20 09:38:15 | INFO     | core.sync.sync_stock:worker:105 - [002687] 同步完成，耗时: 26.74s
+2025-08-20 09:38:16 | INFO     | core.sync.sync_stock:worker:105 - [002688] 同步完成，耗时: 25.94s
+2025-08-20 09:38:16 | INFO     | core.sync.sync_stock:worker:95 - [002696] 开始同步历史数据
+2025-08-20 09:38:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [35/500] | 成功:34 失败:1 剩余:465 | 当前:002686
+2025-08-20 09:38:19 | INFO     | core.sync.sync_stock:worker:105 - [002691] 同步完成，耗时: 24.94s
+2025-08-20 09:38:20 | INFO     | core.sync.sync_stock:worker:95 - [002697] 开始同步历史数据
+2025-08-20 09:38:20 | INFO     | core.sync.sync_stock:worker:95 - [002698] 开始同步历史数据
+2025-08-20 09:38:20 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [36/500] | 成功:35 失败:1 剩余:464 | 当前:002687
+2025-08-20 09:38:20 | INFO     | core.sync.sync_stock:worker:105 - [002690] 同步完成，耗时: 26.63s
+2025-08-20 09:38:20 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [37/500] | 成功:36 失败:1 剩余:463 | 当前:002688
+2025-08-20 09:38:20 | INFO     | core.sync.sync_stock:worker:105 - [002689] 同步完成，耗时: 27.88s
+2025-08-20 09:38:22 | INFO     | core.sync.sync_stock:worker:95 - [002699] 开始同步历史数据
+2025-08-20 09:38:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [38/500] | 成功:37 失败:1 剩余:462 | 当前:002691
+2025-08-20 09:38:22 | INFO     | core.sync.sync_stock:worker:105 - [002692] 同步完成，耗时: 26.91s
+2025-08-20 09:38:23 | INFO     | core.sync.sync_stock:worker:95 - [002700] 开始同步历史数据
+2025-08-20 09:38:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [39/500] | 成功:38 失败:1 剩余:461 | 当前:002690
+2025-08-20 09:38:23 | INFO     | core.sync.sync_stock:worker:95 - [002701] 开始同步历史数据
+2025-08-20 09:38:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [40/500] | 成功:39 失败:1 剩余:460 | 当前:002689
+2025-08-20 09:38:26 | INFO     | core.sync.sync_stock:worker:95 - [002702] 开始同步历史数据
+2025-08-20 09:38:26 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [41/500] | 成功:40 失败:1 剩余:459 | 当前:002692
+2025-08-20 09:38:30 | INFO     | core.sync.sync_stock:worker:105 - [002694] 同步完成，耗时: 22.00s
+2025-08-20 09:38:32 | INFO     | core.sync.sync_stock:worker:105 - [002693] 同步完成，耗时: 25.32s
+2025-08-20 09:38:35 | INFO     | core.sync.sync_stock:worker:95 - [002703] 开始同步历史数据
+2025-08-20 09:38:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [42/500] | 成功:41 失败:1 剩余:458 | 当前:002694
+2025-08-20 09:38:36 | INFO     | core.sync.sync_stock:worker:95 - [002705] 开始同步历史数据
+2025-08-20 09:38:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [43/500] | 成功:42 失败:1 剩余:457 | 当前:002693
+2025-08-20 09:38:38 | INFO     | core.sync.sync_stock:worker:105 - [002695] 同步完成，耗时: 24.76s
+2025-08-20 09:38:40 | INFO     | core.sync.sync_stock:worker:105 - [002696] 同步完成，耗时: 23.09s
+2025-08-20 09:38:41 | INFO     | core.sync.sync_stock:worker:95 - [002706] 开始同步历史数据
+2025-08-20 09:38:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [44/500] | 成功:43 失败:1 剩余:456 | 当前:002696
+2025-08-20 09:38:42 | INFO     | core.sync.sync_stock:worker:95 - [002707] 开始同步历史数据
+2025-08-20 09:38:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [45/500] | 成功:44 失败:1 剩余:455 | 当前:002695
+2025-08-20 09:38:44 | INFO     | core.sync.sync_stock:worker:105 - [002699] 同步完成，耗时: 22.46s
+2025-08-20 09:38:46 | INFO     | core.sync.sync_stock:worker:105 - [002698] 同步完成，耗时: 26.28s
+2025-08-20 09:38:46 | INFO     | core.sync.sync_stock:worker:95 - [002708] 开始同步历史数据
+2025-08-20 09:38:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [46/500] | 成功:45 失败:1 剩余:454 | 当前:002699
+2025-08-20 09:38:47 | INFO     | core.sync.sync_stock:worker:105 - [002697] 同步完成，耗时: 27.03s
+2025-08-20 09:38:48 | INFO     | core.sync.sync_stock:worker:95 - [002709] 开始同步历史数据
+2025-08-20 09:38:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [47/500] | 成功:46 失败:1 剩余:453 | 当前:002698
+2025-08-20 09:38:50 | INFO     | core.sync.sync_stock:worker:105 - [002700] 同步完成，耗时: 27.11s
+2025-08-20 09:38:51 | INFO     | core.sync.sync_stock:worker:95 - [002711] 开始同步历史数据
+2025-08-20 09:38:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [48/500] | 成功:47 失败:1 剩余:452 | 当前:002697
+2025-08-20 09:38:51 | INFO     | core.sync.sync_stock:worker:105 - [002701] 同步完成，耗时: 28.17s
+2025-08-20 09:38:52 | INFO     | core.sync.sync_stock:worker:95 - [002712] 开始同步历史数据
+2025-08-20 09:38:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [49/500] | 成功:48 失败:1 剩余:451 | 当前:002700
+2025-08-20 09:38:54 | INFO     | core.sync.sync_stock:worker:105 - [002702] 同步完成，耗时: 28.57s
+2025-08-20 09:38:55 | INFO     | core.sync.sync_stock:worker:95 - [002713] 开始同步历史数据
+2025-08-20 09:38:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [50/500] | 成功:49 失败:1 剩余:450 | 当前:002701
+2025-08-20 09:38:59 | INFO     | core.sync.sync_stock:worker:95 - [002714] 开始同步历史数据
+2025-08-20 09:38:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [51/500] | 成功:50 失败:1 剩余:449 | 当前:002702
+2025-08-20 09:39:02 | INFO     | core.sync.sync_stock:worker:105 - [002703] 同步完成，耗时: 27.09s
+2025-08-20 09:39:03 | INFO     | core.sync.sync_stock:worker:105 - [002705] 同步完成，耗时: 26.55s
+2025-08-20 09:39:05 | INFO     | core.sync.sync_stock:worker:105 - [002711] 同步完成，耗时: 13.75s
+2025-08-20 09:39:05 | INFO     | core.sync.sync_stock:worker:105 - [002707] 同步完成，耗时: 22.46s
+2025-08-20 09:39:06 | INFO     | core.sync.sync_stock:worker:95 - [002715] 开始同步历史数据
+2025-08-20 09:39:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [52/500] | 成功:51 失败:1 剩余:448 | 当前:002707
+2025-08-20 09:39:06 | INFO     | core.sync.sync_stock:worker:95 - [002716] 开始同步历史数据
+2025-08-20 09:39:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [53/500] | 成功:52 失败:1 剩余:447 | 当前:002705
+2025-08-20 09:39:07 | INFO     | core.sync.sync_stock:worker:105 - [002706] 同步完成，耗时: 25.13s
+2025-08-20 09:39:07 | INFO     | core.sync.sync_stock:worker:95 - [002717] 开始同步历史数据
+2025-08-20 09:39:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [54/500] | 成功:53 失败:1 剩余:446 | 当前:002703
+2025-08-20 09:39:08 | INFO     | core.sync.sync_stock:worker:95 - [002718] 开始同步历史数据
+2025-08-20 09:39:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [55/500] | 成功:54 失败:1 剩余:445 | 当前:002706
+2025-08-20 09:39:09 | INFO     | core.sync.sync_stock:worker:95 - [002719] 开始同步历史数据
+2025-08-20 09:39:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [56/500] | 成功:55 失败:1 剩余:444 | 当前:002711
+2025-08-20 09:39:10 | INFO     | core.sync.sync_stock:worker:105 - [002708] 同步完成，耗时: 23.55s
+2025-08-20 09:39:12 | INFO     | core.sync.sync_stock:worker:105 - [002709] 同步完成，耗时: 24.02s
+2025-08-20 09:39:12 | INFO     | core.sync.sync_stock:worker:95 - [002721] 开始同步历史数据
+2025-08-20 09:39:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [57/500] | 成功:56 失败:1 剩余:443 | 当前:002708
+2025-08-20 09:39:13 | INFO     | core.sync.sync_stock:worker:95 - [002722] 开始同步历史数据
+2025-08-20 09:39:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [58/500] | 成功:57 失败:1 剩余:442 | 当前:002709
+2025-08-20 09:39:15 | INFO     | core.sync.sync_stock:worker:105 - [002712] 同步完成，耗时: 22.71s
+2025-08-20 09:39:17 | INFO     | core.sync.sync_stock:worker:95 - [002723] 开始同步历史数据
+2025-08-20 09:39:17 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [59/500] | 成功:58 失败:1 剩余:441 | 当前:002712
+2025-08-20 09:39:20 | INFO     | core.sync.sync_stock:worker:105 - [002713] 同步完成，耗时: 24.59s
+2025-08-20 09:39:21 | INFO     | core.sync.sync_stock:worker:95 - [002724] 开始同步历史数据
+2025-08-20 09:39:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [60/500] | 成功:59 失败:1 剩余:440 | 当前:002713
+2025-08-20 09:39:22 | INFO     | core.sync.sync_stock:worker:105 - [002714] 同步完成，耗时: 23.44s
+2025-08-20 09:39:24 | INFO     | core.sync.sync_stock:worker:95 - [002725] 开始同步历史数据
+2025-08-20 09:39:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [61/500] | 成功:60 失败:1 剩余:439 | 当前:002714
+2025-08-20 09:39:26 | INFO     | core.sync.sync_stock:worker:105 - [002716] 同步完成，耗时: 20.23s
+2025-08-20 09:39:27 | INFO     | core.sync.sync_stock:worker:105 - [002717] 同步完成，耗时: 19.93s
+2025-08-20 09:39:27 | INFO     | core.sync.sync_stock:worker:105 - [002715] 同步完成，耗时: 20.92s
+2025-08-20 09:39:28 | INFO     | core.sync.sync_stock:worker:105 - [002719] 同步完成，耗时: 19.03s
+2025-08-20 09:39:28 | INFO     | core.sync.sync_stock:worker:95 - [002726] 开始同步历史数据
+2025-08-20 09:39:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [62/500] | 成功:61 失败:1 剩余:438 | 当前:002717
+2025-08-20 09:39:28 | INFO     | core.sync.sync_stock:worker:105 - [002718] 同步完成，耗时: 20.47s
+2025-08-20 09:39:28 | INFO     | core.sync.sync_stock:worker:95 - [002727] 开始同步历史数据
+2025-08-20 09:39:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [63/500] | 成功:62 失败:1 剩余:437 | 当前:002715
+2025-08-20 09:39:29 | INFO     | core.sync.sync_stock:worker:105 - [002721] 同步完成，耗时: 16.45s
+2025-08-20 09:39:29 | INFO     | core.sync.sync_stock:worker:95 - [002728] 开始同步历史数据
+2025-08-20 09:39:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [64/500] | 成功:63 失败:1 剩余:436 | 当前:002718
+2025-08-20 09:39:30 | INFO     | core.sync.sync_stock:worker:95 - [002729] 开始同步历史数据
+2025-08-20 09:39:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [65/500] | 成功:64 失败:1 剩余:435 | 当前:002716
+2025-08-20 09:39:30 | INFO     | core.sync.sync_stock:worker:95 - [002730] 开始同步历史数据
+2025-08-20 09:39:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [66/500] | 成功:65 失败:1 剩余:434 | 当前:002719
+2025-08-20 09:39:31 | INFO     | core.sync.sync_stock:worker:95 - [002731] 开始同步历史数据
+2025-08-20 09:39:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [67/500] | 成功:66 失败:1 剩余:433 | 当前:002721
+2025-08-20 09:39:31 | INFO     | core.sync.sync_stock:worker:105 - [002722] 同步完成，耗时: 17.46s
+2025-08-20 09:39:32 | INFO     | core.sync.sync_stock:worker:95 - [002732] 开始同步历史数据
+2025-08-20 09:39:32 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [68/500] | 成功:67 失败:1 剩余:432 | 当前:002722
+2025-08-20 09:39:34 | INFO     | core.sync.sync_stock:worker:105 - [002723] 同步完成，耗时: 16.62s
+2025-08-20 09:39:37 | INFO     | core.sync.sync_stock:worker:105 - [002724] 同步完成，耗时: 16.43s
+2025-08-20 09:39:38 | INFO     | core.sync.sync_stock:worker:95 - [002733] 开始同步历史数据
+2025-08-20 09:39:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [69/500] | 成功:68 失败:1 剩余:431 | 当前:002723
+2025-08-20 09:39:40 | INFO     | core.sync.sync_stock:worker:105 - [002725] 同步完成，耗时: 16.47s
+2025-08-20 09:39:41 | INFO     | core.sync.sync_stock:worker:95 - [002734] 开始同步历史数据
+2025-08-20 09:39:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [70/500] | 成功:69 失败:1 剩余:430 | 当前:002724
+2025-08-20 09:39:43 | INFO     | core.sync.sync_stock:worker:105 - [002726] 同步完成，耗时: 15.53s
+2025-08-20 09:39:44 | INFO     | core.sync.sync_stock:worker:105 - [002727] 同步完成，耗时: 15.39s
+2025-08-20 09:39:44 | INFO     | core.sync.sync_stock:worker:95 - [002735] 开始同步历史数据
+2025-08-20 09:39:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [71/500] | 成功:70 失败:1 剩余:429 | 当前:002725
+2025-08-20 09:39:45 | INFO     | core.sync.sync_stock:worker:105 - [002728] 同步完成，耗时: 15.32s
+2025-08-20 09:39:45 | INFO     | core.sync.sync_stock:worker:105 - [002729] 同步完成，耗时: 15.78s
+2025-08-20 09:39:46 | INFO     | core.sync.sync_stock:worker:105 - [002730] 同步完成，耗时: 15.55s
+2025-08-20 09:39:46 | INFO     | core.sync.sync_stock:worker:95 - [002736] 开始同步历史数据
+2025-08-20 09:39:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [72/500] | 成功:71 失败:1 剩余:428 | 当前:002728
+2025-08-20 09:39:46 | INFO     | core.sync.sync_stock:worker:105 - [002731] 同步完成，耗时: 15.70s
+2025-08-20 09:39:47 | INFO     | core.sync.sync_stock:worker:95 - [002737] 开始同步历史数据
+2025-08-20 09:39:47 | INFO     | core.sync.sync_stock:worker:105 - [002732] 同步完成，耗时: 14.67s
+2025-08-20 09:39:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [73/500] | 成功:72 失败:1 剩余:427 | 当前:002729
+2025-08-20 09:39:47 | INFO     | core.sync.sync_stock:worker:95 - [002738] 开始同步历史数据
+2025-08-20 09:39:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [74/500] | 成功:73 失败:1 剩余:426 | 当前:002726
+2025-08-20 09:39:48 | INFO     | core.sync.sync_stock:worker:95 - [002739] 开始同步历史数据
+2025-08-20 09:39:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [75/500] | 成功:74 失败:1 剩余:425 | 当前:002727
+2025-08-20 09:39:49 | INFO     | core.sync.sync_stock:worker:95 - [002740] 开始同步历史数据
+2025-08-20 09:39:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [76/500] | 成功:75 失败:1 剩余:424 | 当前:002730
+2025-08-20 09:39:50 | INFO     | core.sync.sync_stock:worker:95 - [002741] 开始同步历史数据
+2025-08-20 09:39:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [77/500] | 成功:76 失败:1 剩余:423 | 当前:002731
+2025-08-20 09:39:51 | INFO     | core.sync.sync_stock:worker:105 - [002733] 同步完成，耗时: 12.79s
+2025-08-20 09:39:52 | INFO     | core.sync.sync_stock:worker:95 - [002742] 开始同步历史数据
+2025-08-20 09:39:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [78/500] | 成功:77 失败:1 剩余:422 | 当前:002732
+2025-08-20 09:39:52 | INFO     | core.sync.sync_stock:worker:95 - [002743] 开始同步历史数据
+2025-08-20 09:39:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [79/500] | 成功:78 失败:1 剩余:421 | 当前:002733
+2025-08-20 09:39:54 | INFO     | core.sync.sync_stock:worker:105 - [002734] 同步完成，耗时: 13.19s
+2025-08-20 09:39:56 | INFO     | core.sync.sync_stock:worker:105 - [002735] 同步完成，耗时: 12.07s
+2025-08-20 09:39:59 | INFO     | core.sync.sync_stock:worker:95 - [002745] 开始同步历史数据
+2025-08-20 09:39:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [80/500] | 成功:79 失败:1 剩余:420 | 当前:002734
+2025-08-20 09:39:59 | INFO     | core.sync.sync_stock:worker:105 - [002736] 同步完成，耗时: 13.55s
+2025-08-20 09:40:00 | INFO     | core.sync.sync_stock:worker:95 - [002746] 开始同步历史数据
+2025-08-20 09:40:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [81/500] | 成功:80 失败:1 剩余:419 | 当前:002735
+2025-08-20 09:40:00 | INFO     | core.sync.sync_stock:worker:105 - [002739] 同步完成，耗时: 12.77s
+2025-08-20 09:40:01 | INFO     | core.sync.sync_stock:worker:105 - [002738] 同步完成，耗时: 14.44s
+2025-08-20 09:40:02 | INFO     | core.sync.sync_stock:worker:105 - [002740] 同步完成，耗时: 12.38s
+2025-08-20 09:40:02 | INFO     | core.sync.sync_stock:worker:105 - [002737] 同步完成，耗时: 15.19s
+2025-08-20 09:40:02 | INFO     | core.sync.sync_stock:worker:95 - [002747] 开始同步历史数据
+2025-08-20 09:40:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [82/500] | 成功:81 失败:1 剩余:418 | 当前:002736
+2025-08-20 09:40:04 | INFO     | core.sync.sync_stock:worker:105 - [002741] 同步完成，耗时: 13.66s
+2025-08-20 09:40:04 | INFO     | core.sync.sync_stock:worker:95 - [002748] 开始同步历史数据
+2025-08-20 09:40:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [83/500] | 成功:82 失败:1 剩余:417 | 当前:002739
+2025-08-20 09:40:04 | INFO     | core.sync.sync_stock:worker:105 - [002742] 同步完成，耗时: 12.78s
+2025-08-20 09:40:05 | INFO     | core.sync.sync_stock:worker:95 - [002749] 开始同步历史数据
+2025-08-20 09:40:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [84/500] | 成功:83 失败:1 剩余:416 | 当前:002741
+2025-08-20 09:40:05 | INFO     | core.sync.sync_stock:worker:105 - [002743] 同步完成，耗时: 12.58s
+2025-08-20 09:40:05 | INFO     | core.sync.sync_stock:worker:95 - [002750] 开始同步历史数据
+2025-08-20 09:40:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [85/500] | 成功:84 失败:1 剩余:415 | 当前:002737
+2025-08-20 09:40:06 | INFO     | core.sync.sync_stock:worker:95 - [002751] 开始同步历史数据
+2025-08-20 09:40:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [86/500] | 成功:85 失败:1 剩余:414 | 当前:002740
+2025-08-20 09:40:06 | INFO     | core.sync.sync_stock:worker:95 - [002752] 开始同步历史数据
+2025-08-20 09:40:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [87/500] | 成功:86 失败:1 剩余:413 | 当前:002738
+2025-08-20 09:40:07 | INFO     | core.sync.sync_stock:worker:95 - [002753] 开始同步历史数据
+2025-08-20 09:40:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [88/500] | 成功:87 失败:1 剩余:412 | 当前:002742
+2025-08-20 09:40:07 | INFO     | core.sync.sync_stock:worker:95 - [002755] 开始同步历史数据
+2025-08-20 09:40:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [89/500] | 成功:88 失败:1 剩余:411 | 当前:002743
+2025-08-20 09:40:12 | INFO     | core.sync.sync_stock:worker:105 - [002745] 同步完成，耗时: 12.60s
+2025-08-20 09:40:13 | INFO     | core.sync.sync_stock:worker:95 - [002756] 开始同步历史数据
+2025-08-20 09:40:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [90/500] | 成功:89 失败:1 剩余:410 | 当前:002745
+2025-08-20 09:40:13 | INFO     | core.sync.sync_stock:worker:105 - [002746] 同步完成，耗时: 13.34s
+2025-08-20 09:40:15 | INFO     | core.sync.sync_stock:worker:95 - [002757] 开始同步历史数据
+2025-08-20 09:40:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [91/500] | 成功:90 失败:1 剩余:409 | 当前:002746
+2025-08-20 09:40:16 | INFO     | core.sync.sync_stock:worker:105 - [002747] 同步完成，耗时: 13.40s
+2025-08-20 09:40:18 | INFO     | core.sync.sync_stock:worker:95 - [002758] 开始同步历史数据
+2025-08-20 09:40:18 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [92/500] | 成功:91 失败:1 剩余:408 | 当前:002747
+2025-08-20 09:40:19 | INFO     | core.sync.sync_stock:worker:105 - [002748] 同步完成，耗时: 14.98s
+2025-08-20 09:40:19 | INFO     | core.sync.sync_stock:worker:105 - [002751] 同步完成，耗时: 12.97s
+2025-08-20 09:40:20 | INFO     | core.sync.sync_stock:worker:105 - [002749] 同步完成，耗时: 15.45s
+2025-08-20 09:40:21 | INFO     | core.sync.sync_stock:worker:105 - [002750] 同步完成，耗时: 15.43s
+2025-08-20 09:40:21 | INFO     | core.sync.sync_stock:worker:105 - [002752] 同步完成，耗时: 15.36s
+2025-08-20 09:40:22 | INFO     | core.sync.sync_stock:worker:105 - [002755] 同步完成，耗时: 15.07s
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:worker:95 - [002759] 开始同步历史数据
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:worker:105 - [002753] 同步完成，耗时: 15.50s
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [93/500] | 成功:92 失败:1 剩余:407 | 当前:002752
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:worker:95 - [002760] 开始同步历史数据
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [94/500] | 成功:93 失败:1 剩余:406 | 当前:002751
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:worker:95 - [002761] 开始同步历史数据
+2025-08-20 09:40:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [95/500] | 成功:94 失败:1 剩余:405 | 当前:002748
+2025-08-20 09:40:24 | INFO     | core.sync.sync_stock:worker:95 - [002762] 开始同步历史数据
+2025-08-20 09:40:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [96/500] | 成功:95 失败:1 剩余:404 | 当前:002755
+2025-08-20 09:40:24 | INFO     | core.sync.sync_stock:worker:95 - [002763] 开始同步历史数据
+2025-08-20 09:40:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [97/500] | 成功:96 失败:1 剩余:403 | 当前:002749
+2025-08-20 09:40:25 | INFO     | core.sync.sync_stock:worker:95 - [002765] 开始同步历史数据
+2025-08-20 09:40:25 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [98/500] | 成功:97 失败:1 剩余:402 | 当前:002753
+2025-08-20 09:40:25 | INFO     | core.sync.sync_stock:worker:95 - [002766] 开始同步历史数据
+2025-08-20 09:40:25 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [99/500] | 成功:98 失败:1 剩余:401 | 当前:002750
+2025-08-20 09:40:28 | INFO     | core.sync.sync_stock:worker:105 - [002756] 同步完成，耗时: 14.45s
+2025-08-20 09:40:29 | INFO     | core.sync.sync_stock:worker:95 - [002767] 开始同步历史数据
+2025-08-20 09:40:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [100/500] | 成功:99 失败:1 剩余:400 | 当前:002756
+2025-08-20 09:40:32 | INFO     | core.sync.sync_stock:worker:105 - [002757] 同步完成，耗时: 16.63s
+2025-08-20 09:40:35 | INFO     | core.sync.sync_stock:worker:95 - [002768] 开始同步历史数据
+2025-08-20 09:40:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [101/500] | 成功:100 失败:1 剩余:399 | 当前:002757
+2025-08-20 09:40:36 | INFO     | core.sync.sync_stock:worker:105 - [002758] 同步完成，耗时: 17.88s
+2025-08-20 09:40:37 | INFO     | core.sync.sync_stock:worker:95 - [002769] 开始同步历史数据
+2025-08-20 09:40:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [102/500] | 成功:101 失败:1 剩余:398 | 当前:002758
+2025-08-20 09:40:45 | INFO     | core.sync.sync_stock:worker:105 - [002761] 同步完成，耗时: 22.29s
+2025-08-20 09:40:46 | INFO     | core.sync.sync_stock:worker:105 - [002759] 同步完成，耗时: 23.57s
+2025-08-20 09:40:47 | INFO     | core.sync.sync_stock:worker:105 - [002762] 同步完成，耗时: 23.05s
+2025-08-20 09:40:47 | INFO     | core.sync.sync_stock:worker:105 - [002760] 同步完成，耗时: 24.49s
+2025-08-20 09:40:47 | INFO     | core.sync.sync_stock:worker:95 - [002770] 开始同步历史数据
+2025-08-20 09:40:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [103/500] | 成功:102 失败:1 剩余:397 | 当前:002761
+2025-08-20 09:40:48 | INFO     | core.sync.sync_stock:worker:105 - [002766] 同步完成，耗时: 23.26s
+2025-08-20 09:40:48 | INFO     | core.sync.sync_stock:worker:105 - [002765] 同步完成，耗时: 23.42s
+2025-08-20 09:40:49 | INFO     | core.sync.sync_stock:worker:105 - [002763] 同步完成，耗时: 24.69s
+2025-08-20 09:40:50 | INFO     | core.sync.sync_stock:worker:95 - [002771] 开始同步历史数据
+2025-08-20 09:40:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [104/500] | 成功:103 失败:1 剩余:396 | 当前:002760
+2025-08-20 09:40:50 | INFO     | core.sync.sync_stock:worker:95 - [002772] 开始同步历史数据
+2025-08-20 09:40:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [105/500] | 成功:104 失败:1 剩余:395 | 当前:002766
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:worker:95 - [002773] 开始同步历史数据
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [106/500] | 成功:105 失败:1 剩余:394 | 当前:002759
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:worker:95 - [002774] 开始同步历史数据
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [107/500] | 成功:106 失败:1 剩余:393 | 当前:002763
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:worker:95 - [002775] 开始同步历史数据
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:worker:95 - [002776] 开始同步历史数据
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [108/500] | 成功:107 失败:1 剩余:392 | 当前:002762
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:worker:105 - [002767] 同步完成，耗时: 22.44s
+2025-08-20 09:40:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [109/500] | 成功:108 失败:1 剩余:391 | 当前:002765
+2025-08-20 09:40:56 | INFO     | core.sync.sync_stock:worker:95 - [002777] 开始同步历史数据
+2025-08-20 09:40:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [110/500] | 成功:109 失败:1 剩余:390 | 当前:002767
+2025-08-20 09:40:57 | INFO     | core.sync.sync_stock:worker:105 - [002769] 同步完成，耗时: 19.99s
+2025-08-20 09:40:58 | INFO     | core.sync.sync_stock:worker:105 - [002768] 同步完成，耗时: 22.70s
+2025-08-20 09:41:00 | INFO     | core.sync.sync_stock:worker:105 - [002770] 同步完成，耗时: 12.16s
+2025-08-20 09:41:00 | INFO     | core.sync.sync_stock:worker:95 - [002778] 开始同步历史数据
+2025-08-20 09:41:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [111/500] | 成功:110 失败:1 剩余:389 | 当前:002769
+2025-08-20 09:41:01 | INFO     | core.sync.sync_stock:worker:95 - [002779] 开始同步历史数据
+2025-08-20 09:41:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [112/500] | 成功:111 失败:1 剩余:388 | 当前:002770
+2025-08-20 09:41:02 | INFO     | core.sync.sync_stock:worker:95 - [002780] 开始同步历史数据
+2025-08-20 09:41:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [113/500] | 成功:112 失败:1 剩余:387 | 当前:002768
+2025-08-20 09:41:10 | INFO     | core.sync.sync_stock:worker:105 - [002774] 同步完成，耗时: 18.77s
+2025-08-20 09:41:10 | INFO     | core.sync.sync_stock:worker:105 - [002776] 同步完成，耗时: 18.90s
+2025-08-20 09:41:12 | INFO     | core.sync.sync_stock:worker:105 - [002771] 同步完成，耗时: 22.50s
+2025-08-20 09:41:13 | INFO     | core.sync.sync_stock:worker:105 - [002772] 同步完成，耗时: 23.23s
+2025-08-20 09:41:13 | INFO     | core.sync.sync_stock:worker:105 - [002773] 同步完成，耗时: 22.85s
+2025-08-20 09:41:13 | INFO     | core.sync.sync_stock:worker:95 - [002781] 开始同步历史数据
+2025-08-20 09:41:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [114/500] | 成功:113 失败:1 剩余:386 | 当前:002774
+2025-08-20 09:41:14 | INFO     | core.sync.sync_stock:worker:105 - [002775] 同步完成，耗时: 22.22s
+2025-08-20 09:41:15 | INFO     | core.sync.sync_stock:worker:95 - [002782] 开始同步历史数据
+2025-08-20 09:41:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [115/500] | 成功:114 失败:1 剩余:385 | 当前:002771
+2025-08-20 09:41:15 | INFO     | core.sync.sync_stock:worker:95 - [002783] 开始同步历史数据
+2025-08-20 09:41:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [116/500] | 成功:115 失败:1 剩余:384 | 当前:002772
+2025-08-20 09:41:15 | INFO     | core.sync.sync_stock:worker:95 - [002785] 开始同步历史数据
+2025-08-20 09:41:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [117/500] | 成功:116 失败:1 剩余:383 | 当前:002776
+2025-08-20 09:41:16 | INFO     | core.sync.sync_stock:worker:105 - [002777] 同步完成，耗时: 20.33s
+2025-08-20 09:41:16 | INFO     | core.sync.sync_stock:worker:95 - [002786] 开始同步历史数据
+2025-08-20 09:41:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [118/500] | 成功:117 失败:1 剩余:382 | 当前:002775
+2025-08-20 09:41:17 | INFO     | core.sync.sync_stock:worker:95 - [002787] 开始同步历史数据
+2025-08-20 09:41:17 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [119/500] | 成功:118 失败:1 剩余:381 | 当前:002773
+2025-08-20 09:41:18 | INFO     | core.sync.sync_stock:worker:95 - [002788] 开始同步历史数据
+2025-08-20 09:41:18 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [120/500] | 成功:119 失败:1 剩余:380 | 当前:002777
+2025-08-20 09:41:19 | INFO     | core.sync.sync_stock:worker:105 - [002778] 同步完成，耗时: 18.66s
+2025-08-20 09:41:20 | INFO     | core.sync.sync_stock:worker:105 - [002779] 同步完成，耗时: 19.33s
+2025-08-20 09:41:23 | INFO     | core.sync.sync_stock:worker:105 - [002780] 同步完成，耗时: 21.01s
+2025-08-20 09:41:23 | INFO     | core.sync.sync_stock:worker:95 - [002789] 开始同步历史数据
+2025-08-20 09:41:23 | INFO     | core.sync.sync_stock:worker:95 - [002790] 开始同步历史数据
+2025-08-20 09:41:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [121/500] | 成功:120 失败:1 剩余:379 | 当前:002778
+2025-08-20 09:41:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [122/500] | 成功:121 失败:1 剩余:378 | 当前:002779
+2025-08-20 09:41:24 | INFO     | core.sync.sync_stock:worker:95 - [002791] 开始同步历史数据
+2025-08-20 09:41:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [123/500] | 成功:122 失败:1 剩余:377 | 当前:002780
+2025-08-20 09:41:28 | INFO     | core.sync.sync_stock:worker:105 - [002781] 同步完成，耗时: 14.21s
+2025-08-20 09:41:31 | INFO     | core.sync.sync_stock:worker:95 - [002792] 开始同步历史数据
+2025-08-20 09:41:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [124/500] | 成功:123 失败:1 剩余:376 | 当前:002781
+2025-08-20 09:41:37 | INFO     | core.sync.sync_stock:worker:105 - [002785] 同步完成，耗时: 21.49s
+2025-08-20 09:41:37 | INFO     | core.sync.sync_stock:worker:105 - [002782] 同步完成，耗时: 22.13s
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:worker:105 - [002787] 同步完成，耗时: 20.67s
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:worker:95 - [002793] 开始同步历史数据
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:worker:105 - [002786] 同步完成，耗时: 21.88s
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [125/500] | 成功:124 失败:1 剩余:375 | 当前:002785
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:worker:95 - [002795] 开始同步历史数据
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [126/500] | 成功:125 失败:1 剩余:374 | 当前:002782
+2025-08-20 09:41:38 | INFO     | core.sync.sync_stock:worker:105 - [002783] 同步完成，耗时: 23.28s
+2025-08-20 09:41:40 | INFO     | core.sync.sync_stock:worker:95 - [002796] 开始同步历史数据
+2025-08-20 09:41:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [127/500] | 成功:126 失败:1 剩余:373 | 当前:002787
+2025-08-20 09:41:40 | INFO     | core.sync.sync_stock:worker:105 - [002788] 同步完成，耗时: 21.75s
+2025-08-20 09:41:40 | INFO     | core.sync.sync_stock:worker:95 - [002797] 开始同步历史数据
+2025-08-20 09:41:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [128/500] | 成功:127 失败:1 剩余:372 | 当前:002786
+2025-08-20 09:41:41 | INFO     | core.sync.sync_stock:worker:95 - [002798] 开始同步历史数据
+2025-08-20 09:41:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [129/500] | 成功:128 失败:1 剩余:371 | 当前:002783
+2025-08-20 09:41:44 | INFO     | core.sync.sync_stock:worker:105 - [002790] 同步完成，耗时: 20.33s
+2025-08-20 09:41:44 | INFO     | core.sync.sync_stock:worker:95 - [002799] 开始同步历史数据
+2025-08-20 09:41:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [130/500] | 成功:129 失败:1 剩余:370 | 当前:002788
+2025-08-20 09:41:44 | INFO     | core.sync.sync_stock:worker:105 - [002789] 同步完成，耗时: 20.68s
+2025-08-20 09:41:46 | INFO     | core.sync.sync_stock:worker:95 - [002800] 开始同步历史数据
+2025-08-20 09:41:46 | INFO     | core.sync.sync_stock:worker:105 - [002791] 同步完成，耗时: 21.79s
+2025-08-20 09:41:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [131/500] | 成功:130 失败:1 剩余:369 | 当前:002790
+2025-08-20 09:41:47 | INFO     | core.sync.sync_stock:worker:95 - [002801] 开始同步历史数据
+2025-08-20 09:41:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [132/500] | 成功:131 失败:1 剩余:368 | 当前:002789
+2025-08-20 09:41:50 | INFO     | core.sync.sync_stock:worker:95 - [002802] 开始同步历史数据
+2025-08-20 09:41:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [133/500] | 成功:132 失败:1 剩余:367 | 当前:002791
+2025-08-20 09:41:51 | INFO     | core.sync.sync_stock:worker:105 - [002792] 同步完成，耗时: 19.92s
+2025-08-20 09:41:55 | INFO     | core.sync.sync_stock:worker:95 - [002803] 开始同步历史数据
+2025-08-20 09:41:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [134/500] | 成功:133 失败:1 剩余:366 | 当前:002792
+2025-08-20 09:41:59 | INFO     | core.sync.sync_stock:worker:105 - [002793] 同步完成，耗时: 20.65s
+2025-08-20 09:42:00 | INFO     | core.sync.sync_stock:worker:105 - [002795] 同步完成，耗时: 21.57s
+2025-08-20 09:42:00 | INFO     | core.sync.sync_stock:worker:95 - [002805] 开始同步历史数据
+2025-08-20 09:42:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [135/500] | 成功:134 失败:1 剩余:365 | 当前:002793
+2025-08-20 09:42:00 | INFO     | core.sync.sync_stock:worker:105 - [002797] 同步完成，耗时: 20.08s
+2025-08-20 09:42:00 | INFO     | core.sync.sync_stock:worker:105 - [002796] 同步完成，耗时: 20.71s
+2025-08-20 09:42:02 | INFO     | core.sync.sync_stock:worker:95 - [002806] 开始同步历史数据
+2025-08-20 09:42:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [136/500] | 成功:135 失败:1 剩余:364 | 当前:002795
+2025-08-20 09:42:02 | INFO     | core.sync.sync_stock:worker:105 - [002798] 同步完成，耗时: 20.93s
+2025-08-20 09:42:03 | INFO     | core.sync.sync_stock:worker:95 - [002807] 开始同步历史数据
+2025-08-20 09:42:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [137/500] | 成功:136 失败:1 剩余:363 | 当前:002796
+2025-08-20 09:42:05 | INFO     | core.sync.sync_stock:worker:95 - [002808] 开始同步历史数据
+2025-08-20 09:42:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [138/500] | 成功:137 失败:1 剩余:362 | 当前:002797
+2025-08-20 09:42:05 | INFO     | core.sync.sync_stock:worker:105 - [002799] 同步完成，耗时: 20.92s
+2025-08-20 09:42:06 | INFO     | core.sync.sync_stock:worker:95 - [002809] 开始同步历史数据
+2025-08-20 09:42:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [139/500] | 成功:138 失败:1 剩余:361 | 当前:002798
+2025-08-20 09:42:06 | INFO     | core.sync.sync_stock:worker:105 - [002800] 同步完成，耗时: 20.08s
+2025-08-20 09:42:07 | INFO     | core.sync.sync_stock:worker:105 - [002801] 同步完成，耗时: 19.29s
+2025-08-20 09:42:08 | INFO     | core.sync.sync_stock:worker:95 - [002810] 开始同步历史数据
+2025-08-20 09:42:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [140/500] | 成功:139 失败:1 剩余:360 | 当前:002799
+2025-08-20 09:42:09 | INFO     | core.sync.sync_stock:worker:95 - [002811] 开始同步历史数据
+2025-08-20 09:42:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [141/500] | 成功:140 失败:1 剩余:359 | 当前:002801
+2025-08-20 09:42:10 | INFO     | core.sync.sync_stock:worker:95 - [002812] 开始同步历史数据
+2025-08-20 09:42:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [142/500] | 成功:141 失败:1 剩余:358 | 当前:002800
+2025-08-20 09:42:11 | INFO     | core.sync.sync_stock:worker:105 - [002802] 同步完成，耗时: 21.04s
+2025-08-20 09:42:12 | INFO     | core.sync.sync_stock:worker:95 - [002813] 开始同步历史数据
+2025-08-20 09:42:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [143/500] | 成功:142 失败:1 剩余:357 | 当前:002802
+2025-08-20 09:52:49 | INFO     | core.sync.sync_stock:worker:105 - [002803] 同步完成，耗时: 653.89s
+2025-08-20 09:52:51 | INFO     | core.sync.sync_stock:worker:95 - [002815] 开始同步历史数据
+2025-08-20 09:52:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [144/500] | 成功:143 失败:1 剩余:356 | 当前:002803
+2025-08-20 09:52:55 | INFO     | core.sync.sync_stock:worker:105 - [002805] 同步完成，耗时: 654.74s
+2025-08-20 09:52:56 | INFO     | core.sync.sync_stock:worker:95 - [002816] 开始同步历史数据
+2025-08-20 09:52:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [145/500] | 成功:144 失败:1 剩余:355 | 当前:002805
+2025-08-20 09:52:57 | INFO     | core.sync.sync_stock:worker:105 - [002806] 同步完成，耗时: 654.95s
+2025-08-20 09:52:59 | INFO     | core.sync.sync_stock:worker:105 - [002807] 同步完成，耗时: 655.69s
+2025-08-20 09:53:00 | INFO     | core.sync.sync_stock:worker:95 - [002817] 开始同步历史数据
+2025-08-20 09:53:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [146/500] | 成功:145 失败:1 剩余:354 | 当前:002807
+2025-08-20 09:53:01 | INFO     | core.sync.sync_stock:worker:95 - [002818] 开始同步历史数据
+2025-08-20 09:53:01 | INFO     | core.sync.sync_stock:worker:105 - [002808] 同步完成，耗时: 656.17s
+2025-08-20 09:53:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [147/500] | 成功:146 失败:1 剩余:353 | 当前:002806
+2025-08-20 09:53:02 | INFO     | core.sync.sync_stock:worker:105 - [002809] 同步完成，耗时: 655.77s
+2025-08-20 09:53:03 | INFO     | core.sync.sync_stock:worker:105 - [002810] 同步完成，耗时: 655.06s
+2025-08-20 09:53:03 | INFO     | core.sync.sync_stock:worker:105 - [002811] 同步完成，耗时: 654.18s
+2025-08-20 09:53:04 | INFO     | core.sync.sync_stock:worker:105 - [002812] 同步完成，耗时: 653.19s
+2025-08-20 09:53:04 | INFO     | core.sync.sync_stock:worker:95 - [002819] 开始同步历史数据
+2025-08-20 09:53:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [148/500] | 成功:147 失败:1 剩余:352 | 当前:002809
+2025-08-20 09:53:04 | INFO     | core.sync.sync_stock:worker:105 - [002813] 同步完成，耗时: 652.49s
+2025-08-20 09:53:05 | INFO     | core.sync.sync_stock:worker:95 - [002820] 开始同步历史数据
+2025-08-20 09:53:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [149/500] | 成功:148 失败:1 剩余:351 | 当前:002808
+2025-08-20 09:53:05 | INFO     | core.sync.sync_stock:worker:95 - [002821] 开始同步历史数据
+2025-08-20 09:53:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [150/500] | 成功:149 失败:1 剩余:350 | 当前:002810
+2025-08-20 09:53:05 | INFO     | core.sync.sync_stock:worker:105 - [002815] 同步完成，耗时: 14.60s
+2025-08-20 09:53:06 | INFO     | core.sync.sync_stock:worker:95 - [002822] 开始同步历史数据
+2025-08-20 09:53:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [151/500] | 成功:150 失败:1 剩余:349 | 当前:002812
+2025-08-20 09:53:06 | INFO     | core.sync.sync_stock:worker:95 - [002823] 开始同步历史数据
+2025-08-20 09:53:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [152/500] | 成功:151 失败:1 剩余:348 | 当前:002811
+2025-08-20 09:53:06 | INFO     | core.sync.sync_stock:worker:95 - [002824] 开始同步历史数据
+2025-08-20 09:53:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [153/500] | 成功:152 失败:1 剩余:347 | 当前:002813
+2025-08-20 09:53:08 | INFO     | core.sync.sync_stock:worker:105 - [002816] 同步完成，耗时: 11.11s
+2025-08-20 09:53:10 | INFO     | core.sync.sync_stock:worker:95 - [002825] 开始同步历史数据
+2025-08-20 09:53:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [154/500] | 成功:153 失败:1 剩余:346 | 当前:002815
+2025-08-20 09:53:10 | INFO     | core.sync.sync_stock:worker:95 - [002826] 开始同步历史数据
+2025-08-20 09:53:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [155/500] | 成功:154 失败:1 剩余:345 | 当前:002816
+2025-08-20 09:53:10 | INFO     | core.sync.sync_stock:worker:105 - [002817] 同步完成，耗时: 10.03s
+2025-08-20 09:53:11 | INFO     | core.sync.sync_stock:worker:105 - [002818] 同步完成，耗时: 10.37s
+2025-08-20 09:53:13 | INFO     | core.sync.sync_stock:worker:95 - [002827] 开始同步历史数据
+2025-08-20 09:53:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [156/500] | 成功:155 失败:1 剩余:344 | 当前:002817
+2025-08-20 09:53:14 | INFO     | core.sync.sync_stock:worker:95 - [002828] 开始同步历史数据
+2025-08-20 09:53:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [157/500] | 成功:156 失败:1 剩余:343 | 当前:002818
+2025-08-20 09:53:15 | INFO     | core.sync.sync_stock:worker:105 - [002819] 同步完成，耗时: 10.58s
+2025-08-20 09:53:16 | INFO     | core.sync.sync_stock:worker:105 - [002820] 同步完成，耗时: 11.37s
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:worker:105 - [002823] 同步完成，耗时: 12.02s
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:worker:95 - [002829] 开始同步历史数据
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [158/500] | 成功:157 失败:1 剩余:342 | 当前:002820
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:worker:105 - [002821] 同步完成，耗时: 12.71s
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:worker:105 - [002822] 同步完成，耗时: 12.50s
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:worker:95 - [002830] 开始同步历史数据
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [159/500] | 成功:158 失败:1 剩余:341 | 当前:002819
+2025-08-20 09:53:18 | INFO     | core.sync.sync_stock:worker:105 - [002824] 同步完成，耗时: 12.37s
+2025-08-20 09:53:21 | INFO     | core.sync.sync_stock:worker:105 - [002826] 同步完成，耗时: 10.97s
+2025-08-20 09:53:21 | INFO     | core.sync.sync_stock:worker:105 - [002825] 同步完成，耗时: 11.31s
+2025-08-20 09:53:21 | INFO     | core.sync.sync_stock:worker:95 - [002831] 开始同步历史数据
+2025-08-20 09:53:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [160/500] | 成功:159 失败:1 剩余:340 | 当前:002822
+2025-08-20 09:53:22 | INFO     | core.sync.sync_stock:worker:95 - [002832] 开始同步历史数据
+2025-08-20 09:53:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [161/500] | 成功:160 失败:1 剩余:339 | 当前:002823
+2025-08-20 09:53:23 | INFO     | core.sync.sync_stock:worker:95 - [002833] 开始同步历史数据
+2025-08-20 09:53:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [162/500] | 成功:161 失败:1 剩余:338 | 当前:002821
+2025-08-20 09:53:23 | INFO     | core.sync.sync_stock:worker:95 - [002835] 开始同步历史数据
+2025-08-20 09:53:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [163/500] | 成功:162 失败:1 剩余:337 | 当前:002824
+2025-08-20 09:53:23 | INFO     | core.sync.sync_stock:worker:105 - [002827] 同步完成，耗时: 9.53s
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:worker:95 - [002836] 开始同步历史数据
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [164/500] | 成功:163 失败:1 剩余:336 | 当前:002825
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:worker:95 - [002837] 开始同步历史数据
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:worker:105 - [002828] 同步完成，耗时: 9.65s
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [165/500] | 成功:164 失败:1 剩余:335 | 当前:002826
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:worker:95 - [002838] 开始同步历史数据
+2025-08-20 09:53:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [166/500] | 成功:165 失败:1 剩余:334 | 当前:002827
+2025-08-20 09:53:27 | INFO     | core.sync.sync_stock:worker:105 - [002829] 同步完成，耗时: 9.49s
+2025-08-20 09:53:28 | INFO     | core.sync.sync_stock:worker:105 - [002830] 同步完成，耗时: 9.74s
+2025-08-20 09:53:29 | INFO     | core.sync.sync_stock:worker:95 - [002839] 开始同步历史数据
+2025-08-20 09:53:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [167/500] | 成功:166 失败:1 剩余:333 | 当前:002828
+2025-08-20 09:53:30 | INFO     | core.sync.sync_stock:worker:95 - [002840] 开始同步历史数据
+2025-08-20 09:53:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [168/500] | 成功:167 失败:1 剩余:332 | 当前:002829
+2025-08-20 09:53:30 | INFO     | core.sync.sync_stock:worker:95 - [002841] 开始同步历史数据
+2025-08-20 09:53:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [169/500] | 成功:168 失败:1 剩余:331 | 当前:002830
+2025-08-20 09:53:33 | INFO     | core.sync.sync_stock:worker:105 - [002831] 同步完成，耗时: 11.81s
+2025-08-20 09:53:34 | INFO     | core.sync.sync_stock:worker:105 - [002832] 同步完成，耗时: 12.03s
+2025-08-20 09:53:35 | INFO     | core.sync.sync_stock:worker:105 - [002833] 同步完成，耗时: 12.63s
+2025-08-20 09:53:35 | INFO     | core.sync.sync_stock:worker:105 - [002835] 同步完成，耗时: 12.73s
+2025-08-20 09:53:36 | INFO     | core.sync.sync_stock:worker:105 - [002836] 同步完成，耗时: 12.35s
+2025-08-20 09:53:36 | INFO     | core.sync.sync_stock:worker:105 - [002837] 同步完成，耗时: 12.11s
+2025-08-20 09:53:36 | INFO     | core.sync.sync_stock:worker:95 - [002842] 开始同步历史数据
+2025-08-20 09:53:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [170/500] | 成功:169 失败:1 剩余:330 | 当前:002832
+2025-08-20 09:53:36 | INFO     | core.sync.sync_stock:worker:105 - [002838] 同步完成，耗时: 11.91s
+2025-08-20 09:53:38 | INFO     | core.sync.sync_stock:worker:95 - [002843] 开始同步历史数据
+2025-08-20 09:53:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [171/500] | 成功:170 失败:1 剩余:329 | 当前:002831
+2025-08-20 09:53:38 | INFO     | core.sync.sync_stock:worker:95 - [002845] 开始同步历史数据
+2025-08-20 09:53:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [172/500] | 成功:171 失败:1 剩余:328 | 当前:002833
+2025-08-20 09:53:39 | INFO     | core.sync.sync_stock:worker:105 - [002839] 同步完成，耗时: 9.80s
+2025-08-20 09:53:39 | INFO     | core.sync.sync_stock:worker:95 - [002846] 开始同步历史数据
+2025-08-20 09:53:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [173/500] | 成功:172 失败:1 剩余:327 | 当前:002836
+2025-08-20 09:53:39 | INFO     | core.sync.sync_stock:worker:95 - [002847] 开始同步历史数据
+2025-08-20 09:53:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [174/500] | 成功:173 失败:1 剩余:326 | 当前:002835
+2025-08-20 09:53:39 | INFO     | core.sync.sync_stock:worker:105 - [002840] 同步完成，耗时: 9.59s
+2025-08-20 09:53:40 | INFO     | core.sync.sync_stock:worker:105 - [002841] 同步完成，耗时: 9.54s
+2025-08-20 09:53:40 | INFO     | core.sync.sync_stock:worker:95 - [002848] 开始同步历史数据
+2025-08-20 09:53:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [175/500] | 成功:174 失败:1 剩余:325 | 当前:002838
+2025-08-20 09:53:40 | INFO     | core.sync.sync_stock:worker:95 - [002849] 开始同步历史数据
+2025-08-20 09:53:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [176/500] | 成功:175 失败:1 剩余:324 | 当前:002839
+2025-08-20 09:53:41 | INFO     | core.sync.sync_stock:worker:95 - [002850] 开始同步历史数据
+2025-08-20 09:53:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [177/500] | 成功:176 失败:1 剩余:323 | 当前:002837
+2025-08-20 09:53:41 | INFO     | core.sync.sync_stock:worker:95 - [002851] 开始同步历史数据
+2025-08-20 09:53:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [178/500] | 成功:177 失败:1 剩余:322 | 当前:002841
+2025-08-20 09:53:43 | INFO     | core.sync.sync_stock:worker:95 - [002852] 开始同步历史数据
+2025-08-20 09:53:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [179/500] | 成功:178 失败:1 剩余:321 | 当前:002840
+2025-08-20 09:53:45 | INFO     | core.sync.sync_stock:worker:105 - [002842] 同步完成，耗时: 8.89s
+2025-08-20 09:53:46 | INFO     | core.sync.sync_stock:worker:95 - [002853] 开始同步历史数据
+2025-08-20 09:53:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [180/500] | 成功:179 失败:1 剩余:320 | 当前:002842
+2025-08-20 09:53:48 | INFO     | core.sync.sync_stock:worker:105 - [002843] 同步完成，耗时: 10.47s
+2025-08-20 09:53:49 | INFO     | core.sync.sync_stock:worker:105 - [002845] 同步完成，耗时: 11.09s
+2025-08-20 09:53:50 | INFO     | core.sync.sync_stock:worker:105 - [002846] 同步完成，耗时: 11.32s
+2025-08-20 09:53:51 | INFO     | core.sync.sync_stock:worker:105 - [002847] 同步完成，耗时: 11.58s
+2025-08-20 09:53:51 | INFO     | core.sync.sync_stock:worker:95 - [002855] 开始同步历史数据
+2025-08-20 09:53:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [181/500] | 成功:180 失败:1 剩余:319 | 当前:002843
+2025-08-20 09:53:52 | INFO     | core.sync.sync_stock:worker:95 - [002856] 开始同步历史数据
+2025-08-20 09:53:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [182/500] | 成功:181 失败:1 剩余:318 | 当前:002846
+2025-08-20 09:53:52 | INFO     | core.sync.sync_stock:worker:105 - [002848] 同步完成，耗时: 11.81s
+2025-08-20 09:53:52 | INFO     | core.sync.sync_stock:worker:105 - [002850] 同步完成，耗时: 11.72s
+2025-08-20 09:53:52 | INFO     | core.sync.sync_stock:worker:105 - [002849] 同步完成，耗时: 12.05s
+2025-08-20 09:53:53 | INFO     | core.sync.sync_stock:worker:105 - [002851] 同步完成，耗时: 11.46s
+2025-08-20 09:53:53 | INFO     | core.sync.sync_stock:worker:95 - [002857] 开始同步历史数据
+2025-08-20 09:53:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [183/500] | 成功:182 失败:1 剩余:317 | 当前:002847
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:worker:95 - [002858] 开始同步历史数据
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [184/500] | 成功:183 失败:1 剩余:316 | 当前:002845
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:worker:95 - [002859] 开始同步历史数据
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [185/500] | 成功:184 失败:1 剩余:315 | 当前:002849
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:worker:105 - [002852] 同步完成，耗时: 10.56s
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:worker:95 - [002860] 开始同步历史数据
+2025-08-20 09:53:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [186/500] | 成功:185 失败:1 剩余:314 | 当前:002851
+2025-08-20 09:53:55 | INFO     | core.sync.sync_stock:worker:95 - [002861] 开始同步历史数据
+2025-08-20 09:53:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [187/500] | 成功:186 失败:1 剩余:313 | 当前:002852
+2025-08-20 09:53:56 | INFO     | core.sync.sync_stock:worker:95 - [002862] 开始同步历史数据
+2025-08-20 09:53:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [188/500] | 成功:187 失败:1 剩余:312 | 当前:002848
+2025-08-20 09:53:56 | INFO     | core.sync.sync_stock:worker:105 - [002853] 同步完成，耗时: 10.19s
+2025-08-20 09:53:56 | INFO     | core.sync.sync_stock:worker:95 - [002863] 开始同步历史数据
+2025-08-20 09:53:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [189/500] | 成功:188 失败:1 剩余:311 | 当前:002850
+2025-08-20 09:53:58 | INFO     | core.sync.sync_stock:worker:95 - [002864] 开始同步历史数据
+2025-08-20 09:53:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [190/500] | 成功:189 失败:1 剩余:310 | 当前:002853
+2025-08-20 09:54:02 | INFO     | core.sync.sync_stock:worker:105 - [002856] 同步完成，耗时: 9.77s
+2025-08-20 09:54:02 | INFO     | core.sync.sync_stock:worker:105 - [002855] 同步完成，耗时: 11.27s
+2025-08-20 09:54:04 | INFO     | core.sync.sync_stock:worker:95 - [002865] 开始同步历史数据
+2025-08-20 09:54:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [191/500] | 成功:190 失败:1 剩余:309 | 当前:002856
+2025-08-20 09:54:04 | INFO     | core.sync.sync_stock:worker:105 - [002857] 同步完成，耗时: 11.36s
+2025-08-20 09:54:06 | INFO     | core.sync.sync_stock:worker:105 - [002859] 同步完成，耗时: 11.89s
+2025-08-20 09:54:06 | INFO     | core.sync.sync_stock:worker:105 - [002858] 同步完成，耗时: 12.28s
+2025-08-20 09:54:06 | INFO     | core.sync.sync_stock:worker:105 - [002860] 同步完成，耗时: 12.00s
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:worker:95 - [002866] 开始同步历史数据
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [192/500] | 成功:191 失败:1 剩余:308 | 当前:002855
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:worker:105 - [002861] 同步完成，耗时: 11.65s
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:worker:95 - [002867] 开始同步历史数据
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [193/500] | 成功:192 失败:1 剩余:307 | 当前:002857
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:worker:105 - [002862] 同步完成，耗时: 11.59s
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:worker:105 - [002863] 同步完成，耗时: 11.13s
+2025-08-20 09:54:07 | INFO     | core.sync.sync_stock:worker:95 - [002868] 开始同步历史数据
+2025-08-20 09:54:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [194/500] | 成功:193 失败:1 剩余:306 | 当前:002858
+2025-08-20 09:54:08 | INFO     | core.sync.sync_stock:worker:105 - [002864] 同步完成，耗时: 9.82s
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:worker:95 - [002869] 开始同步历史数据
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:worker:95 - [002870] 开始同步历史数据
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [195/500] | 成功:194 失败:1 剩余:305 | 当前:002861
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [196/500] | 成功:195 失败:1 剩余:304 | 当前:002862
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:worker:95 - [002871] 开始同步历史数据
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [197/500] | 成功:196 失败:1 剩余:303 | 当前:002859
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:worker:95 - [002872] 开始同步历史数据
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [198/500] | 成功:197 失败:1 剩余:302 | 当前:002863
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:worker:95 - [002873] 开始同步历史数据
+2025-08-20 09:54:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [199/500] | 成功:198 失败:1 剩余:301 | 当前:002860
+2025-08-20 09:54:11 | INFO     | core.sync.sync_stock:worker:105 - [002865] 同步完成，耗时: 6.96s
+2025-08-20 09:54:11 | INFO     | core.sync.sync_stock:worker:95 - [002875] 开始同步历史数据
+2025-08-20 09:54:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [200/500] | 成功:199 失败:1 剩余:300 | 当前:002864
+2025-08-20 09:58:42 | INFO     | core.sync.sync_stock:worker:95 - [002876] 开始同步历史数据
+2025-08-20 09:58:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [201/500] | 成功:200 失败:1 剩余:299 | 当前:002865
+2025-08-20 09:58:46 | INFO     | core.sync.sync_stock:worker:105 - [002866] 同步完成，耗时: 278.56s
+2025-08-20 09:58:46 | INFO     | core.sync.sync_stock:worker:105 - [002867] 同步完成，耗时: 279.29s
+2025-08-20 09:58:48 | INFO     | core.sync.sync_stock:worker:105 - [002868] 同步完成，耗时: 280.50s
+2025-08-20 09:58:49 | INFO     | core.sync.sync_stock:worker:95 - [002877] 开始同步历史数据
+2025-08-20 09:58:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [202/500] | 成功:201 失败:1 剩余:298 | 当前:002867
+2025-08-20 09:58:50 | INFO     | core.sync.sync_stock:worker:95 - [002878] 开始同步历史数据
+2025-08-20 09:58:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [203/500] | 成功:202 失败:1 剩余:297 | 当前:002866
+2025-08-20 09:58:50 | INFO     | core.sync.sync_stock:worker:95 - [002879] 开始同步历史数据
+2025-08-20 09:58:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [204/500] | 成功:203 失败:1 剩余:296 | 当前:002868
+2025-08-20 09:58:52 | INFO     | core.sync.sync_stock:worker:105 - [002869] 同步完成，耗时: 282.79s
+2025-08-20 09:58:52 | INFO     | core.sync.sync_stock:worker:105 - [002870] 同步完成，耗时: 282.89s
+2025-08-20 09:58:53 | INFO     | core.sync.sync_stock:worker:105 - [002872] 同步完成，耗时: 282.57s
+2025-08-20 09:58:53 | INFO     | core.sync.sync_stock:worker:105 - [002873] 同步完成，耗时: 282.75s
+2025-08-20 09:58:53 | INFO     | core.sync.sync_stock:worker:105 - [002871] 同步完成，耗时: 283.23s
+2025-08-20 09:58:53 | INFO     | core.sync.sync_stock:worker:105 - [002875] 同步完成，耗时: 282.58s
+2025-08-20 09:58:54 | INFO     | core.sync.sync_stock:worker:105 - [002876] 同步完成，耗时: 12.28s
+2025-08-20 09:58:54 | INFO     | core.sync.sync_stock:worker:95 - [002880] 开始同步历史数据
+2025-08-20 09:58:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [205/500] | 成功:204 失败:1 剩余:295 | 当前:002871
+2025-08-20 09:58:56 | INFO     | core.sync.sync_stock:worker:105 - [002877] 同步完成，耗时: 6.78s
+2025-08-20 09:58:56 | INFO     | core.sync.sync_stock:worker:105 - [002878] 同步完成，耗时: 6.12s
+2025-08-20 09:58:56 | INFO     | core.sync.sync_stock:worker:105 - [002879] 同步完成，耗时: 6.00s
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:worker:95 - [002881] 开始同步历史数据
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [206/500] | 成功:205 失败:1 剩余:294 | 当前:002876
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:worker:95 - [002882] 开始同步历史数据
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [207/500] | 成功:206 失败:1 剩余:293 | 当前:002872
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:worker:95 - [002883] 开始同步历史数据
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [208/500] | 成功:207 失败:1 剩余:292 | 当前:002869
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:worker:95 - [002884] 开始同步历史数据
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [209/500] | 成功:208 失败:1 剩余:291 | 当前:002870
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:worker:95 - [002885] 开始同步历史数据
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [210/500] | 成功:209 失败:1 剩余:290 | 当前:002873
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:worker:95 - [002886] 开始同步历史数据
+2025-08-20 09:58:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [211/500] | 成功:210 失败:1 剩余:289 | 当前:002877
+2025-08-20 09:58:58 | INFO     | core.sync.sync_stock:worker:95 - [002887] 开始同步历史数据
+2025-08-20 09:58:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [212/500] | 成功:211 失败:1 剩余:288 | 当前:002879
+2025-08-20 09:58:58 | INFO     | core.sync.sync_stock:worker:95 - [002888] 开始同步历史数据
+2025-08-20 09:58:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [213/500] | 成功:212 失败:1 剩余:287 | 当前:002875
+2025-08-20 09:59:00 | INFO     | core.sync.sync_stock:worker:105 - [002880] 同步完成，耗时: 5.65s
+2025-08-20 09:59:00 | INFO     | core.sync.sync_stock:worker:95 - [002889] 开始同步历史数据
+2025-08-20 09:59:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [214/500] | 成功:213 失败:1 剩余:286 | 当前:002878
+2025-08-20 09:59:02 | INFO     | core.sync.sync_stock:worker:95 - [002890] 开始同步历史数据
+2025-08-20 09:59:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [215/500] | 成功:214 失败:1 剩余:285 | 当前:002880
+2025-08-20 09:59:07 | INFO     | core.sync.sync_stock:worker:105 - [002881] 同步完成，耗时: 10.28s
+2025-08-20 09:59:09 | INFO     | core.sync.sync_stock:worker:105 - [002882] 同步完成，耗时: 12.01s
+2025-08-20 09:59:09 | INFO     | core.sync.sync_stock:worker:95 - [002891] 开始同步历史数据
+2025-08-20 09:59:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [216/500] | 成功:215 失败:1 剩余:284 | 当前:002881
+2025-08-20 09:59:09 | INFO     | core.sync.sync_stock:worker:105 - [002884] 同步完成，耗时: 12.38s
+2025-08-20 09:59:10 | INFO     | core.sync.sync_stock:worker:105 - [002883] 同步完成，耗时: 12.74s
+2025-08-20 09:59:10 | INFO     | core.sync.sync_stock:worker:105 - [002885] 同步完成，耗时: 12.67s
+2025-08-20 09:59:10 | INFO     | core.sync.sync_stock:worker:105 - [002886] 同步完成，耗时: 12.80s
+2025-08-20 09:59:10 | INFO     | core.sync.sync_stock:worker:105 - [002887] 同步完成，耗时: 12.58s
+2025-08-20 09:59:11 | INFO     | core.sync.sync_stock:worker:105 - [002888] 同步完成，耗时: 12.42s
+2025-08-20 09:59:11 | INFO     | core.sync.sync_stock:worker:105 - [002889] 同步完成，耗时: 11.16s
+2025-08-20 09:59:12 | INFO     | core.sync.sync_stock:worker:105 - [002890] 同步完成，耗时: 9.55s
+2025-08-20 09:59:12 | INFO     | core.sync.sync_stock:worker:95 - [002892] 开始同步历史数据
+2025-08-20 09:59:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [217/500] | 成功:216 失败:1 剩余:283 | 当前:002887
+2025-08-20 09:59:12 | INFO     | core.sync.sync_stock:worker:95 - [002893] 开始同步历史数据
+2025-08-20 09:59:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [218/500] | 成功:217 失败:1 剩余:282 | 当前:002882
+2025-08-20 09:59:13 | INFO     | core.sync.sync_stock:worker:105 - [002891] 同步完成，耗时: 3.40s
+2025-08-20 09:59:13 | INFO     | core.sync.sync_stock:worker:95 - [002895] 开始同步历史数据
+2025-08-20 09:59:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [219/500] | 成功:218 失败:1 剩余:281 | 当前:002884
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:worker:95 - [002896] 开始同步历史数据
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:worker:95 - [002897] 开始同步历史数据
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [220/500] | 成功:219 失败:1 剩余:280 | 当前:002885
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [221/500] | 成功:220 失败:1 剩余:279 | 当前:002883
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:worker:95 - [002898] 开始同步历史数据
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [222/500] | 成功:221 失败:1 剩余:278 | 当前:002890
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:worker:95 - [002899] 开始同步历史数据
+2025-08-20 09:59:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [223/500] | 成功:222 失败:1 剩余:277 | 当前:002886
+2025-08-20 09:59:15 | INFO     | core.sync.sync_stock:worker:95 - [002900] 开始同步历史数据
+2025-08-20 09:59:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [224/500] | 成功:223 失败:1 剩余:276 | 当前:002891
+2025-08-20 09:59:15 | INFO     | core.sync.sync_stock:worker:95 - [002901] 开始同步历史数据
+2025-08-20 09:59:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [225/500] | 成功:224 失败:1 剩余:275 | 当前:002888
+2025-08-20 09:59:16 | INFO     | core.sync.sync_stock:worker:95 - [002902] 开始同步历史数据
+2025-08-20 09:59:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [226/500] | 成功:225 失败:1 剩余:274 | 当前:002889
+2025-08-20 09:59:20 | INFO     | core.sync.sync_stock:worker:105 - [002893] 同步完成，耗时: 7.93s
+2025-08-20 09:59:21 | INFO     | core.sync.sync_stock:worker:105 - [002892] 同步完成，耗时: 8.71s
+2025-08-20 09:59:22 | INFO     | core.sync.sync_stock:worker:105 - [002895] 同步完成，耗时: 9.37s
+2025-08-20 09:59:23 | INFO     | core.sync.sync_stock:worker:95 - [002903] 开始同步历史数据
+2025-08-20 09:59:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [227/500] | 成功:226 失败:1 剩余:273 | 当前:002892
+2025-08-20 09:59:24 | INFO     | core.sync.sync_stock:worker:95 - [002905] 开始同步历史数据
+2025-08-20 09:59:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [228/500] | 成功:227 失败:1 剩余:272 | 当前:002893
+2025-08-20 09:59:25 | INFO     | core.sync.sync_stock:worker:105 - [002899] 同步完成，耗时: 10.91s
+2025-08-20 09:59:25 | INFO     | core.sync.sync_stock:worker:105 - [002897] 同步完成，耗时: 11.57s
+2025-08-20 09:59:25 | INFO     | core.sync.sync_stock:worker:105 - [002898] 同步完成，耗时: 11.32s
+2025-08-20 09:59:26 | INFO     | core.sync.sync_stock:worker:105 - [002900] 同步完成，耗时: 10.73s
+2025-08-20 09:59:26 | INFO     | core.sync.sync_stock:worker:105 - [002896] 同步完成，耗时: 12.00s
+2025-08-20 09:59:26 | INFO     | core.sync.sync_stock:worker:105 - [002901] 同步完成，耗时: 10.56s
+2025-08-20 09:59:26 | INFO     | core.sync.sync_stock:worker:95 - [002906] 开始同步历史数据
+2025-08-20 09:59:26 | INFO     | core.sync.sync_stock:worker:105 - [002902] 同步完成，耗时: 10.12s
+2025-08-20 09:59:26 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [229/500] | 成功:228 失败:1 剩余:271 | 当前:002899
+2025-08-20 09:59:27 | INFO     | core.sync.sync_stock:worker:95 - [002907] 开始同步历史数据
+2025-08-20 09:59:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [230/500] | 成功:229 失败:1 剩余:270 | 当前:002895
+2025-08-20 09:59:27 | INFO     | core.sync.sync_stock:worker:95 - [002908] 开始同步历史数据
+2025-08-20 09:59:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [231/500] | 成功:230 失败:1 剩余:269 | 当前:002900
+2025-08-20 09:59:28 | INFO     | core.sync.sync_stock:worker:95 - [002909] 开始同步历史数据
+2025-08-20 09:59:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [232/500] | 成功:231 失败:1 剩余:268 | 当前:002896
+2025-08-20 09:59:29 | INFO     | core.sync.sync_stock:worker:95 - [002910] 开始同步历史数据
+2025-08-20 09:59:29 | INFO     | core.sync.sync_stock:worker:95 - [002911] 开始同步历史数据
+2025-08-20 09:59:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [233/500] | 成功:232 失败:1 剩余:267 | 当前:002897
+2025-08-20 09:59:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [234/500] | 成功:233 失败:1 剩余:266 | 当前:002902
+2025-08-20 09:59:29 | INFO     | core.sync.sync_stock:worker:95 - [002912] 开始同步历史数据
+2025-08-20 09:59:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [235/500] | 成功:234 失败:1 剩余:265 | 当前:002898
+2025-08-20 09:59:30 | INFO     | core.sync.sync_stock:worker:105 - [002903] 同步完成，耗时: 6.53s
+2025-08-20 09:59:30 | INFO     | core.sync.sync_stock:worker:95 - [002913] 开始同步历史数据
+2025-08-20 09:59:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [236/500] | 成功:235 失败:1 剩余:264 | 当前:002901
+2025-08-20 09:59:30 | INFO     | core.sync.sync_stock:worker:105 - [002905] 同步完成，耗时: 6.24s
+2025-08-20 09:59:31 | INFO     | core.sync.sync_stock:worker:95 - [002915] 开始同步历史数据
+2025-08-20 09:59:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [237/500] | 成功:236 失败:1 剩余:263 | 当前:002903
+2025-08-20 09:59:34 | INFO     | core.sync.sync_stock:worker:105 - [002906] 同步完成，耗时: 8.12s
+2025-08-20 09:59:34 | INFO     | core.sync.sync_stock:worker:95 - [002916] 开始同步历史数据
+2025-08-20 09:59:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [238/500] | 成功:237 失败:1 剩余:262 | 当前:002905
+2025-08-20 09:59:36 | INFO     | core.sync.sync_stock:worker:105 - [002907] 同步完成，耗时: 9.00s
+2025-08-20 09:59:37 | INFO     | core.sync.sync_stock:worker:105 - [002908] 同步完成，耗时: 9.60s
+2025-08-20 09:59:37 | INFO     | core.sync.sync_stock:worker:95 - [002917] 开始同步历史数据
+2025-08-20 09:59:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [239/500] | 成功:238 失败:1 剩余:261 | 当前:002907
+2025-08-20 09:59:38 | INFO     | core.sync.sync_stock:worker:95 - [002918] 开始同步历史数据
+2025-08-20 09:59:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [240/500] | 成功:239 失败:1 剩余:260 | 当前:002906
+2025-08-20 09:59:38 | INFO     | core.sync.sync_stock:worker:105 - [002909] 同步完成，耗时: 10.27s
+2025-08-20 09:59:39 | INFO     | core.sync.sync_stock:worker:105 - [002911] 同步完成，耗时: 9.87s
+2025-08-20 09:59:39 | INFO     | core.sync.sync_stock:worker:105 - [002910] 同步完成，耗时: 10.18s
+2025-08-20 09:59:40 | INFO     | core.sync.sync_stock:worker:105 - [002912] 同步完成，耗时: 10.07s
+2025-08-20 09:59:40 | INFO     | core.sync.sync_stock:worker:95 - [002919] 开始同步历史数据
+2025-08-20 09:59:40 | INFO     | core.sync.sync_stock:worker:105 - [002913] 同步完成，耗时: 9.74s
+2025-08-20 09:59:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [241/500] | 成功:240 失败:1 剩余:259 | 当前:002911
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:worker:95 - [002920] 开始同步历史数据
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [242/500] | 成功:241 失败:1 剩余:258 | 当前:002909
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:worker:95 - [002921] 开始同步历史数据
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:worker:95 - [002922] 开始同步历史数据
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [243/500] | 成功:242 失败:1 剩余:257 | 当前:002913
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:worker:105 - [002915] 同步完成，耗时: 9.36s
+2025-08-20 09:59:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [244/500] | 成功:243 失败:1 剩余:256 | 当前:002912
+2025-08-20 09:59:42 | INFO     | core.sync.sync_stock:worker:95 - [002923] 开始同步历史数据
+2025-08-20 09:59:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [245/500] | 成功:244 失败:1 剩余:255 | 当前:002908
+2025-08-20 09:59:42 | INFO     | core.sync.sync_stock:worker:95 - [002925] 开始同步历史数据
+2025-08-20 09:59:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [246/500] | 成功:245 失败:1 剩余:254 | 当前:002915
+2025-08-20 09:59:43 | INFO     | core.sync.sync_stock:worker:105 - [002916] 同步完成，耗时: 8.63s
+2025-08-20 09:59:43 | INFO     | core.sync.sync_stock:worker:95 - [002926] 开始同步历史数据
+2025-08-20 09:59:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [247/500] | 成功:246 失败:1 剩余:253 | 当前:002910
+2025-08-20 09:59:46 | INFO     | core.sync.sync_stock:worker:105 - [002917] 同步完成，耗时: 8.81s
+2025-08-20 09:59:46 | INFO     | core.sync.sync_stock:worker:105 - [002918] 同步完成，耗时: 8.86s
+2025-08-20 09:59:48 | INFO     | core.sync.sync_stock:worker:95 - [002927] 开始同步历史数据
+2025-08-20 09:59:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [248/500] | 成功:247 失败:1 剩余:252 | 当前:002916
+2025-08-20 09:59:49 | INFO     | core.sync.sync_stock:worker:105 - [002919] 同步完成，耗时: 8.80s
+2025-08-20 09:59:49 | INFO     | core.sync.sync_stock:worker:95 - [002928] 开始同步历史数据
+2025-08-20 09:59:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [249/500] | 成功:248 失败:1 剩余:251 | 当前:002918
+2025-08-20 09:59:49 | INFO     | core.sync.sync_stock:worker:95 - [002929] 开始同步历史数据
+2025-08-20 09:59:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [250/500] | 成功:249 失败:1 剩余:250 | 当前:002917
+2025-08-20 09:59:50 | INFO     | core.sync.sync_stock:worker:105 - [002921] 同步完成，耗时: 9.23s
+2025-08-20 09:59:50 | INFO     | core.sync.sync_stock:worker:105 - [002920] 同步完成，耗时: 9.52s
+2025-08-20 09:59:50 | INFO     | core.sync.sync_stock:worker:105 - [002922] 同步完成，耗时: 9.46s
+2025-08-20 09:59:51 | INFO     | core.sync.sync_stock:worker:105 - [002923] 同步完成，耗时: 9.27s
+2025-08-20 09:59:51 | INFO     | core.sync.sync_stock:worker:105 - [002925] 同步完成，耗时: 9.38s
+2025-08-20 09:59:52 | INFO     | core.sync.sync_stock:worker:105 - [002926] 同步完成，耗时: 8.49s
+2025-08-20 09:59:52 | INFO     | core.sync.sync_stock:worker:95 - [002930] 开始同步历史数据
+2025-08-20 09:59:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [251/500] | 成功:250 失败:1 剩余:249 | 当前:002921
+2025-08-20 09:59:52 | INFO     | core.sync.sync_stock:worker:95 - [002931] 开始同步历史数据
+2025-08-20 09:59:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [252/500] | 成功:251 失败:1 剩余:248 | 当前:002919
+2025-08-20 09:59:53 | INFO     | core.sync.sync_stock:worker:95 - [002932] 开始同步历史数据
+2025-08-20 09:59:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [253/500] | 成功:252 失败:1 剩余:247 | 当前:002926
+2025-08-20 09:59:53 | INFO     | core.sync.sync_stock:worker:95 - [002933] 开始同步历史数据
+2025-08-20 09:59:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [254/500] | 成功:253 失败:1 剩余:246 | 当前:002923
+2025-08-20 09:59:53 | INFO     | core.sync.sync_stock:worker:95 - [002935] 开始同步历史数据
+2025-08-20 09:59:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [255/500] | 成功:254 失败:1 剩余:245 | 当前:002920
+2025-08-20 09:59:54 | INFO     | core.sync.sync_stock:worker:95 - [002936] 开始同步历史数据
+2025-08-20 09:59:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [256/500] | 成功:255 失败:1 剩余:244 | 当前:002922
+2025-08-20 09:59:55 | INFO     | core.sync.sync_stock:worker:105 - [002927] 同步完成，耗时: 6.78s
+2025-08-20 09:59:55 | INFO     | core.sync.sync_stock:worker:95 - [002937] 开始同步历史数据
+2025-08-20 09:59:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [257/500] | 成功:256 失败:1 剩余:243 | 当前:002925
+2025-08-20 09:59:56 | INFO     | core.sync.sync_stock:worker:95 - [002938] 开始同步历史数据
+2025-08-20 09:59:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [258/500] | 成功:257 失败:1 剩余:242 | 当前:002927
+2025-08-20 09:59:57 | INFO     | core.sync.sync_stock:worker:105 - [002929] 同步完成，耗时: 7.86s
+2025-08-20 09:59:58 | INFO     | core.sync.sync_stock:worker:105 - [002928] 同步完成，耗时: 9.17s
+2025-08-20 09:59:59 | INFO     | core.sync.sync_stock:worker:95 - [002939] 开始同步历史数据
+2025-08-20 10:00:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [259/500] | 成功:258 失败:1 剩余:241 | 当前:002928
+2025-08-20 10:00:01 | INFO     | core.sync.sync_stock:worker:105 - [002930] 同步完成，耗时: 9.19s
+2025-08-20 10:00:02 | INFO     | core.sync.sync_stock:worker:95 - [002940] 开始同步历史数据
+2025-08-20 10:00:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [260/500] | 成功:259 失败:1 剩余:240 | 当前:002929
+2025-08-20 10:00:02 | INFO     | core.sync.sync_stock:worker:105 - [002931] 同步完成，耗时: 9.76s
+2025-08-20 10:00:02 | INFO     | core.sync.sync_stock:worker:105 - [002932] 同步完成，耗时: 9.56s
+2025-08-20 10:00:03 | INFO     | core.sync.sync_stock:worker:105 - [002933] 同步完成，耗时: 9.35s
+2025-08-20 10:00:03 | INFO     | core.sync.sync_stock:worker:105 - [002935] 同步完成，耗时: 9.58s
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:worker:105 - [002936] 同步完成，耗时: 9.09s
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:worker:95 - [002941] 开始同步历史数据
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [261/500] | 成功:260 失败:1 剩余:239 | 当前:002933
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:worker:105 - [002937] 同步完成，耗时: 8.90s
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:worker:95 - [002942] 开始同步历史数据
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:worker:105 - [002938] 同步完成，耗时: 8.26s
+2025-08-20 10:00:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [262/500] | 成功:261 失败:1 剩余:238 | 当前:002932
+2025-08-20 10:00:05 | INFO     | core.sync.sync_stock:worker:95 - [002943] 开始同步历史数据
+2025-08-20 10:00:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [263/500] | 成功:262 失败:1 剩余:237 | 当前:002931
+2025-08-20 10:00:05 | INFO     | core.sync.sync_stock:worker:95 - [002945] 开始同步历史数据
+2025-08-20 10:00:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [264/500] | 成功:263 失败:1 剩余:236 | 当前:002930
+2025-08-20 10:00:06 | INFO     | core.sync.sync_stock:worker:105 - [002939] 同步完成，耗时: 6.78s
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:worker:95 - [002946] 开始同步历史数据
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [265/500] | 成功:264 失败:1 剩余:235 | 当前:002938
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:worker:95 - [002947] 开始同步历史数据
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [266/500] | 成功:265 失败:1 剩余:234 | 当前:002937
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:worker:95 - [002948] 开始同步历史数据
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:worker:105 - [002940] 同步完成，耗时: 5.48s
+2025-08-20 10:00:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [267/500] | 成功:266 失败:1 剩余:233 | 当前:002936
+2025-08-20 10:00:08 | INFO     | core.sync.sync_stock:worker:95 - [002949] 开始同步历史数据
+2025-08-20 10:00:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [268/500] | 成功:267 失败:1 剩余:232 | 当前:002935
+2025-08-20 10:00:08 | INFO     | core.sync.sync_stock:worker:95 - [002950] 开始同步历史数据
+2025-08-20 10:00:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [269/500] | 成功:268 失败:1 剩余:231 | 当前:002939
+2025-08-20 10:00:10 | INFO     | core.sync.sync_stock:worker:95 - [002951] 开始同步历史数据
+2025-08-20 10:00:19 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [270/500] | 成功:269 失败:1 剩余:230 | 当前:002940
+2025-08-20 10:00:19 | INFO     | core.sync.sync_stock:worker:105 - [002941] 同步完成，耗时: 15.47s
+2025-08-20 10:00:22 | INFO     | core.sync.sync_stock:worker:95 - [002952] 开始同步历史数据
+2025-08-20 10:00:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [271/500] | 成功:270 失败:1 剩余:229 | 当前:002941
+2025-08-20 10:00:23 | INFO     | core.sync.sync_stock:worker:105 - [002942] 同步完成，耗时: 18.55s
+2025-08-20 10:00:23 | INFO     | core.sync.sync_stock:worker:105 - [002943] 同步完成，耗时: 18.39s
+2025-08-20 10:00:24 | INFO     | core.sync.sync_stock:worker:95 - [002953] 开始同步历史数据
+2025-08-20 10:00:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [272/500] | 成功:271 失败:1 剩余:228 | 当前:002942
+2025-08-20 10:00:24 | INFO     | core.sync.sync_stock:worker:105 - [002945] 同步完成，耗时: 18.79s
+2025-08-20 10:00:25 | INFO     | core.sync.sync_stock:worker:95 - [002955] 开始同步历史数据
+2025-08-20 10:00:25 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [273/500] | 成功:272 失败:1 剩余:227 | 当前:002943
+2025-08-20 10:00:27 | INFO     | core.sync.sync_stock:worker:105 - [002946] 同步完成，耗时: 19.76s
+2025-08-20 10:00:27 | INFO     | core.sync.sync_stock:worker:105 - [002947] 同步完成，耗时: 20.11s
+2025-08-20 10:00:27 | INFO     | core.sync.sync_stock:worker:105 - [002948] 同步完成，耗时: 20.32s
+2025-08-20 10:00:28 | INFO     | core.sync.sync_stock:worker:95 - [002956] 开始同步历史数据
+2025-08-20 10:00:28 | INFO     | core.sync.sync_stock:worker:105 - [002949] 同步完成，耗时: 20.17s
+2025-08-20 10:00:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [274/500] | 成功:273 失败:1 剩余:226 | 当前:002945
+2025-08-20 10:00:28 | INFO     | core.sync.sync_stock:worker:105 - [002950] 同步完成，耗时: 20.01s
+2025-08-20 10:00:29 | INFO     | core.sync.sync_stock:worker:105 - [002951] 同步完成，耗时: 19.24s
+2025-08-20 10:00:29 | INFO     | core.sync.sync_stock:worker:105 - [002952] 同步完成，耗时: 7.70s
+2025-08-20 10:00:30 | INFO     | core.sync.sync_stock:worker:95 - [002957] 开始同步历史数据
+2025-08-20 10:00:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [275/500] | 成功:274 失败:1 剩余:225 | 当前:002946
+2025-08-20 10:00:30 | INFO     | core.sync.sync_stock:worker:105 - [002953] 同步完成，耗时: 6.17s
+2025-08-20 10:00:30 | INFO     | core.sync.sync_stock:worker:95 - [002958] 开始同步历史数据
+2025-08-20 10:00:30 | INFO     | core.sync.sync_stock:worker:105 - [002955] 同步完成，耗时: 5.11s
+2025-08-20 10:00:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [276/500] | 成功:275 失败:1 剩余:224 | 当前:002951
+2025-08-20 10:00:31 | INFO     | core.sync.sync_stock:worker:95 - [002959] 开始同步历史数据
+2025-08-20 10:00:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [277/500] | 成功:276 失败:1 剩余:223 | 当前:002947
+2025-08-20 10:00:31 | INFO     | core.sync.sync_stock:worker:105 - [002956] 同步完成，耗时: 3.18s
+2025-08-20 10:00:32 | INFO     | core.sync.sync_stock:worker:95 - [002960] 开始同步历史数据
+2025-08-20 10:00:32 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [278/500] | 成功:277 失败:1 剩余:222 | 当前:002949
+2025-08-20 10:00:32 | INFO     | core.sync.sync_stock:worker:95 - [002961] 开始同步历史数据
+2025-08-20 10:00:32 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [279/500] | 成功:278 失败:1 剩余:221 | 当前:002948
+2025-08-20 10:00:33 | INFO     | core.sync.sync_stock:worker:105 - [002957] 同步完成，耗时: 2.94s
+2025-08-20 10:00:33 | INFO     | core.sync.sync_stock:worker:95 - [002962] 开始同步历史数据
+2025-08-20 10:00:33 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [280/500] | 成功:279 失败:1 剩余:220 | 当前:002952
+2025-08-20 10:00:33 | INFO     | core.sync.sync_stock:worker:105 - [002958] 同步完成，耗时: 2.78s
+2025-08-20 10:00:33 | INFO     | core.sync.sync_stock:worker:95 - [002963] 开始同步历史数据
+2025-08-20 10:00:33 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [281/500] | 成功:280 失败:1 剩余:219 | 当前:002950
+2025-08-20 10:00:34 | INFO     | core.sync.sync_stock:worker:95 - [002965] 开始同步历史数据
+2025-08-20 10:00:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [282/500] | 成功:281 失败:1 剩余:218 | 当前:002957
+2025-08-20 10:00:34 | INFO     | core.sync.sync_stock:worker:105 - [002959] 同步完成，耗时: 3.52s
+2025-08-20 10:00:34 | INFO     | core.sync.sync_stock:worker:95 - [002966] 开始同步历史数据
+2025-08-20 10:00:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [283/500] | 成功:282 失败:1 剩余:217 | 当前:002953
+2025-08-20 10:00:34 | INFO     | core.sync.sync_stock:worker:105 - [002960] 同步完成，耗时: 2.65s
+2025-08-20 10:00:35 | INFO     | core.sync.sync_stock:worker:95 - [002967] 开始同步历史数据
+2025-08-20 10:00:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [284/500] | 成功:283 失败:1 剩余:216 | 当前:002955
+2025-08-20 10:00:35 | INFO     | core.sync.sync_stock:worker:95 - [002968] 开始同步历史数据
+2025-08-20 10:00:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [285/500] | 成功:284 失败:1 剩余:215 | 当前:002956
+2025-08-20 10:00:36 | INFO     | core.sync.sync_stock:worker:105 - [002961] 同步完成，耗时: 3.99s
+2025-08-20 10:00:36 | INFO     | core.sync.sync_stock:worker:95 - [002969] 开始同步历史数据
+2025-08-20 10:00:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [286/500] | 成功:285 失败:1 剩余:214 | 当前:002958
+2025-08-20 10:00:37 | INFO     | core.sync.sync_stock:worker:95 - [002970] 开始同步历史数据
+2025-08-20 10:00:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [287/500] | 成功:286 失败:1 剩余:213 | 当前:002961
+2025-08-20 10:00:38 | INFO     | core.sync.sync_stock:worker:95 - [002971] 开始同步历史数据
+2025-08-20 10:00:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [288/500] | 成功:287 失败:1 剩余:212 | 当前:002959
+2025-08-20 10:00:38 | INFO     | core.sync.sync_stock:worker:95 - [002972] 开始同步历史数据
+2025-08-20 10:00:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [289/500] | 成功:288 失败:1 剩余:211 | 当前:002960
+2025-08-20 10:00:41 | ERROR    | core.sync.sync_stock:worker:110 - [002965] 同步失败，耗时: 6.86s，错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-20 10:00:41 | ERROR    | core.sync.sync_stock:worker:110 - [002963] 同步失败，耗时: 7.52s，错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-20 10:00:41 | ERROR    | core.sync.sync_stock:worker:110 - [002962] 同步失败，耗时: 7.91s，错误: ('Connection broken: IncompleteRead(12009 bytes read, 29757 more expected)', IncompleteRead(12009 bytes read, 29757 more expected))
+2025-08-20 10:00:41 | ERROR    | core.sync.sync_stock:worker:110 - [002969] 同步失败，耗时: 5.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:42 | INFO     | core.sync.sync_stock:worker:95 - [002973] 开始同步历史数据
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002973] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [290/500] | 成功:288 失败:2 剩余:210 | 当前:002962
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002970] 同步失败，耗时: 5.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002972] 同步失败，耗时: 4.05s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002966] 同步失败，耗时: 8.29s，错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002971] 同步失败，耗时: 4.20s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002968] 同步失败，耗时: 7.30s，错误: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-20 10:00:42 | ERROR    | core.sync.sync_stock:worker:110 - [002967] 同步失败，耗时: 7.71s，错误: ('Connection broken: IncompleteRead(9361 bytes read, 31773 more expected)', IncompleteRead(9361 bytes read, 31773 more expected))
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:worker:95 - [002975] 开始同步历史数据
+2025-08-20 10:00:44 | ERROR    | core.sync.sync_stock:worker:110 - [002975] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002975&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [291/500] | 成功:288 失败:3 剩余:209 | 当前:002970
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:worker:95 - [002976] 开始同步历史数据
+2025-08-20 10:00:44 | ERROR    | core.sync.sync_stock:worker:110 - [002976] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002976&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [292/500] | 成功:288 失败:4 剩余:208 | 当前:002972
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:worker:95 - [002977] 开始同步历史数据
+2025-08-20 10:00:44 | ERROR    | core.sync.sync_stock:worker:110 - [002977] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002977&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [293/500] | 成功:288 失败:5 剩余:207 | 当前:002965
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:worker:95 - [002978] 开始同步历史数据
+2025-08-20 10:00:44 | ERROR    | core.sync.sync_stock:worker:110 - [002978] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002978&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [294/500] | 成功:288 失败:6 剩余:206 | 当前:002969
+2025-08-20 10:00:45 | INFO     | core.sync.sync_stock:worker:95 - [002979] 开始同步历史数据
+2025-08-20 10:00:45 | ERROR    | core.sync.sync_stock:worker:110 - [002979] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002979&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [295/500] | 成功:288 失败:7 剩余:205 | 当前:002963
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:worker:95 - [002980] 开始同步历史数据
+2025-08-20 10:00:46 | ERROR    | core.sync.sync_stock:worker:110 - [002980] 同步失败，耗时: 0.00s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [296/500] | 成功:288 失败:8 剩余:204 | 当前:002967
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:worker:95 - [002981] 开始同步历史数据
+2025-08-20 10:00:46 | ERROR    | core.sync.sync_stock:worker:110 - [002981] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002981&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [297/500] | 成功:288 失败:9 剩余:203 | 当前:002971
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:worker:95 - [002982] 开始同步历史数据
+2025-08-20 10:00:46 | ERROR    | core.sync.sync_stock:worker:110 - [002982] 同步失败，耗时: 0.00s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [298/500] | 成功:288 失败:10 剩余:202 | 当前:002976
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:worker:95 - [002983] 开始同步历史数据
+2025-08-20 10:00:46 | ERROR    | core.sync.sync_stock:worker:110 - [002983] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002983&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [299/500] | 成功:288 失败:11 剩余:201 | 当前:002968
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:worker:95 - [002984] 开始同步历史数据
+2025-08-20 10:00:46 | ERROR    | core.sync.sync_stock:worker:110 - [002984] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002984&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [300/500] | 成功:288 失败:12 剩余:200 | 当前:002966
+2025-08-20 10:00:47 | INFO     | core.sync.sync_stock:worker:95 - [002985] 开始同步历史数据
+2025-08-20 10:00:47 | ERROR    | core.sync.sync_stock:worker:110 - [002985] 同步失败，耗时: 0.00s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002985&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [301/500] | 成功:288 失败:13 剩余:199 | 当前:002973
+2025-08-20 10:00:47 | INFO     | core.sync.sync_stock:worker:95 - [002986] 开始同步历史数据
+2025-08-20 10:00:47 | ERROR    | core.sync.sync_stock:worker:110 - [002986] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002986&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [302/500] | 成功:288 失败:14 剩余:198 | 当前:002975
+2025-08-20 10:00:48 | INFO     | core.sync.sync_stock:worker:95 - [002987] 开始同步历史数据
+2025-08-20 10:00:48 | ERROR    | core.sync.sync_stock:worker:110 - [002987] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [303/500] | 成功:288 失败:15 剩余:197 | 当前:002977
+2025-08-20 10:00:48 | INFO     | core.sync.sync_stock:worker:95 - [002988] 开始同步历史数据
+2025-08-20 10:00:48 | INFO     | core.sync.sync_stock:worker:95 - [002989] 开始同步历史数据
+2025-08-20 10:00:48 | ERROR    | core.sync.sync_stock:worker:110 - [002988] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002988&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:48 | ERROR    | core.sync.sync_stock:worker:110 - [002989] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002989&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [304/500] | 成功:288 失败:16 剩余:196 | 当前:002978
+2025-08-20 10:00:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [305/500] | 成功:288 失败:17 剩余:195 | 当前:002980
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:worker:95 - [002990] 开始同步历史数据
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [306/500] | 成功:288 失败:18 剩余:194 | 当前:002982
+2025-08-20 10:00:49 | ERROR    | core.sync.sync_stock:worker:110 - [002990] 同步失败，耗时: 0.02s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:worker:95 - [002991] 开始同步历史数据
+2025-08-20 10:00:49 | ERROR    | core.sync.sync_stock:worker:110 - [002991] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002991&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [307/500] | 成功:288 失败:19 剩余:193 | 当前:002979
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:worker:95 - [002992] 开始同步历史数据
+2025-08-20 10:00:49 | ERROR    | core.sync.sync_stock:worker:110 - [002992] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002992&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [308/500] | 成功:288 失败:20 剩余:192 | 当前:002987
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:worker:95 - [002993] 开始同步历史数据
+2025-08-20 10:00:49 | ERROR    | core.sync.sync_stock:worker:110 - [002993] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [309/500] | 成功:288 失败:21 剩余:191 | 当前:002984
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:worker:95 - [002995] 开始同步历史数据
+2025-08-20 10:00:49 | ERROR    | core.sync.sync_stock:worker:110 - [002995] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002995&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [310/500] | 成功:288 失败:22 剩余:190 | 当前:002986
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:worker:95 - [002996] 开始同步历史数据
+2025-08-20 10:00:49 | ERROR    | core.sync.sync_stock:worker:110 - [002996] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [311/500] | 成功:288 失败:23 剩余:189 | 当前:002983
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:worker:95 - [002997] 开始同步历史数据
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [312/500] | 成功:288 失败:24 剩余:188 | 当前:002991
+2025-08-20 10:00:50 | ERROR    | core.sync.sync_stock:worker:110 - [002997] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002997&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:worker:95 - [002998] 开始同步历史数据
+2025-08-20 10:00:50 | ERROR    | core.sync.sync_stock:worker:110 - [002998] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002998&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [313/500] | 成功:288 失败:25 剩余:187 | 当前:002989
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:worker:95 - [002999] 开始同步历史数据
+2025-08-20 10:00:50 | ERROR    | core.sync.sync_stock:worker:110 - [002999] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.002999&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [314/500] | 成功:288 失败:26 剩余:186 | 当前:002992
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:worker:95 - [003000] 开始同步历史数据
+2025-08-20 10:00:50 | ERROR    | core.sync.sync_stock:worker:110 - [003000] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003000&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [315/500] | 成功:288 失败:27 剩余:185 | 当前:002981
+2025-08-20 10:00:51 | INFO     | core.sync.sync_stock:worker:95 - [003001] 开始同步历史数据
+2025-08-20 10:00:51 | ERROR    | core.sync.sync_stock:worker:110 - [003001] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003001&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [316/500] | 成功:288 失败:28 剩余:184 | 当前:002985
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:worker:95 - [003002] 开始同步历史数据
+2025-08-20 10:00:52 | ERROR    | core.sync.sync_stock:worker:110 - [003002] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [317/500] | 成功:288 失败:29 剩余:183 | 当前:002996
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:worker:95 - [003003] 开始同步历史数据
+2025-08-20 10:00:52 | ERROR    | core.sync.sync_stock:worker:110 - [003003] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [318/500] | 成功:288 失败:30 剩余:182 | 当前:002988
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:worker:95 - [003004] 开始同步历史数据
+2025-08-20 10:00:52 | ERROR    | core.sync.sync_stock:worker:110 - [003004] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [319/500] | 成功:288 失败:31 剩余:181 | 当前:002998
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:worker:95 - [003005] 开始同步历史数据
+2025-08-20 10:00:52 | ERROR    | core.sync.sync_stock:worker:110 - [003005] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [320/500] | 成功:288 失败:32 剩余:180 | 当前:002997
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:worker:95 - [003006] 开始同步历史数据
+2025-08-20 10:00:53 | ERROR    | core.sync.sync_stock:worker:110 - [003006] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [321/500] | 成功:288 失败:33 剩余:179 | 当前:003000
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:worker:95 - [003007] 开始同步历史数据
+2025-08-20 10:00:53 | ERROR    | core.sync.sync_stock:worker:110 - [003007] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003007&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [322/500] | 成功:288 失败:34 剩余:178 | 当前:002993
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:worker:95 - [003008] 开始同步历史数据
+2025-08-20 10:00:53 | ERROR    | core.sync.sync_stock:worker:110 - [003008] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003008&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [323/500] | 成功:288 失败:35 剩余:177 | 当前:002990
+2025-08-20 10:00:53 | INFO     | core.sync.sync_stock:worker:95 - [003009] 开始同步历史数据
+2025-08-20 10:00:53 | ERROR    | core.sync.sync_stock:worker:110 - [003009] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003009&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [324/500] | 成功:288 失败:36 剩余:176 | 当前:003005
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:worker:95 - [003010] 开始同步历史数据
+2025-08-20 10:00:54 | ERROR    | core.sync.sync_stock:worker:110 - [003010] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [325/500] | 成功:288 失败:37 剩余:175 | 当前:002995
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:worker:95 - [003011] 开始同步历史数据
+2025-08-20 10:00:54 | ERROR    | core.sync.sync_stock:worker:110 - [003011] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003011&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [326/500] | 成功:288 失败:38 剩余:174 | 当前:003004
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:worker:95 - [003012] 开始同步历史数据
+2025-08-20 10:00:54 | ERROR    | core.sync.sync_stock:worker:110 - [003012] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003012&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [327/500] | 成功:288 失败:39 剩余:173 | 当前:003001
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:worker:95 - [003013] 开始同步历史数据
+2025-08-20 10:00:54 | ERROR    | core.sync.sync_stock:worker:110 - [003013] 同步失败，耗时: 0.02s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [328/500] | 成功:288 失败:40 剩余:172 | 当前:003008
+2025-08-20 10:00:55 | INFO     | core.sync.sync_stock:worker:95 - [003015] 开始同步历史数据
+2025-08-20 10:00:55 | ERROR    | core.sync.sync_stock:worker:110 - [003015] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003015&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [329/500] | 成功:288 失败:41 剩余:171 | 当前:002999
+2025-08-20 10:00:55 | INFO     | core.sync.sync_stock:worker:95 - [003016] 开始同步历史数据
+2025-08-20 10:00:55 | ERROR    | core.sync.sync_stock:worker:110 - [003016] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003016&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [330/500] | 成功:288 失败:42 剩余:170 | 当前:003003
+2025-08-20 10:00:56 | INFO     | core.sync.sync_stock:worker:95 - [003017] 开始同步历史数据
+2025-08-20 10:00:56 | ERROR    | core.sync.sync_stock:worker:110 - [003017] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [331/500] | 成功:288 失败:43 剩余:169 | 当前:003002
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:worker:95 - [003018] 开始同步历史数据
+2025-08-20 10:00:57 | ERROR    | core.sync.sync_stock:worker:110 - [003018] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003018&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [332/500] | 成功:288 失败:44 剩余:168 | 当前:003012
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:worker:95 - [003019] 开始同步历史数据
+2025-08-20 10:00:57 | ERROR    | core.sync.sync_stock:worker:110 - [003019] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [333/500] | 成功:288 失败:45 剩余:167 | 当前:003007
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:worker:95 - [003020] 开始同步历史数据
+2025-08-20 10:00:57 | ERROR    | core.sync.sync_stock:worker:110 - [003020] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003020&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [334/500] | 成功:288 失败:46 剩余:166 | 当前:003010
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:worker:95 - [003021] 开始同步历史数据
+2025-08-20 10:00:57 | ERROR    | core.sync.sync_stock:worker:110 - [003021] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [335/500] | 成功:288 失败:47 剩余:165 | 当前:003011
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:worker:95 - [003022] 开始同步历史数据
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [336/500] | 成功:288 失败:48 剩余:164 | 当前:003009
+2025-08-20 10:00:57 | ERROR    | core.sync.sync_stock:worker:110 - [003022] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003022&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:worker:95 - [003023] 开始同步历史数据
+2025-08-20 10:00:57 | ERROR    | core.sync.sync_stock:worker:110 - [003023] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003023&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [337/500] | 成功:288 失败:49 剩余:163 | 当前:003016
+2025-08-20 10:00:58 | INFO     | core.sync.sync_stock:worker:95 - [003025] 开始同步历史数据
+2025-08-20 10:00:58 | ERROR    | core.sync.sync_stock:worker:110 - [003025] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003025&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [338/500] | 成功:288 失败:50 剩余:162 | 当前:003006
+2025-08-20 10:00:58 | INFO     | core.sync.sync_stock:worker:95 - [003026] 开始同步历史数据
+2025-08-20 10:00:58 | ERROR    | core.sync.sync_stock:worker:110 - [003026] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003026&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [339/500] | 成功:288 失败:51 剩余:161 | 当前:003013
+2025-08-20 10:00:58 | INFO     | core.sync.sync_stock:worker:95 - [003027] 开始同步历史数据
+2025-08-20 10:00:58 | ERROR    | core.sync.sync_stock:worker:110 - [003027] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003027&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:00:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [340/500] | 成功:288 失败:52 剩余:160 | 当前:003017
+2025-08-20 10:00:59 | INFO     | core.sync.sync_stock:worker:95 - [003028] 开始同步历史数据
+2025-08-20 10:00:59 | ERROR    | core.sync.sync_stock:worker:110 - [003028] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:00:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [341/500] | 成功:288 失败:53 剩余:159 | 当前:003026
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:worker:95 - [003029] 开始同步历史数据
+2025-08-20 10:01:00 | ERROR    | core.sync.sync_stock:worker:110 - [003029] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [342/500] | 成功:288 失败:54 剩余:158 | 当前:003015
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:worker:95 - [003030] 开始同步历史数据
+2025-08-20 10:01:00 | ERROR    | core.sync.sync_stock:worker:110 - [003030] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003030&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [343/500] | 成功:288 失败:55 剩余:157 | 当前:003019
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:worker:95 - [003031] 开始同步历史数据
+2025-08-20 10:01:00 | ERROR    | core.sync.sync_stock:worker:110 - [003031] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [344/500] | 成功:288 失败:56 剩余:156 | 当前:003021
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:worker:95 - [003032] 开始同步历史数据
+2025-08-20 10:01:00 | ERROR    | core.sync.sync_stock:worker:110 - [003032] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003032&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [345/500] | 成功:288 失败:57 剩余:155 | 当前:003022
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:worker:95 - [003033] 开始同步历史数据
+2025-08-20 10:01:01 | ERROR    | core.sync.sync_stock:worker:110 - [003033] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [346/500] | 成功:288 失败:58 剩余:154 | 当前:003020
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:worker:95 - [003035] 开始同步历史数据
+2025-08-20 10:01:01 | ERROR    | core.sync.sync_stock:worker:110 - [003035] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003035&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [347/500] | 成功:288 失败:59 剩余:153 | 当前:003028
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:worker:95 - [003036] 开始同步历史数据
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:worker:95 - [003037] 开始同步历史数据
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [348/500] | 成功:288 失败:60 剩余:152 | 当前:003018
+2025-08-20 10:01:01 | ERROR    | core.sync.sync_stock:worker:110 - [003036] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003036&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:01 | ERROR    | core.sync.sync_stock:worker:110 - [003037] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003037&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [349/500] | 成功:288 失败:61 剩余:151 | 当前:003023
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:worker:95 - [003038] 开始同步历史数据
+2025-08-20 10:01:01 | ERROR    | core.sync.sync_stock:worker:110 - [003038] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003038&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [350/500] | 成功:288 失败:62 剩余:150 | 当前:003025
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:worker:95 - [003039] 开始同步历史数据
+2025-08-20 10:01:02 | ERROR    | core.sync.sync_stock:worker:110 - [003039] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [351/500] | 成功:288 失败:63 剩余:149 | 当前:003033
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:worker:95 - [003040] 开始同步历史数据
+2025-08-20 10:01:02 | ERROR    | core.sync.sync_stock:worker:110 - [003040] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003040&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [352/500] | 成功:288 失败:64 剩余:148 | 当前:003030
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:worker:95 - [003041] 开始同步历史数据
+2025-08-20 10:01:02 | ERROR    | core.sync.sync_stock:worker:110 - [003041] 同步失败，耗时: 0.02s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003041&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [353/500] | 成功:288 失败:65 剩余:147 | 当前:003032
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:worker:95 - [003042] 开始同步历史数据
+2025-08-20 10:01:02 | ERROR    | core.sync.sync_stock:worker:110 - [003042] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.003042&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [354/500] | 成功:288 失败:66 剩余:146 | 当前:003027
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:worker:95 - [003043] 开始同步历史数据
+2025-08-20 10:01:02 | ERROR    | core.sync.sync_stock:worker:110 - [003043] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [355/500] | 成功:288 失败:67 剩余:145 | 当前:003038
+2025-08-20 10:01:03 | INFO     | core.sync.sync_stock:worker:95 - [003816] 开始同步历史数据
+2025-08-20 10:01:03 | ERROR    | core.sync.sync_stock:worker:110 - [003816] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [356/500] | 成功:288 失败:68 剩余:144 | 当前:003029
+2025-08-20 10:01:03 | INFO     | core.sync.sync_stock:worker:95 - [300001] 开始同步历史数据
+2025-08-20 10:01:03 | ERROR    | core.sync.sync_stock:worker:110 - [300001] 同步失败，耗时: 0.02s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [357/500] | 成功:288 失败:69 剩余:143 | 当前:003039
+2025-08-20 10:01:04 | INFO     | core.sync.sync_stock:worker:95 - [300002] 开始同步历史数据
+2025-08-20 10:01:04 | ERROR    | core.sync.sync_stock:worker:110 - [300002] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [358/500] | 成功:288 失败:70 剩余:142 | 当前:003037
+2025-08-20 10:01:04 | INFO     | core.sync.sync_stock:worker:95 - [300003] 开始同步历史数据
+2025-08-20 10:01:04 | ERROR    | core.sync.sync_stock:worker:110 - [300003] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [359/500] | 成功:288 失败:71 剩余:141 | 当前:003031
+2025-08-20 10:01:04 | INFO     | core.sync.sync_stock:worker:95 - [300004] 开始同步历史数据
+2025-08-20 10:01:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [360/500] | 成功:288 失败:72 剩余:140 | 当前:003035
+2025-08-20 10:01:04 | ERROR    | core.sync.sync_stock:worker:110 - [300004] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300004&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:05 | INFO     | core.sync.sync_stock:worker:95 - [300005] 开始同步历史数据
+2025-08-20 10:01:05 | ERROR    | core.sync.sync_stock:worker:110 - [300005] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300005&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [361/500] | 成功:288 失败:73 剩余:139 | 当前:300001
+2025-08-20 10:01:05 | INFO     | core.sync.sync_stock:worker:95 - [300006] 开始同步历史数据
+2025-08-20 10:01:05 | ERROR    | core.sync.sync_stock:worker:110 - [300006] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [362/500] | 成功:288 失败:74 剩余:138 | 当前:003041
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:worker:95 - [300007] 开始同步历史数据
+2025-08-20 10:01:06 | ERROR    | core.sync.sync_stock:worker:110 - [300007] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [363/500] | 成功:288 失败:75 剩余:137 | 当前:003036
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:worker:95 - [300008] 开始同步历史数据
+2025-08-20 10:01:06 | ERROR    | core.sync.sync_stock:worker:110 - [300008] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300008&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:worker:95 - [300009] 开始同步历史数据
+2025-08-20 10:01:06 | ERROR    | core.sync.sync_stock:worker:110 - [300009] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300009&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [364/500] | 成功:288 失败:76 剩余:136 | 当前:003816
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [365/500] | 成功:288 失败:77 剩余:135 | 当前:003040
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:worker:95 - [300010] 开始同步历史数据
+2025-08-20 10:01:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [366/500] | 成功:288 失败:78 剩余:134 | 当前:003042
+2025-08-20 10:01:06 | ERROR    | core.sync.sync_stock:worker:110 - [300010] 同步失败，耗时: 0.03s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300010&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:worker:95 - [300011] 开始同步历史数据
+2025-08-20 10:01:07 | ERROR    | core.sync.sync_stock:worker:110 - [300011] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [367/500] | 成功:288 失败:79 剩余:133 | 当前:300005
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:worker:95 - [300012] 开始同步历史数据
+2025-08-20 10:01:07 | ERROR    | core.sync.sync_stock:worker:110 - [300012] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [368/500] | 成功:288 失败:80 剩余:132 | 当前:300002
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:worker:95 - [300013] 开始同步历史数据
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:worker:95 - [300014] 开始同步历史数据
+2025-08-20 10:01:07 | ERROR    | core.sync.sync_stock:worker:110 - [300013] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300013&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:07 | ERROR    | core.sync.sync_stock:worker:110 - [300014] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300014&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [369/500] | 成功:288 失败:81 剩余:131 | 当前:300009
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [370/500] | 成功:288 失败:82 剩余:130 | 当前:003043
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:worker:95 - [300015] 开始同步历史数据
+2025-08-20 10:01:07 | ERROR    | core.sync.sync_stock:worker:110 - [300015] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300015&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [371/500] | 成功:288 失败:83 剩余:129 | 当前:300003
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:worker:95 - [300016] 开始同步历史数据
+2025-08-20 10:01:07 | ERROR    | core.sync.sync_stock:worker:110 - [300016] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [372/500] | 成功:288 失败:84 剩余:128 | 当前:300004
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300017] 开始同步历史数据
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300017] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [373/500] | 成功:288 失败:85 剩余:127 | 当前:300013
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300018] 开始同步历史数据
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300018] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [374/500] | 成功:288 失败:86 剩余:126 | 当前:300016
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300019] 开始同步历史数据
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300019] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300019&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300020] 开始同步历史数据
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [375/500] | 成功:288 失败:87 剩余:125 | 当前:300007
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300020] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300020&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [376/500] | 成功:288 失败:88 剩余:124 | 当前:300008
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300021] 开始同步历史数据
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300022] 开始同步历史数据
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300022] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300022&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300021] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:worker:95 - [300023] 开始同步历史数据
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [377/500] | 成功:288 失败:89 剩余:123 | 当前:300015
+2025-08-20 10:01:09 | ERROR    | core.sync.sync_stock:worker:110 - [300023] 同步失败，耗时: 0.02s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300023&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [378/500] | 成功:288 失败:90 剩余:122 | 当前:300014
+2025-08-20 10:01:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [379/500] | 成功:288 失败:91 剩余:121 | 当前:300006
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:worker:95 - [300024] 开始同步历史数据
+2025-08-20 10:01:10 | ERROR    | core.sync.sync_stock:worker:110 - [300024] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300024&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [380/500] | 成功:288 失败:92 剩余:120 | 当前:300012
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:worker:95 - [300025] 开始同步历史数据
+2025-08-20 10:01:10 | ERROR    | core.sync.sync_stock:worker:110 - [300025] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300025&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [381/500] | 成功:288 失败:93 剩余:119 | 当前:300010
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:worker:95 - [300026] 开始同步历史数据
+2025-08-20 10:01:10 | ERROR    | core.sync.sync_stock:worker:110 - [300026] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300026&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [382/500] | 成功:288 失败:94 剩余:118 | 当前:300011
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:worker:95 - [300027] 开始同步历史数据
+2025-08-20 10:01:10 | ERROR    | core.sync.sync_stock:worker:110 - [300027] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [383/500] | 成功:288 失败:95 剩余:117 | 当前:300021
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:worker:95 - [300028] 开始同步历史数据
+2025-08-20 10:01:10 | ERROR    | core.sync.sync_stock:worker:110 - [300028] 同步失败，耗时: 0.01s，错误: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-08-20 10:01:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [384/500] | 成功:288 失败:96 剩余:116 | 当前:300019
+2025-08-20 10:01:11 | INFO     | core.sync.sync_stock:worker:95 - [300029] 开始同步历史数据
+2025-08-20 10:01:11 | ERROR    | core.sync.sync_stock:worker:110 - [300029] 同步失败，耗时: 0.02s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300029&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [385/500] | 成功:288 失败:97 剩余:115 | 当前:300018
+2025-08-20 10:01:11 | INFO     | core.sync.sync_stock:worker:95 - [300030] 开始同步历史数据
+2025-08-20 10:01:11 | ERROR    | core.sync.sync_stock:worker:110 - [300030] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300030&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [386/500] | 成功:288 失败:98 剩余:114 | 当前:300025
+2025-08-20 10:01:33 | INFO     | core.sync.sync_stock:worker:95 - [300031] 开始同步历史数据
+2025-08-20 10:01:33 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [387/500] | 成功:288 失败:99 剩余:113 | 当前:300026
+2025-08-20 10:01:33 | ERROR    | core.sync.sync_stock:worker:110 - [300031] 同步失败，耗时: 0.01s，错误: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&secid=0.300031&beg=19700101&end=20250819 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1147)')))
+2025-08-20 10:01:33 | INFO     | core.sync.sync_stock:worker:95 - [300032] 开始同步历史数据
+2025-08-20 10:01:33 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [388/500] | 成功:288 失败:100 剩余:112 | 当前:300017
+2025-08-20 10:01:34 | INFO     | core.sync.sync_stock:worker:95 - [300033] 开始同步历史数据
+2025-08-20 10:01:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [389/500] | 成功:288 失败:101 剩余:111 | 当前:300020
+2025-08-20 10:01:34 | INFO     | core.sync.sync_stock:worker:95 - [300034] 开始同步历史数据
+2025-08-20 10:01:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [390/500] | 成功:288 失败:102 剩余:110 | 当前:300028
+2025-08-20 10:01:34 | INFO     | core.sync.sync_stock:worker:95 - [300035] 开始同步历史数据
+2025-08-20 10:01:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [391/500] | 成功:288 失败:103 剩余:109 | 当前:300024
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:worker:95 - [300036] 开始同步历史数据
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [392/500] | 成功:288 失败:104 剩余:108 | 当前:300031
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:worker:95 - [300037] 开始同步历史数据
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [393/500] | 成功:288 失败:105 剩余:107 | 当前:300022
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:worker:95 - [300038] 开始同步历史数据
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [394/500] | 成功:288 失败:106 剩余:106 | 当前:300023
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:worker:95 - [300039] 开始同步历史数据
+2025-08-20 10:01:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [395/500] | 成功:288 失败:107 剩余:105 | 当前:300027
+2025-08-20 10:01:36 | INFO     | core.sync.sync_stock:worker:95 - [300040] 开始同步历史数据
+2025-08-20 10:01:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [396/500] | 成功:288 失败:108 剩余:104 | 当前:300029
+2025-08-20 10:01:37 | INFO     | core.sync.sync_stock:worker:95 - [300041] 开始同步历史数据
+2025-08-20 10:01:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [397/500] | 成功:288 失败:109 剩余:103 | 当前:300030
+2025-08-20 10:01:53 | INFO     | core.sync.sync_stock:worker:105 - [300038] 同步完成，耗时: 17.54s
+2025-08-20 10:01:56 | INFO     | core.sync.sync_stock:worker:95 - [300042] 开始同步历史数据
+2025-08-20 10:01:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [398/500] | 成功:289 失败:109 剩余:102 | 当前:300038
+2025-08-20 10:01:56 | INFO     | core.sync.sync_stock:worker:105 - [300032] 同步完成，耗时: 22.81s
+2025-08-20 10:01:57 | INFO     | core.sync.sync_stock:worker:105 - [300034] 同步完成，耗时: 22.74s
+2025-08-20 10:01:57 | INFO     | core.sync.sync_stock:worker:105 - [300033] 同步完成，耗时: 23.38s
+2025-08-20 10:01:58 | INFO     | core.sync.sync_stock:worker:105 - [300035] 同步完成，耗时: 23.77s
+2025-08-20 10:01:58 | INFO     | core.sync.sync_stock:worker:105 - [300040] 同步完成，耗时: 22.37s
+2025-08-20 10:01:59 | INFO     | core.sync.sync_stock:worker:105 - [300036] 同步完成，耗时: 24.40s
+2025-08-20 10:01:59 | INFO     | core.sync.sync_stock:worker:105 - [300039] 同步完成，耗时: 23.63s
+2025-08-20 10:01:59 | INFO     | core.sync.sync_stock:worker:105 - [300037] 同步完成，耗时: 24.36s
+2025-08-20 10:01:59 | INFO     | core.sync.sync_stock:worker:95 - [300043] 开始同步历史数据
+2025-08-20 10:01:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [399/500] | 成功:290 失败:109 剩余:101 | 当前:300034
+2025-08-20 10:01:59 | INFO     | core.sync.sync_stock:worker:105 - [300041] 同步完成，耗时: 22.71s
+2025-08-20 10:02:01 | INFO     | core.sync.sync_stock:worker:95 - [300044] 开始同步历史数据
+2025-08-20 10:02:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [400/500] | 成功:291 失败:109 剩余:100 | 当前:300032
+2025-08-20 10:02:01 | INFO     | core.sync.sync_stock:worker:95 - [300045] 开始同步历史数据
+2025-08-20 10:02:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [401/500] | 成功:292 失败:109 剩余:99 | 当前:300039
+2025-08-20 10:02:01 | INFO     | core.sync.sync_stock:worker:95 - [300046] 开始同步历史数据
+2025-08-20 10:02:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [402/500] | 成功:293 失败:109 剩余:98 | 当前:300033
+2025-08-20 10:02:02 | INFO     | core.sync.sync_stock:worker:95 - [300047] 开始同步历史数据
+2025-08-20 10:02:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [403/500] | 成功:294 失败:109 剩余:97 | 当前:300037
+2025-08-20 10:02:02 | INFO     | core.sync.sync_stock:worker:95 - [300048] 开始同步历史数据
+2025-08-20 10:02:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [404/500] | 成功:295 失败:109 剩余:96 | 当前:300040
+2025-08-20 10:02:02 | INFO     | core.sync.sync_stock:worker:95 - [300049] 开始同步历史数据
+2025-08-20 10:02:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [405/500] | 成功:296 失败:109 剩余:95 | 当前:300035
+2025-08-20 10:02:03 | INFO     | core.sync.sync_stock:worker:95 - [300050] 开始同步历史数据
+2025-08-20 10:02:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [406/500] | 成功:297 失败:109 剩余:94 | 当前:300036
+2025-08-20 10:02:03 | INFO     | core.sync.sync_stock:worker:95 - [300051] 开始同步历史数据
+2025-08-20 10:02:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [407/500] | 成功:298 失败:109 剩余:93 | 当前:300041
+2025-08-20 10:02:08 | INFO     | core.sync.sync_stock:worker:105 - [300042] 同步完成，耗时: 12.31s
+2025-08-20 10:02:13 | INFO     | core.sync.sync_stock:worker:105 - [300043] 同步完成，耗时: 13.28s
+2025-08-20 10:02:13 | INFO     | core.sync.sync_stock:worker:95 - [300052] 开始同步历史数据
+2025-08-20 10:02:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [408/500] | 成功:299 失败:109 剩余:92 | 当前:300042
+2025-08-20 10:02:16 | INFO     | core.sync.sync_stock:worker:95 - [300053] 开始同步历史数据
+2025-08-20 10:02:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [409/500] | 成功:300 失败:109 剩余:91 | 当前:300043
+2025-08-20 10:02:20 | INFO     | core.sync.sync_stock:worker:105 - [300044] 同步完成，耗时: 19.42s
+2025-08-20 10:02:22 | INFO     | core.sync.sync_stock:worker:105 - [300046] 同步完成，耗时: 20.73s
+2025-08-20 10:02:22 | INFO     | core.sync.sync_stock:worker:105 - [300045] 同步完成，耗时: 21.03s
+2025-08-20 10:02:23 | INFO     | core.sync.sync_stock:worker:95 - [300054] 开始同步历史数据
+2025-08-20 10:03:19 | INFO     | core.sync.sync_stock:worker:95 - [300055] 开始同步历史数据
+2025-08-20 10:03:19 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [410/500] | 成功:301 失败:109 剩余:90 | 当前:300044
+2025-08-20 10:03:19 | INFO     | core.sync.sync_stock:worker:105 - [300047] 同步完成，耗时: 77.14s
+2025-08-20 10:03:19 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [411/500] | 成功:302 失败:109 剩余:89 | 当前:300046
+2025-08-20 10:03:20 | INFO     | core.sync.sync_stock:worker:95 - [300056] 开始同步历史数据
+2025-08-20 10:03:20 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [412/500] | 成功:303 失败:109 剩余:88 | 当前:300045
+2025-08-20 10:03:20 | INFO     | core.sync.sync_stock:worker:105 - [300049] 同步完成，耗时: 77.53s
+2025-08-20 10:03:20 | INFO     | core.sync.sync_stock:worker:95 - [300057] 开始同步历史数据
+2025-08-20 10:03:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [413/500] | 成功:304 失败:109 剩余:87 | 当前:300047
+2025-08-20 10:03:21 | INFO     | core.sync.sync_stock:worker:105 - [300051] 同步完成，耗时: 77.65s
+2025-08-20 10:03:22 | INFO     | core.sync.sync_stock:worker:95 - [300058] 开始同步历史数据
+2025-08-20 10:03:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [414/500] | 成功:305 失败:109 剩余:86 | 当前:300049
+2025-08-20 10:03:23 | INFO     | core.sync.sync_stock:worker:105 - [300048] 同步完成，耗时: 80.33s
+2025-08-20 10:03:23 | INFO     | core.sync.sync_stock:worker:105 - [300050] 同步完成，耗时: 80.04s
+2025-08-20 10:03:23 | INFO     | core.sync.sync_stock:worker:95 - [300059] 开始同步历史数据
+2025-08-20 10:03:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [415/500] | 成功:306 失败:109 剩余:85 | 当前:300051
+2025-08-20 10:03:27 | INFO     | core.sync.sync_stock:worker:95 - [300061] 开始同步历史数据
+2025-08-20 10:03:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [416/500] | 成功:307 失败:109 剩余:84 | 当前:300048
+2025-08-20 10:03:28 | INFO     | core.sync.sync_stock:worker:95 - [300062] 开始同步历史数据
+2025-08-20 10:03:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [417/500] | 成功:308 失败:109 剩余:83 | 当前:300050
+2025-08-20 10:03:33 | INFO     | core.sync.sync_stock:worker:105 - [300052] 同步完成，耗时: 79.54s
+2025-08-20 10:03:35 | INFO     | core.sync.sync_stock:worker:105 - [300053] 同步完成，耗时: 78.99s
+2025-08-20 10:03:36 | INFO     | core.sync.sync_stock:worker:95 - [300063] 开始同步历史数据
+2025-08-20 10:03:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [418/500] | 成功:309 失败:109 剩余:82 | 当前:300053
+2025-08-20 10:03:38 | INFO     | core.sync.sync_stock:worker:95 - [300064] 开始同步历史数据
+2025-08-20 10:03:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [419/500] | 成功:310 失败:109 剩余:81 | 当前:300052
+2025-08-20 10:03:41 | INFO     | core.sync.sync_stock:worker:105 - [300056] 同步完成，耗时: 21.18s
+2025-08-20 10:03:42 | INFO     | core.sync.sync_stock:worker:105 - [300055] 同步完成，耗时: 23.06s
+2025-08-20 10:03:42 | INFO     | core.sync.sync_stock:worker:105 - [300054] 同步完成，耗时: 79.12s
+2025-08-20 10:03:43 | INFO     | core.sync.sync_stock:worker:95 - [300065] 开始同步历史数据
+2025-08-20 10:03:43 | INFO     | core.sync.sync_stock:worker:105 - [300058] 同步完成，耗时: 20.85s
+2025-08-20 10:03:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [420/500] | 成功:311 失败:109 剩余:80 | 当前:300056
+2025-08-20 10:03:43 | INFO     | core.sync.sync_stock:worker:105 - [300057] 同步完成，耗时: 22.53s
+2025-08-20 10:03:44 | INFO     | core.sync.sync_stock:worker:105 - [300059] 同步完成，耗时: 20.60s
+2025-08-20 10:03:44 | INFO     | core.sync.sync_stock:worker:95 - [300066] 开始同步历史数据
+2025-08-20 10:03:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [421/500] | 成功:312 失败:109 剩余:79 | 当前:300058
+2025-08-20 10:03:45 | INFO     | core.sync.sync_stock:worker:95 - [300067] 开始同步历史数据
+2025-08-20 10:03:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [422/500] | 成功:313 失败:109 剩余:78 | 当前:300055
+2025-08-20 10:03:46 | INFO     | core.sync.sync_stock:worker:95 - [300068] 开始同步历史数据
+2025-08-20 10:03:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [423/500] | 成功:314 失败:109 剩余:77 | 当前:300054
+2025-08-20 10:03:46 | INFO     | core.sync.sync_stock:worker:95 - [300069] 开始同步历史数据
+2025-08-20 10:03:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [424/500] | 成功:315 失败:109 剩余:76 | 当前:300057
+2025-08-20 10:03:48 | INFO     | core.sync.sync_stock:worker:105 - [300061] 同步完成，耗时: 20.81s
+2025-08-20 10:03:48 | INFO     | core.sync.sync_stock:worker:95 - [300070] 开始同步历史数据
+2025-08-20 10:03:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [425/500] | 成功:316 失败:109 剩余:75 | 当前:300059
+2025-08-20 10:03:49 | INFO     | core.sync.sync_stock:worker:105 - [300062] 同步完成，耗时: 21.04s
+2025-08-20 10:03:52 | INFO     | core.sync.sync_stock:worker:95 - [300071] 开始同步历史数据
+2025-08-20 10:03:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [426/500] | 成功:317 失败:109 剩余:74 | 当前:300062
+2025-08-20 10:03:53 | INFO     | core.sync.sync_stock:worker:105 - [300064] 同步完成，耗时: 15.06s
+2025-08-20 10:03:53 | INFO     | core.sync.sync_stock:worker:95 - [300072] 开始同步历史数据
+2025-08-20 10:03:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [427/500] | 成功:318 失败:109 剩余:73 | 当前:300061
+2025-08-20 10:03:54 | INFO     | core.sync.sync_stock:worker:95 - [300073] 开始同步历史数据
+2025-08-20 10:03:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [428/500] | 成功:319 失败:109 剩余:72 | 当前:300064
+2025-08-20 10:03:55 | INFO     | core.sync.sync_stock:worker:105 - [300063] 同步完成，耗时: 18.95s
+2025-08-20 10:03:59 | INFO     | core.sync.sync_stock:worker:95 - [300074] 开始同步历史数据
+2025-08-20 10:03:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [429/500] | 成功:320 失败:109 剩余:71 | 当前:300063
+2025-08-20 10:04:01 | INFO     | core.sync.sync_stock:worker:105 - [300065] 同步完成，耗时: 18.47s
+2025-08-20 10:04:05 | INFO     | core.sync.sync_stock:worker:105 - [300066] 同步完成，耗时: 20.46s
+2025-08-20 10:04:05 | INFO     | core.sync.sync_stock:worker:95 - [300075] 开始同步历史数据
+2025-08-20 10:04:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [430/500] | 成功:321 失败:109 剩余:70 | 当前:300065
+2025-08-20 10:04:06 | INFO     | core.sync.sync_stock:worker:105 - [300067] 同步完成，耗时: 20.09s
+2025-08-20 10:04:06 | INFO     | core.sync.sync_stock:worker:95 - [300076] 开始同步历史数据
+2025-08-20 10:04:06 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [431/500] | 成功:322 失败:109 剩余:69 | 当前:300066
+2025-08-20 10:04:06 | INFO     | core.sync.sync_stock:worker:105 - [300068] 同步完成，耗时: 20.33s
+2025-08-20 10:04:07 | INFO     | core.sync.sync_stock:worker:105 - [300069] 同步完成，耗时: 20.80s
+2025-08-20 10:04:08 | INFO     | core.sync.sync_stock:worker:105 - [300070] 同步完成，耗时: 19.99s
+2025-08-20 10:04:10 | INFO     | core.sync.sync_stock:worker:95 - [300077] 开始同步历史数据
+2025-08-20 10:04:10 | INFO     | core.sync.sync_stock:worker:105 - [300071] 同步完成，耗时: 17.74s
+2025-08-20 10:04:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [432/500] | 成功:323 失败:109 剩余:68 | 当前:300068
+2025-08-20 10:04:10 | INFO     | core.sync.sync_stock:worker:95 - [300078] 开始同步历史数据
+2025-08-20 10:04:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [433/500] | 成功:324 失败:109 剩余:67 | 当前:300067
+2025-08-20 10:04:11 | INFO     | core.sync.sync_stock:worker:95 - [300079] 开始同步历史数据
+2025-08-20 10:04:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [434/500] | 成功:325 失败:109 剩余:66 | 当前:300069
+2025-08-20 10:04:11 | INFO     | core.sync.sync_stock:worker:95 - [300080] 开始同步历史数据
+2025-08-20 10:04:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [435/500] | 成功:326 失败:109 剩余:65 | 当前:300070
+2025-08-20 10:04:13 | INFO     | core.sync.sync_stock:worker:105 - [300072] 同步完成，耗时: 20.12s
+2025-08-20 10:04:13 | INFO     | core.sync.sync_stock:worker:95 - [300081] 开始同步历史数据
+2025-08-20 10:04:13 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [436/500] | 成功:327 失败:109 剩余:64 | 当前:300071
+2025-08-20 10:04:14 | INFO     | core.sync.sync_stock:worker:105 - [300073] 同步完成，耗时: 19.57s
+2025-08-20 10:04:15 | INFO     | core.sync.sync_stock:worker:95 - [300082] 开始同步历史数据
+2025-08-20 10:04:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [437/500] | 成功:328 失败:109 剩余:63 | 当前:300072
+2025-08-20 10:04:16 | INFO     | core.sync.sync_stock:worker:95 - [300083] 开始同步历史数据
+2025-08-20 10:04:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [438/500] | 成功:329 失败:109 剩余:62 | 当前:300073
+2025-08-20 10:04:18 | INFO     | core.sync.sync_stock:worker:105 - [300074] 同步完成，耗时: 19.61s
+2025-08-20 10:04:20 | INFO     | core.sync.sync_stock:worker:95 - [300084] 开始同步历史数据
+2025-08-20 10:04:20 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [439/500] | 成功:330 失败:109 剩余:61 | 当前:300074
+2025-08-20 10:04:25 | INFO     | core.sync.sync_stock:worker:105 - [300075] 同步完成，耗时: 19.69s
+2025-08-20 10:04:26 | INFO     | core.sync.sync_stock:worker:105 - [300076] 同步完成，耗时: 20.11s
+2025-08-20 10:04:27 | INFO     | core.sync.sync_stock:worker:95 - [300085] 开始同步历史数据
+2025-08-20 10:04:27 | INFO     | core.sync.sync_stock:worker:95 - [300086] 开始同步历史数据
+2025-08-20 10:04:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [440/500] | 成功:331 失败:109 剩余:60 | 当前:300076
+2025-08-20 10:04:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [441/500] | 成功:332 失败:109 剩余:59 | 当前:300075
+2025-08-20 10:19:35 | INFO     | core.sync.sync_stock:worker:105 - [300080] 同步完成，耗时: 923.82s
+2025-08-20 10:19:36 | INFO     | core.sync.sync_stock:worker:105 - [300077] 同步完成，耗时: 926.00s
+2025-08-20 10:19:36 | INFO     | core.sync.sync_stock:worker:105 - [300078] 同步完成，耗时: 926.67s
+2025-08-20 10:19:38 | INFO     | core.sync.sync_stock:worker:95 - [300087] 开始同步历史数据
+2025-08-20 10:19:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [442/500] | 成功:333 失败:109 剩余:58 | 当前:300078
+2025-08-20 10:19:38 | INFO     | core.sync.sync_stock:worker:105 - [300079] 同步完成，耗时: 927.24s
+2025-08-20 10:19:38 | INFO     | core.sync.sync_stock:worker:95 - [300088] 开始同步历史数据
+2025-08-20 10:19:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [443/500] | 成功:334 失败:109 剩余:57 | 当前:300080
+2025-08-20 10:19:39 | INFO     | core.sync.sync_stock:worker:95 - [300089] 开始同步历史数据
+2025-08-20 10:19:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [444/500] | 成功:335 失败:109 剩余:56 | 当前:300077
+2025-08-20 10:19:40 | INFO     | core.sync.sync_stock:worker:105 - [300081] 同步完成，耗时: 926.64s
+2025-08-20 10:19:41 | INFO     | core.sync.sync_stock:worker:95 - [300090] 开始同步历史数据
+2025-08-20 10:19:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [445/500] | 成功:336 失败:109 剩余:55 | 当前:300079
+2025-08-20 10:19:42 | INFO     | core.sync.sync_stock:worker:95 - [300091] 开始同步历史数据
+2025-08-20 10:19:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [446/500] | 成功:337 失败:109 剩余:54 | 当前:300081
+2025-08-20 10:19:43 | INFO     | core.sync.sync_stock:worker:105 - [300082] 同步完成，耗时: 927.90s
+2025-08-20 10:19:44 | INFO     | core.sync.sync_stock:worker:95 - [300092] 开始同步历史数据
+2025-08-20 10:19:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [447/500] | 成功:338 失败:109 剩余:53 | 当前:300082
+2025-08-20 10:19:44 | INFO     | core.sync.sync_stock:worker:105 - [300083] 同步完成，耗时: 928.55s
+2025-08-20 10:19:46 | INFO     | core.sync.sync_stock:worker:95 - [300093] 开始同步历史数据
+2025-08-20 10:19:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [448/500] | 成功:339 失败:109 剩余:52 | 当前:300083
+2025-08-20 10:19:47 | INFO     | core.sync.sync_stock:worker:105 - [300084] 同步完成，耗时: 927.37s
+2025-08-20 10:19:52 | INFO     | core.sync.sync_stock:worker:95 - [300094] 开始同步历史数据
+2025-08-20 10:19:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [449/500] | 成功:340 失败:109 剩余:51 | 当前:300084
+2025-08-20 10:19:55 | INFO     | core.sync.sync_stock:worker:105 - [300086] 同步完成，耗时: 927.85s
+2025-08-20 10:19:55 | INFO     | core.sync.sync_stock:worker:105 - [300085] 同步完成，耗时: 928.30s
+2025-08-20 10:19:55 | INFO     | core.sync.sync_stock:worker:105 - [300090] 同步完成，耗时: 13.99s
+2025-08-20 10:19:56 | INFO     | core.sync.sync_stock:worker:105 - [300089] 同步完成，耗时: 16.66s
+2025-08-20 10:19:57 | INFO     | core.sync.sync_stock:worker:95 - [300095] 开始同步历史数据
+2025-08-20 10:19:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [450/500] | 成功:341 失败:109 剩余:50 | 当前:300090
+2025-08-20 10:19:58 | INFO     | core.sync.sync_stock:worker:105 - [300088] 同步完成，耗时: 19.22s
+2025-08-20 10:19:58 | INFO     | core.sync.sync_stock:worker:105 - [300087] 同步完成，耗时: 20.01s
+2025-08-20 10:19:59 | INFO     | core.sync.sync_stock:worker:95 - [300096] 开始同步历史数据
+2025-08-20 10:19:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [451/500] | 成功:342 失败:109 剩余:49 | 当前:300089
+2025-08-20 10:20:00 | INFO     | core.sync.sync_stock:worker:95 - [300097] 开始同步历史数据
+2025-08-20 10:20:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [452/500] | 成功:343 失败:109 剩余:48 | 当前:300086
+2025-08-20 10:20:00 | INFO     | core.sync.sync_stock:worker:95 - [300098] 开始同步历史数据
+2025-08-20 10:20:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [453/500] | 成功:344 失败:109 剩余:47 | 当前:300085
+2025-08-20 10:20:02 | INFO     | core.sync.sync_stock:worker:105 - [300091] 同步完成，耗时: 19.06s
+2025-08-20 10:20:02 | INFO     | core.sync.sync_stock:worker:95 - [300099] 开始同步历史数据
+2025-08-20 10:20:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [454/500] | 成功:345 失败:109 剩余:46 | 当前:300088
+2025-08-20 10:20:02 | INFO     | core.sync.sync_stock:worker:105 - [300092] 同步完成，耗时: 18.56s
+2025-08-20 10:20:03 | INFO     | core.sync.sync_stock:worker:95 - [300100] 开始同步历史数据
+2025-08-20 10:20:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [455/500] | 成功:346 失败:109 剩余:45 | 当前:300087
+2025-08-20 10:20:03 | INFO     | core.sync.sync_stock:worker:95 - [300101] 开始同步历史数据
+2025-08-20 10:20:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [456/500] | 成功:347 失败:109 剩余:44 | 当前:300092
+2025-08-20 10:20:04 | INFO     | core.sync.sync_stock:worker:105 - [300093] 同步完成，耗时: 17.28s
+2025-08-20 10:20:05 | INFO     | core.sync.sync_stock:worker:95 - [300102] 开始同步历史数据
+2025-08-20 10:20:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [457/500] | 成功:348 失败:109 剩余:43 | 当前:300093
+2025-08-20 10:20:05 | INFO     | core.sync.sync_stock:worker:95 - [300103] 开始同步历史数据
+2025-08-20 10:20:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [458/500] | 成功:349 失败:109 剩余:42 | 当前:300091
+2025-08-20 10:20:10 | INFO     | core.sync.sync_stock:worker:105 - [300094] 同步完成，耗时: 17.66s
+2025-08-20 10:20:14 | INFO     | core.sync.sync_stock:worker:95 - [300104] 开始同步历史数据
+2025-08-20 10:20:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [459/500] | 成功:350 失败:109 剩余:41 | 当前:300094
+2025-08-20 10:20:17 | INFO     | core.sync.sync_stock:worker:105 - [300095] 同步完成，耗时: 19.55s
+2025-08-20 10:20:19 | INFO     | core.sync.sync_stock:worker:105 - [300096] 同步完成，耗时: 19.93s
+2025-08-20 10:20:20 | INFO     | core.sync.sync_stock:worker:105 - [300098] 同步完成，耗时: 19.74s
+2025-08-20 10:20:20 | INFO     | core.sync.sync_stock:worker:95 - [300105] 开始同步历史数据
+2025-08-20 10:20:20 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [460/500] | 成功:351 失败:109 剩余:40 | 当前:300095
+2025-08-20 10:20:20 | INFO     | core.sync.sync_stock:worker:105 - [300097] 同步完成，耗时: 20.51s
+2025-08-20 10:20:22 | INFO     | core.sync.sync_stock:worker:95 - [300106] 开始同步历史数据
+2025-08-20 10:20:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [461/500] | 成功:352 失败:109 剩余:39 | 当前:300098
+2025-08-20 10:20:22 | INFO     | core.sync.sync_stock:worker:105 - [300099] 同步完成，耗时: 19.71s
+2025-08-20 10:20:22 | INFO     | core.sync.sync_stock:worker:105 - [300100] 同步完成，耗时: 19.53s
+2025-08-20 10:20:23 | INFO     | core.sync.sync_stock:worker:95 - [300107] 开始同步历史数据
+2025-08-20 10:20:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [462/500] | 成功:353 失败:109 剩余:38 | 当前:300096
+2025-08-20 10:20:23 | INFO     | core.sync.sync_stock:worker:105 - [300104] 同步完成，耗时: 9.09s
+2025-08-20 10:20:24 | INFO     | core.sync.sync_stock:worker:105 - [300101] 同步完成，耗时: 20.34s
+2025-08-20 10:20:25 | INFO     | core.sync.sync_stock:worker:95 - [300108] 开始同步历史数据
+2025-08-20 10:20:25 | INFO     | core.sync.sync_stock:worker:95 - [300109] 开始同步历史数据
+2025-08-20 10:20:25 | INFO     | core.sync.sync_stock:worker:105 - [300103] 同步完成，耗时: 19.34s
+2025-08-20 10:20:25 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [463/500] | 成功:354 失败:109 剩余:37 | 当前:300099
+2025-08-20 10:20:25 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [464/500] | 成功:355 失败:109 剩余:36 | 当前:300097
+2025-08-20 10:20:25 | INFO     | core.sync.sync_stock:worker:105 - [300102] 同步完成，耗时: 19.68s
+2025-08-20 10:20:26 | INFO     | core.sync.sync_stock:worker:95 - [300110] 开始同步历史数据
+2025-08-20 10:20:26 | INFO     | core.sync.sync_stock:worker:95 - [300111] 开始同步历史数据
+2025-08-20 10:20:26 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [465/500] | 成功:356 失败:109 剩余:35 | 当前:300100
+2025-08-20 10:20:26 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [466/500] | 成功:357 失败:109 剩余:34 | 当前:300102
+2025-08-20 10:20:28 | INFO     | core.sync.sync_stock:worker:95 - [300112] 开始同步历史数据
+2025-08-20 10:20:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [467/500] | 成功:358 失败:109 剩余:33 | 当前:300101
+2025-08-20 10:20:28 | INFO     | core.sync.sync_stock:worker:95 - [300113] 开始同步历史数据
+2025-08-20 10:20:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [468/500] | 成功:359 失败:109 剩余:32 | 当前:300104
+2025-08-20 10:20:29 | INFO     | core.sync.sync_stock:worker:95 - [300115] 开始同步历史数据
+2025-08-20 10:20:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [469/500] | 成功:360 失败:109 剩余:31 | 当前:300103
+2025-08-20 10:20:38 | INFO     | core.sync.sync_stock:worker:105 - [300105] 同步完成，耗时: 18.59s
+2025-08-20 10:20:40 | INFO     | core.sync.sync_stock:worker:105 - [300106] 同步完成，耗时: 18.65s
+2025-08-20 10:20:42 | INFO     | core.sync.sync_stock:worker:105 - [300108] 同步完成，耗时: 17.23s
+2025-08-20 10:20:42 | INFO     | core.sync.sync_stock:worker:105 - [300107] 同步完成，耗时: 19.00s
+2025-08-20 10:20:43 | INFO     | core.sync.sync_stock:worker:105 - [300109] 同步完成，耗时: 17.87s
+2025-08-20 10:20:43 | INFO     | core.sync.sync_stock:worker:95 - [300116] 开始同步历史数据
+2025-08-20 10:20:43 | INFO     | core.sync.sync_stock:worker:95 - [300117] 开始同步历史数据
+2025-08-20 10:20:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [470/500] | 成功:361 失败:109 剩余:30 | 当前:300105
+2025-08-20 10:20:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [471/500] | 成功:362 失败:109 剩余:29 | 当前:300106
+2025-08-20 10:20:45 | INFO     | core.sync.sync_stock:worker:95 - [300118] 开始同步历史数据
+2025-08-20 10:20:45 | INFO     | core.sync.sync_stock:worker:105 - [300110] 同步完成，耗时: 18.66s
+2025-08-20 10:20:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [472/500] | 成功:363 失败:109 剩余:28 | 当前:300109
+2025-08-20 10:20:45 | INFO     | core.sync.sync_stock:worker:105 - [300111] 同步完成，耗时: 18.96s
+2025-08-20 10:20:46 | INFO     | core.sync.sync_stock:worker:95 - [300119] 开始同步历史数据
+2025-08-20 10:20:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [473/500] | 成功:364 失败:109 剩余:27 | 当前:300108
+2025-08-20 10:20:46 | INFO     | core.sync.sync_stock:worker:95 - [300120] 开始同步历史数据
+2025-08-20 10:20:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [474/500] | 成功:365 失败:109 剩余:26 | 当前:300107
+2025-08-20 10:20:47 | INFO     | core.sync.sync_stock:worker:105 - [300113] 同步完成，耗时: 19.12s
+2025-08-20 10:20:47 | INFO     | core.sync.sync_stock:worker:105 - [300112] 同步完成，耗时: 19.56s
+2025-08-20 10:20:48 | INFO     | core.sync.sync_stock:worker:105 - [300115] 同步完成，耗时: 19.46s
+2025-08-20 10:20:48 | INFO     | core.sync.sync_stock:worker:95 - [300121] 开始同步历史数据
+2025-08-20 10:20:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [475/500] | 成功:366 失败:109 剩余:25 | 当前:300110
+2025-08-20 10:20:49 | INFO     | core.sync.sync_stock:worker:95 - [300122] 开始同步历史数据
+2025-08-20 10:20:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [476/500] | 成功:367 失败:109 剩余:24 | 当前:300112
+2025-08-20 10:20:49 | INFO     | core.sync.sync_stock:worker:95 - [300123] 开始同步历史数据
+2025-08-20 10:20:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [477/500] | 成功:368 失败:109 剩余:23 | 当前:300111
+2025-08-20 10:20:50 | INFO     | core.sync.sync_stock:worker:95 - [300124] 开始同步历史数据
+2025-08-20 10:20:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [478/500] | 成功:369 失败:109 剩余:22 | 当前:300113
+2025-08-20 10:20:51 | INFO     | core.sync.sync_stock:worker:95 - [300125] 开始同步历史数据
+2025-08-20 10:20:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [479/500] | 成功:370 失败:109 剩余:21 | 当前:300115
+2025-08-20 10:20:59 | INFO     | core.sync.sync_stock:worker:105 - [300116] 同步完成，耗时: 15.69s
+2025-08-20 10:21:00 | INFO     | core.sync.sync_stock:worker:95 - [300126] 开始同步历史数据
+2025-08-20 10:21:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [480/500] | 成功:371 失败:109 剩余:20 | 当前:300116
+2025-08-20 10:21:01 | INFO     | core.sync.sync_stock:worker:105 - [300117] 同步完成，耗时: 17.45s
+2025-08-20 10:21:03 | INFO     | core.sync.sync_stock:worker:95 - [300127] 开始同步历史数据
+2025-08-20 10:21:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [481/500] | 成功:372 失败:109 剩余:19 | 当前:300117
+2025-08-20 10:21:03 | INFO     | core.sync.sync_stock:worker:105 - [300118] 同步完成，耗时: 18.19s
+2025-08-20 10:21:05 | INFO     | core.sync.sync_stock:worker:105 - [300120] 同步完成，耗时: 19.35s
+2025-08-20 10:21:05 | INFO     | core.sync.sync_stock:worker:105 - [300119] 同步完成，耗时: 19.59s
+2025-08-20 10:21:07 | INFO     | core.sync.sync_stock:worker:95 - [300128] 开始同步历史数据
+2025-08-20 10:21:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [482/500] | 成功:373 失败:109 剩余:18 | 当前:300118
+2025-08-20 10:21:08 | INFO     | core.sync.sync_stock:worker:95 - [300129] 开始同步历史数据
+2025-08-20 10:21:08 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [483/500] | 成功:374 失败:109 剩余:17 | 当前:300120
+2025-08-20 10:21:09 | INFO     | core.sync.sync_stock:worker:95 - [300130] 开始同步历史数据
+2025-08-20 10:21:09 | INFO     | core.sync.sync_stock:worker:105 - [300121] 同步完成，耗时: 20.48s
+2025-08-20 10:21:09 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [484/500] | 成功:375 失败:109 剩余:16 | 当前:300119
+2025-08-20 10:21:09 | INFO     | core.sync.sync_stock:worker:105 - [300123] 同步完成，耗时: 20.56s
+2025-08-20 10:21:10 | INFO     | core.sync.sync_stock:worker:105 - [300122] 同步完成，耗时: 21.72s
+2025-08-20 10:21:11 | INFO     | core.sync.sync_stock:worker:105 - [300124] 同步完成，耗时: 20.92s
+2025-08-20 10:21:11 | INFO     | core.sync.sync_stock:worker:105 - [300125] 同步完成，耗时: 20.18s
+2025-08-20 10:21:12 | INFO     | core.sync.sync_stock:worker:95 - [300131] 开始同步历史数据
+2025-08-20 10:21:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [485/500] | 成功:376 失败:109 剩余:15 | 当前:300121
+2025-08-20 10:21:14 | INFO     | core.sync.sync_stock:worker:95 - [300132] 开始同步历史数据
+2025-08-20 10:21:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [486/500] | 成功:377 失败:109 剩余:14 | 当前:300123
+2025-08-20 10:21:14 | INFO     | core.sync.sync_stock:worker:95 - [300133] 开始同步历史数据
+2025-08-20 10:21:14 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [487/500] | 成功:378 失败:109 剩余:13 | 当前:300124
+2025-08-20 10:21:15 | INFO     | core.sync.sync_stock:worker:95 - [300134] 开始同步历史数据
+2025-08-20 10:21:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [488/500] | 成功:379 失败:109 剩余:12 | 当前:300122
+2025-08-20 10:21:16 | INFO     | core.sync.sync_stock:worker:95 - [300135] 开始同步历史数据
+2025-08-20 10:21:16 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [489/500] | 成功:380 失败:109 剩余:11 | 当前:300125
+2025-08-20 10:21:19 | INFO     | core.sync.sync_stock:worker:105 - [300126] 同步完成，耗时: 18.53s
+2025-08-20 10:21:20 | INFO     | core.sync.sync_stock:worker:105 - [300127] 同步完成，耗时: 17.73s
+2025-08-20 10:21:21 | INFO     | core.sync.sync_stock:worker:95 - [300136] 开始同步历史数据
+2025-08-20 10:21:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [490/500] | 成功:381 失败:109 剩余:10 | 当前:300126
+2025-08-20 10:21:23 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [491/500] | 成功:382 失败:109 剩余:9 | 当前:300127
+2025-08-20 10:21:24 | INFO     | core.sync.sync_stock:worker:105 - [300128] 同步完成，耗时: 16.93s
+2025-08-20 10:21:26 | INFO     | core.sync.sync_stock:worker:105 - [300129] 同步完成，耗时: 17.72s
+2025-08-20 10:21:26 | INFO     | core.sync.sync_stock:worker:105 - [300130] 同步完成，耗时: 17.44s
+2025-08-20 10:21:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [492/500] | 成功:383 失败:109 剩余:8 | 当前:300129
+2025-08-20 10:21:28 | INFO     | core.sync.sync_stock:worker:105 - [300131] 同步完成，耗时: 15.98s
+2025-08-20 10:21:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [493/500] | 成功:384 失败:109 剩余:7 | 当前:300128
+2025-08-20 10:21:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [494/500] | 成功:385 失败:109 剩余:6 | 当前:300130
+2025-08-20 10:21:31 | INFO     | core.sync.sync_stock:worker:105 - [300134] 同步完成，耗时: 16.63s
+2025-08-20 10:21:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [495/500] | 成功:386 失败:109 剩余:5 | 当前:300131
+2025-08-20 10:21:31 | INFO     | core.sync.sync_stock:worker:105 - [300133] 同步完成，耗时: 17.21s
+2025-08-20 10:21:31 | INFO     | core.sync.sync_stock:worker:105 - [300132] 同步完成，耗时: 17.85s
+2025-08-20 10:21:32 | INFO     | core.sync.sync_stock:worker:105 - [300135] 同步完成，耗时: 16.27s
+2025-08-20 10:21:33 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [496/500] | 成功:387 失败:109 剩余:4 | 当前:300133
+2025-08-20 10:21:33 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [497/500] | 成功:388 失败:109 剩余:3 | 当前:300134
+2025-08-20 10:21:33 | INFO     | core.sync.sync_stock:worker:105 - [300136] 同步完成，耗时: 11.46s
+2025-08-20 10:21:34 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [498/500] | 成功:389 失败:109 剩余:2 | 当前:300136
+2025-08-20 10:21:35 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [499/500] | 成功:390 失败:109 剩余:1 | 当前:300132
+2025-08-20 10:21:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:149 - 进度 [500/500] | 成功:391 失败:109 剩余:0 | 当前:300135
