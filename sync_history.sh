@@ -16,7 +16,7 @@ LOCAL_DIR="/usr/local/apps/sync_stock/stock_chose"
 BRANCH="main"
 LOG_DIR="/usr/local/apps/sync_stock"
 LOG_FILE="$LOG_DIR/output_$(date +%Y%m%d).log"
-MAX_LOGS=10   # 最多保留的日志文件数
+MAX_LOGS=10   # 最多保留的日志文件数 
 
 #-----------------------------
 # 工具函数
