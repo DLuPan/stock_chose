@@ -5,6 +5,18 @@
 - 2024-12-03：取消规则1、规则2新增规则3的全量股票选股
 - 2025-08-13：改用sqllite存储数据提高数据的复用性和可以只执行，使用uv作为项目依赖管理工具
 
+# 新增sync_hisotry.sh脚本，fork项目后可直接定时运行该脚本自动同步数据
+```shell
+# 初始化目录
+mkdir -f /usr/local/apps/sync_stock
+# 移动脚本至sync_stock目录
+# 配置定时任务
+crontab -e
+0 17 * * 1-5 /usr/bin/bash /usr/local/apps/sync_stock/sync_history.sh &
+# 查看定时任务
+crontab -l
+```
+
 
 # 运行规则如下
  - ~~rule1:100-200亿流通市值&15天内持续收盘价在250日均线上下~~
