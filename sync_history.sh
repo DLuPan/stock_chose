@@ -19,6 +19,25 @@ LOG_FILE="$LOG_DIR/output_$(date +%Y%m%d).log"
 MAX_LOGS=10   # 最多保留的日志文件数 
 
 #-----------------------------
+# 定位 uv 命令
+#-----------------------------
+find_uv() {
+    if command -v uv >/dev/null 2>&1; then
+        echo "$(command -v uv)"
+    elif [ -x "$HOME/.local/bin/uv" ]; then
+        echo "$HOME/.local/bin/uv"
+    elif [ -x "/usr/local/bin/uv" ]; then
+        echo "/usr/local/bin/uv"
+    else
+        echo "Error: uv not found in PATH or common locations." >&2
+        exit 1
+    fi
+}
+
+UV_BIN=$(find_uv)
+export PATH="$(dirname "$UV_BIN"):$PATH"
+
+#-----------------------------
 # 工具函数
 #-----------------------------
 log() {
@@ -61,13 +80,13 @@ run_tasks() {
     log "Running sync-all..."
     uv run --package core cli sync-all
 
-    for run in {1..8}; do
-        log "Starting execution $run of 8..."
+    for run in {1..12}; do
+        log "Starting execution $run of 12..."
         uv run --package core cli sync-hist-all --end-date "$cur_date" --adjust hfq --max-workers 20
 
-        if [ $run -lt 8 ]; then
+        if [ $run -lt 12 ]; then
             log "Waiting 30 minutes before next run..."
-            sleep 1800
+            sleep 300
         fi
     done
 }
