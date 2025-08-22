@@ -118,21 +118,24 @@ def process_stock_data(
             if hist_df.empty:
                 raise ValueError("历史数据为空")
 
+            # 使用历史数据中的最新收盘价作为当前价格
+            current_price = float(hist_df.iloc[-1]["close"])
             monthly_high, months = calc_recent_3m_monthly_high(hist_df)
-            price = float(stock.get("price") or stock.get("pre_close", 0))
 
-            if price <= 0:
-                raise ValueError(f"股票价格无效: {price}")
+            if current_price <= 0:
+                raise ValueError(f"股票价格无效: {current_price}")
 
-            retr = calculate_retracement(monthly_high, price)
+            retr = calculate_retracement(monthly_high, current_price)
             retr_percent = retr * 100
 
             log.debug(
-                f"股票 {symbol}({name}) 月最高价: {monthly_high:.2f}, 当前价: {price:.2f}, 回撤率: {retr_percent:.2f}%"
+                f"股票 {symbol}({name}) 月最高价: {monthly_high:.2f}, 当前价: {current_price:.2f}, 回撤率: {retr_percent:.2f}%"
             )
 
             stats["success"] += 1
-            stock_record = create_stock_record(stock, hist_df, monthly_high, retr)
+            stock_record = create_stock_record(
+                stock, hist_df, monthly_high, retr, current_price
+            )
             all_stocks.append(stock_record)
             log.info(f"✓ 成功处理股票: {symbol}({name}), 回撤率: {retr_percent:.2f}%")
 
@@ -153,7 +156,11 @@ def process_stock_data(
 
 
 def create_stock_record(
-    stock: pd.Series, hist_df: pd.DataFrame, monthly_high: float, retr: float
+    stock: pd.Series,
+    hist_df: pd.DataFrame,
+    monthly_high: float,
+    retr: float,
+    current_price: float,
 ) -> Dict:
     """创建股票记录"""
     # 确定股票交易所前缀
@@ -172,7 +179,7 @@ def create_stock_record(
         "name": stock["name"],
         "index": stock["index"],
         "industry": stock.get("industry", "未知"),
-        "price": float(stock.get("price") or stock.get("pre_close", 0)),
+        "price": current_price,  # 使用历史数据中的最新收盘价
         "monthly_high": monthly_high,
         "retracement": retr,
         "pe_ratio": stock.get("pe_ratio"),

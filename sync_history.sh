@@ -80,12 +80,12 @@ run_tasks() {
     log "Running sync-all..."
     uv run --package core cli sync-all
 
-    for run in {1..12}; do
-        log "Starting execution $run of 12..."
+    for run in {1..15}; do
+        log "Starting execution $run of 15..."
         uv run --package core cli sync-hist-all --end-date "$cur_date" --adjust hfq --max-workers 20
 
-        if [ $run -lt 12 ]; then
-            log "Waiting 30 minutes before next run..."
+        if [ $run -lt 15 ]; then
+            log "Waiting 5 minutes before next run..."
             sleep 300
         fi
     done
