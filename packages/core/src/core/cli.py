@@ -65,5 +65,23 @@ def sync_hist_all(
     typer.echo("Historical stock data synchronization completed.")
 
 
+@app.command()
+def generate_stock_report(
+    adjust: Annotated[
+        str, typer.Option("--adjust", "-a", help="Adjustment type (default: qfq)")
+    ] = "hfq",
+    output_dir: Annotated[
+        str, typer.Option("--out-html", "-o", help="Output HTML file path")
+    ] = "stock_report",
+):
+    """
+    Generate a stock report based on the provided parameters.
+    """
+    from core.report import generate_report
+
+    generate_report(adjust, output_dir)
+    typer.echo(f"Stock report generated at {output_dir}")
+
+
 if __name__ == "__main__":
     app()

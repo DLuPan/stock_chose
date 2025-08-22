@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票回撤分析报告</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.2.0/dist/chartjs-adapter-luxon.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #0f3460;
+            --accent-color: #e94560;
+            --dark-bg: #16213e;
+            --light-bg: #1e2a4a;
+            --text-color: #f0f5ff;
+            --border-color: #2d3e5c;
+            --success-color: #4cc9f0;
+            --warning-color: #f72585;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --glow-color: rgba(76, 201, 240, 0.3);
+            --grid-color: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 70px 1fr;
+            grid-template-areas:
+                "sidebar header"
+                "sidebar main";
+            height: 100vh;
+        }
+
+        /* Header Styles */
+        .header {
+            grid-area: header;
+            background: var(--light-bg);
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-title h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .header-title i {
+            margin-right: 15px;
+            color: var(--success-color);
+            font-size: 1.5rem;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            grid-area: sidebar;
+            background: var(--secondary-color);
+            padding: 30px 0;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .sidebar-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #aab7d8;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .filter-group {
+            margin-bottom: 20px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #aab7d8;
+        }
+
+        .range-slider {
+            width: 100%;
+            height: 6px;
+            -webkit-appearance: none;
+            background: var(--border-color);
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--success-color);
+            cursor: pointer;
+            box-shadow: 0 0 10px var(--glow-color);
+        }
+
+        .range-values {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #aab7d8;
+        }
+
+        select.filter-select {
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            grid-area: main;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stat-card-title {
+            font-size: 0.95rem;
+            color: #aab7d8;
+            font-weight: 500;
+        }
+
+        .stat-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(76, 201, 240, 0.2);
+            color: var(--success-color);
+        }
+
+        .stat-card-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-card-change {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .change-positive {
+            color: #4cc9f0;
+        }
+
+        .change-negative {
+            color: #e94560;
+        }
+
+        /* Chart Containers */
+        .chart-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .chart-container {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .chart-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chart-action-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .chart-action-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        canvas {
+            width: 100% !important;
+        }
+
+        /* Tab Navigation */
+        .tab-navigation {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background: transparent;
+            border: none;
+            color: #aab7d8;
+            font-size: 0.95rem;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--success-color);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Table Styles */
+        .data-table-container {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        table.dataTable {
+            width: 100% !important;
+            border-collapse: separate !important;
+            border-spacing: 0;
+            margin: 20px 0;
+        }
+
+        table.dataTable thead th {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 16px;
+            font-weight: 600;
+            text-align: left;
+            border: none;
+            position: relative;
+        }
+
+        table.dataTable thead th::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        table.dataTable tbody td {
+            padding: 14px 16px;
+            border: none;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        table.dataTable tbody tr:hover td {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .btn-link {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-link:hover {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            box-shadow: 0 0 15px var(--glow-color);
+            transform: translateY(-2px);
+        }
+
+        .retracement-cell {
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-align: center;
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        .retracement-high {
+            background: rgba(233, 69, 96, 0.2);
+            color: #e94560;
+        }
+
+        .retracement-medium {
+            background: rgba(247, 37, 133, 0.2);
+            color: #f72585;
+        }
+
+        .retracement-low {
+            background: rgba(76, 201, 240, 0.2);
+            color: #4cc9f0;
+        }
+
+        .retracement-none {
+            background: rgba(114, 9, 183, 0.2);
+            color: #7209b7;
+        }
+
+        .sector-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            background: rgba(76, 201, 240, 0.15);
+            color: #4cc9f0;
+            margin-right: 5px;
+        }
+
+        .report-section {
+            margin-bottom: 30px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+        }
+
+        .report-section h2 {
+            margin-bottom: 15px;
+            color: var(--success-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .report-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .chart-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "main";
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-title">
+                <i class="fas fa-chart-line"></i>
+                <h1>股票回撤分析报告</h1>
+            </div>
+            <div class="header-actions">
+                <button class="header-btn" onclick="exportReport()">
+                    <i class="fas fa-download"></i> 导出报告
+                </button>
+                <button class="header-btn" onclick="window.location.reload()">
+                    <i class="fas fa-sync-alt"></i> 刷新数据
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">数据筛选</h3>
+
+                <div class="filter-group">
+                    <label for="retracement-min-range">回撤率最小值</label>
+                    <input type="range" id="retracement-min-range" class="range-slider" min="0" max="100" step="1"
+                        value="0">
+                    <div class="range-values">
+                        <span id="retracement-min-value">0%</span>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="retracement-max-range">回撤率最大值</label>
+                    <input type="range" id="retracement-max-range" class="range-slider" min="0" max="100" step="1"
+                        value="100">
+                    <div class="range-values">
+                        <span id="retracement-max-value">100%</span>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="industry-filter">行业</label>
+                    <select id="industry-filter" class="filter-select">
+                        <option value="">所有行业</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="market-cap-filter">市值规模</label>
+                    <select id="market-cap-filter" class="filter-select">
+                        <option value="">全部</option>
+                        <option value="small">小盘 (< 50亿)</option>
+                        <option value="mid">中盘 (50-200亿)</option>
+                        <option value="large">大盘 (> 200亿)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">报告信息</h3>
+                <div class="report-info">
+                    <p>生成时间: <span id="report-time"></span></p>
+                    <p>数据源: 本地数据库</p>
+                    <p>股票总数: <span id="total-stocks-count">0</span></p>
+                    <p>成功处理: <span id="success-stocks-count">0</span></p>
+                    <p>处理失败: <span id="failed-stocks-count">0</span></p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- 报告说明 -->
+            <div class="report-section">
+                <h2><i class="fas fa-info-circle"></i> 报告说明</h2>
+                <p>本报告分析了所有A股股票的近期回撤情况。回撤率计算基于最近3个月的月最高价与当前价格的比较。</p>
+                <p><strong>计算方法：</strong>回撤率 = (月最高价 - 当前价) / 月最高价 × 100%</p>
+                <p><strong>数据来源：</strong>本地数据库，包含实时股价和近3个月历史数据</p>
+                <p><strong>更新时间：</strong><span id="report-time-desc"></span></p>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-card-title">成功处理的股票</div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card-value" id="success-stocks">0</div>
+                    <div class="stat-card-change change-positive" id="success-percentage">0%</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-card-title">平均回撤率</div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card-value" id="avg-retracement">0%</div>
+                    <div class="stat-card-change">所有股票</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-card-title">最大回撤率</div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card-value" id="max-retracement">0%</div>
+                    <div class="stat-card-change change-negative" id="max-retracement-stock">-</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <div class="stat-card-title">最小回撤率</div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card-value" id="min-retracement">0%</div>
+                    <div class="stat-card-change change-positive" id="min-retracement-stock">-</div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">回撤率分布</div>
+                        <div class="chart-actions">
+                            <button class="chart-action-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <canvas id="retracement-distribution"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">行业分布</div>
+                        <div class="chart-actions">
+                            <button class="chart-action-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <canvas id="sector-distribution"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">市值 vs 回撤率</div>
+                        <div class="chart-actions">
+                            <button class="chart-action-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <canvas id="market-cap-scatter"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">PE比率分布</div>
+                        <div class="chart-actions">
+                            <button class="chart-action-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <canvas id="pe-distribution"></canvas>
+                </div>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="all">所有股票</button>
+                <button class="tab-btn" data-tab="high-retracement">高回撤股票(>30%)</button>
+                <button class="tab-btn" data-tab="failures">处理失败股票</button>
+            </div>
+
+            <!-- All Stocks Tab -->
+            <div class="tab-content active" id="all-tab">
+                <div class="data-table-container">
+                    <table id="all-table" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>代码</th>
+                                <th>名称</th>
+                                <th>行业</th>
+                                <th>现价</th>
+                                <th>月最高</th>
+                                <th>回撤率</th>
+                                <th>PE</th>
+                                <th>PB</th>
+                                <th>市值(亿)</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- High Retracement Stocks Tab -->
+            <div class="tab-content" id="high-retracement-tab">
+                <div class="data-table-container">
+                    <table id="high-retracement-table" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>代码</th>
+                                <th>名称</th>
+                                <th>行业</th>
+                                <th>现价</th>
+                                <th>月最高</th>
+                                <th>回撤率</th>
+                                <th>PE</th>
+                                <th>PB</th>
+                                <th>市值(亿)</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Failures Tab -->
+            <div class="tab-content" id="failures-tab">
+                <div class="data-table-container">
+                    <table id="failures-table" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>代码</th>
+                                <th>名称</th>
+                                <th>错误原因</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // 数据注入
+        const stockData = /*REPLACE_JSON_DATA*/;
+        const failuresData = /*REPLACE_FAILURES_DATA*/;
+        const reportTime = new Date().toLocaleString('zh-CN');
+
+        // 分离高回撤股票
+        const highRetracementStocks = stockData.filter(stock => stock.retracement * 100 >= 30);
+
+        // 更新报告信息
+        document.getElementById('report-time').textContent = reportTime;
+        document.getElementById('report-time-desc').textContent = reportTime;
+        document.getElementById('total-stocks-count').textContent = stockData.length + failuresData.length;
+        document.getElementById('success-stocks-count').textContent = stockData.length;
+        document.getElementById('failed-stocks-count').textContent = failuresData.length;
+        document.getElementById('success-stocks').textContent = stockData.length;
+
+        // 计算成功百分比
+        const totalStocks = stockData.length + failuresData.length;
+        const successPercentage = totalStocks > 0 ? ((stockData.length / totalStocks) * 100).toFixed(2) : 0;
+        document.getElementById('success-percentage').textContent = `${successPercentage}%`;
+
+        // 计算平均回撤、最大回撤和最小回撤
+        if (stockData.length > 0) {
+            const retracements = stockData.map(stock => stock.retracement * 100);
+            const avgRetracement = (retracements.reduce((a, b) => a + b, 0) / retracements.length).toFixed(2);
+            const maxRetracement = Math.max(...retracements).toFixed(2);
+            const minRetracement = Math.min(...retracements).toFixed(2);
+
+            const maxRetracementStock = stockData.find(stock => (stock.retracement * 100) === parseFloat(maxRetracement));
+            const minRetracementStock = stockData.find(stock => (stock.retracement * 100) === parseFloat(minRetracement));
+
+            document.getElementById('avg-retracement').textContent = avgRetracement + '%';
+            document.getElementById('max-retracement').textContent = maxRetracement + '%';
+            document.getElementById('min-retracement').textContent = minRetracement + '%';
+
+            if (maxRetracementStock) {
+                document.getElementById('max-retracement-stock').textContent = maxRetracementStock.name;
+            }
+            if (minRetracementStock) {
+                document.getElementById('min-retracement-stock').textContent = minRetracementStock.name;
+            }
+        }
+
+        // 初始化标签页
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // 移除所有active类
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                // 添加active类到当前按钮和对应内容
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(`${tabId}-tab`).classList.add('active');
+            });
+        });
+
+        // 初始化滑块
+        const minSlider = document.getElementById('retracement-min-range');
+        const maxSlider = document.getElementById('retracement-max-range');
+        const minValue = document.getElementById('retracement-min-value');
+        const maxValue = document.getElementById('retracement-max-value');
+
+        minSlider.addEventListener('input', updateFilters);
+        maxSlider.addEventListener('input', updateFilters);
+
+        function updateFilters() {
+            minValue.textContent = minSlider.value + '%';
+            maxValue.textContent = maxSlider.value + '%';
+            filterTables();
+        }
+
+        function filterTables() {
+            const minRetracement = parseFloat(minSlider.value);
+            const maxRetracement = parseFloat(maxSlider.value);
+
+            // 过滤所有股票表格
+            const filteredData = stockData.filter(stock => {
+                const retracement = stock.retracement * 100;
+                return retracement >= minRetracement && retracement <= maxRetracement;
+            });
+
+            // 重新初始化表格
+            initAllTable(filteredData);
+        }
+
+        // 初始化行业筛选器
+        function initIndustryFilter() {
+            const industries = new Set(stockData.map(stock => stock.industry).filter(Boolean));
+            const industryFilter = document.getElementById('industry-filter');
+
+            industries.forEach(industry => {
+                const option = document.createElement('option');
+                option.value = industry;
+                option.textContent = industry;
+                industryFilter.appendChild(option);
+            });
+
+            industryFilter.addEventListener('change', filterTables);
+        }
+
+        // 初始化DataTables
+        function initAllTable(data) {
+            if ($.fn.DataTable.isDataTable('#all-table')) {
+                $('#all-table').DataTable().destroy();
+            }
+
+            $('#all-table').DataTable({
+                data: data,
+                columns: [
+                    { data: 'symbol' },
+                    { data: 'name' },
+                    {
+                        data: 'industry',
+                        render: function (data) {
+                            return data ? `<span class="sector-tag">${data}</span>` : '-';
+                        }
+                    },
+                    {
+                        data: 'price',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'monthly_high',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'retracement',
+                        render: function (data) {
+                            if (data === undefined || data === null) return '-';
+                            const percent = (data * 100).toFixed(2) + '%';
+                            let className = 'retracement-cell ';
+
+                            if (data > 0.3) className += 'retracement-high';
+                            else if (data > 0.2) className += 'retracement-medium';
+                            else if (data > 0.1) className += 'retracement-low';
+                            else className += 'retracement-none';
+
+                            return `<span class="${className}">${percent}</span>`;
+                        }
+                    },
+                    {
+                        data: 'pe_ratio',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'pb_ratio',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'market_cap',
+                        render: function (data) {
+                            if (!data) return '-';
+                            return (data / 1e8).toFixed(2);
+                        }
+                    },
+                    {
+                        data: 'eastmoney_url',
+                        render: function (data, type, row) {
+                            return `<a href="${data}" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> 详情
+                            </a>`;
+                        }
+                    }
+                ],
+                order: [[5, 'desc']],
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/zh.json'
+                },
+                pageLength: 10,
+                responsive: true,
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel'
+                ]
+            });
+        }
+
+        $(document).ready(function () {
+            // 初始化所有股票表格
+            initAllTable(stockData);
+
+            // 初始化高回撤股票表格
+            $('#high-retracement-table').DataTable({
+                data: highRetracementStocks,
+                columns: [
+                    { data: 'symbol' },
+                    { data: 'name' },
+                    {
+                        data: 'industry',
+                        render: function (data) {
+                            return data ? `<span class="sector-tag">${data}</span>` : '-';
+                        }
+                    },
+                    {
+                        data: 'price',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'monthly_high',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'retracement',
+                        render: function (data) {
+                            if (data === undefined || data === null) return '-';
+                            const percent = (data * 100).toFixed(2) + '%';
+                            return `<span class="retracement-cell retracement-high">${percent}</span>`;
+                        }
+                    },
+                    {
+                        data: 'pe_ratio',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'pb_ratio',
+                        render: function (data) {
+                            return data ? data.toFixed(2) : '-';
+                        }
+                    },
+                    {
+                        data: 'market_cap',
+                        render: function (data) {
+                            if (!data) return '-';
+                            return (data / 1e8).toFixed(2);
+                        }
+                    },
+                    {
+                        data: 'eastmoney_url',
+                        render: function (data, type, row) {
+                            return `<a href="${data}" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> 详情
+                            </a>`;
+                        }
+                    }
+                ],
+                order: [[5, 'desc']],
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/zh.json'
+                },
+                pageLength: 10,
+                responsive: true,
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel'
+                ]
+            });
+
+            // 错误股票表格
+            $('#failures-table').DataTable({
+                data: failuresData,
+                columns: [
+                    { data: 'symbol' },
+                    { data: 'name' },
+                    {
+                        data: 'reason',
+                        render: function (data) {
+                            return data || '未知错误';
+                        }
+                    },
+                    {
+                        data: 'symbol',
+                        render: function (data) {
+                            const exchangePrefix = data.startsWith('6') ? 'sh' : 'sz';
+                            return `<a href="https://quote.eastmoney.com/concept/${exchangePrefix}${data}.html" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> 详情
+                            </a>`;
+                        }
+                    }
+                ],
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/zh.json'
+                },
+                pageLength: 10,
+                responsive: true
+            });
+
+            // 初始化行业筛选器
+            initIndustryFilter();
+
+            // 渲染图表
+            renderCharts(stockData);
+        });
+
+        // 渲染统计图表
+        function renderCharts(data) {
+            if (data.length === 0) {
+                return;
+            }
+
+            // 回撤率分布图
+            const retracementRanges = [
+                { min: 0, max: 10, count: 0, label: '0%-10%' },
+                { min: 10, max: 20, count: 0, label: '10%-20%' },
+                { min: 20, max: 30, count: 0, label: '20%-30%' },
+                { min: 30, max: 40, count: 0, label: '30%-40%' },
+                { min: 40, max: 50, count: 0, label: '40%-50%' },
+                { min: 50, max: 100, count: 0, label: '50%+' }
+            ];
+
+            data.forEach(stock => {
+                const retracementPercent = stock.retracement * 100;
+                for (const range of retracementRanges) {
+                    if (retracementPercent >= range.min && retracementPercent < range.max) {
+                        range.count++;
+                        break;
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('retracement-distribution'), {
+                type: 'bar',
+                data: {
+                    labels: retracementRanges.map(r => r.label),
+                    datasets: [{
+                        label: '股票数量',
+                        data: retracementRanges.map(r => r.count),
+                        backgroundColor: [
+                            '#4cc9f0',
+                            '#3a86ff',
+                            '#7209b7',
+                            '#f72585',
+                            '#e94560',
+                            '#fb5607'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#aab7d8'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#aab7d8'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 行业分布图
+            const industries = {};
+            data.forEach(stock => {
+                const industry = stock.industry || '未知';
+                industries[industry] = (industries[industry] || 0) + 1;
+            });
+
+            const sortedIndustries = Object.entries(industries)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 8);
+
+            new Chart(document.getElementById('sector-distribution'), {
+                type: 'pie',
+                data: {
+                    labels: sortedIndustries.map(item => item[0]),
+                    datasets: [{
+                        data: sortedIndustries.map(item => item[1]),
+                        backgroundColor: [
+                            '#4cc9f0', '#f72585', '#e94560', '#7209b7',
+                            '#3a86ff', '#fb5607', '#ff006e', '#8338ec'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                color: '#aab7d8'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 市值 vs 回撤率散点图
+            const validMarketCapData = data.filter(stock => stock.market_cap && stock.market_cap > 0);
+
+            new Chart(document.getElementById('market-cap-scatter'), {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: '股票',
+                        data: validMarketCapData.map(stock => ({
+                            x: stock.market_cap / 1e8,
+                            y: stock.retracement * 100
+                        })),
+                        backgroundColor: '#4cc9f0',
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    const stock = validMarketCapData[context.dataIndex];
+                                    return `${stock.name}: ${(stock.retracement * 100).toFixed(2)}%回撤, ${(stock.market_cap / 1e8).toFixed(2)}亿市值`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: '市值(亿)',
+                                color: '#aab7d8'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#aab7d8'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: '回撤率(%)',
+                                color: '#aab7d8'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#aab7d8'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // PE比率分布
+            const peValues = data.map(stock => stock.pe_ratio).filter(pe => pe && pe > 0 && pe < 100);
+            if (peValues.length > 0) {
+                new Chart(document.getElementById('pe-distribution'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50+'],
+                        datasets: [{
+                            label: 'PE比率分布',
+                            data: [
+                                peValues.filter(pe => pe <= 10).length,
+                                peValues.filter(pe => pe > 10 && pe <= 20).length,
+                                peValues.filter(pe => pe > 20 && pe <= 30).length,
+                                peValues.filter(pe => pe > 30 && pe <= 40).length,
+                                peValues.filter(pe => pe > 40 && pe <= 50).length,
+                                peValues.filter(pe => pe > 50).length
+                            ],
+                            backgroundColor: '#f72585'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.1)'
+                                },
+                                ticks: {
+                                    color: '#aab7d8'
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    color: '#aab7d8'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // 导出报告功能
+        function exportReport() {
+            // 这里可以添加导出报告的功能
+            alert('导出报告功能将在后续版本中实现');
+        }
+    </script>
+</body>
+
+</html>

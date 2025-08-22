@@ -89,6 +89,9 @@ run_tasks() {
             sleep 300
         fi
     done
+    log "Running generate-stock-report with hfq adjustment..."
+    uv run --package core cli generate-stock-report --adjust hfq
+    
 }
 
 commit_and_push() {
