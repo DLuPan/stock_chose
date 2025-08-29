@@ -1,0 +1,26 @@
+[project]
+name = "stock-chose"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "akshare>=1.17.34",
+    "dotenv>=0.9.9",
+    "loguru>=0.7.3",
+    "mysql-connector-python>=9.4.0",
+    "pydantic>=2.11.7",
+    "pymysql>=1.1.2",
+    "sqlalchemy>=2.0.43",
+    "typer>=0.16.0",
+]
+
+
+[tool.uv.workspace]
+members = [
+    "packages/core",
+    "packages/bot",
+]
+
+[tool.setuptools.packages.find]
+include = ["packages*"]

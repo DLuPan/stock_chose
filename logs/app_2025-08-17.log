@@ -1,0 +1,102 @@
+2025-08-17 08:44:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:36 - 准备同步 5739 个股票历史数据，最大并发数: 3
+2025-08-17 08:44:45 | INFO     | core.sync.sync_stock:worker:40 - [000001] 开始同步历史数据
+2025-08-17 08:44:45 | INFO     | core.sync.sync_stock:worker:40 - [000002] 开始同步历史数据
+2025-08-17 08:44:45 | INFO     | core.sync.sync_stock:worker:40 - [000003] 开始同步历史数据
+2025-08-17 08:44:49 | INFO     | core.sync.sync_stock:worker:50 - [000003] 同步完成，耗时: 4.08s
+2025-08-17 08:44:49 | INFO     | core.sync.sync_stock:worker:40 - [000004] 开始同步历史数据
+2025-08-17 08:44:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [1/5739] | 成功:1 失败:0 剩余:5738 | 当前:000003
+2025-08-17 08:44:51 | INFO     | core.sync.sync_stock:worker:50 - [000002] 同步完成，耗时: 6.86s
+2025-08-17 08:44:51 | INFO     | core.sync.sync_stock:worker:40 - [000005] 开始同步历史数据
+2025-08-17 08:44:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [2/5739] | 成功:2 失败:0 剩余:5737 | 当前:000002
+2025-08-17 08:44:53 | INFO     | core.sync.sync_stock:worker:50 - [000001] 同步完成，耗时: 8.20s
+2025-08-17 08:44:53 | INFO     | core.sync.sync_stock:worker:40 - [000006] 开始同步历史数据
+2025-08-17 08:44:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [3/5739] | 成功:3 失败:0 剩余:5736 | 当前:000001
+2025-08-17 08:44:56 | INFO     | core.sync.sync_stock:worker:50 - [000004] 同步完成，耗时: 7.30s
+2025-08-17 08:44:56 | INFO     | core.sync.sync_stock:worker:40 - [000007] 开始同步历史数据
+2025-08-17 08:44:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [4/5739] | 成功:4 失败:0 剩余:5735 | 当前:000004
+2025-08-17 08:44:58 | INFO     | core.sync.sync_stock:worker:50 - [000005] 同步完成，耗时: 6.34s
+2025-08-17 08:44:58 | INFO     | core.sync.sync_stock:worker:40 - [000008] 开始同步历史数据
+2025-08-17 08:45:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [5/5739] | 成功:5 失败:0 剩余:5734 | 当前:000005
+2025-08-17 08:45:01 | INFO     | core.sync.sync_stock:worker:50 - [000006] 同步完成，耗时: 8.33s
+2025-08-17 08:45:01 | INFO     | core.sync.sync_stock:worker:40 - [000009] 开始同步历史数据
+2025-08-17 08:45:02 | INFO     | core.sync.sync_stock:worker:50 - [000007] 同步完成，耗时: 6.39s
+2025-08-17 08:45:02 | INFO     | core.sync.sync_stock:worker:40 - [000010] 开始同步历史数据
+2025-08-17 08:45:05 | INFO     | core.sync.sync_stock:worker:50 - [000008] 同步完成，耗时: 7.32s
+2025-08-17 08:45:05 | INFO     | core.sync.sync_stock:worker:40 - [000011] 开始同步历史数据
+2025-08-17 08:45:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [6/5739] | 成功:6 失败:0 剩余:5733 | 当前:000006
+2025-08-17 08:45:08 | INFO     | core.sync.sync_stock:worker:50 - [000009] 同步完成，耗时: 6.81s
+2025-08-17 08:45:08 | INFO     | core.sync.sync_stock:worker:40 - [000012] 开始同步历史数据
+2025-08-17 08:45:08 | INFO     | core.sync.sync_stock:worker:50 - [000010] 同步完成，耗时: 5.69s
+2025-08-17 08:45:08 | INFO     | core.sync.sync_stock:worker:40 - [000013] 开始同步历史数据
+2025-08-17 08:45:10 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [7/5739] | 成功:7 失败:0 剩余:5732 | 当前:000007
+2025-08-17 08:45:11 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [8/5739] | 成功:8 失败:0 剩余:5731 | 当前:000008
+2025-08-17 08:45:12 | INFO     | core.sync.sync_stock:worker:50 - [000013] 同步完成，耗时: 3.47s
+2025-08-17 08:45:12 | INFO     | core.sync.sync_stock:worker:40 - [000014] 开始同步历史数据
+2025-08-17 08:45:13 | INFO     | core.sync.sync_stock:worker:50 - [000011] 同步完成，耗时: 7.79s
+2025-08-17 08:45:13 | INFO     | core.sync.sync_stock:worker:40 - [000015] 开始同步历史数据
+2025-08-17 08:45:15 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [9/5739] | 成功:9 失败:0 剩余:5730 | 当前:000009
+2025-08-17 08:45:15 | INFO     | core.sync.sync_stock:worker:50 - [000015] 同步完成，耗时: 2.57s
+2025-08-17 08:45:15 | INFO     | core.sync.sync_stock:worker:40 - [000016] 开始同步历史数据
+2025-08-17 08:45:16 | INFO     | core.sync.sync_stock:worker:50 - [000012] 同步完成，耗时: 7.85s
+2025-08-17 08:45:16 | INFO     | core.sync.sync_stock:worker:40 - [000017] 开始同步历史数据
+2025-08-17 08:45:18 | INFO     | core.sync.sync_stock:worker:50 - [000014] 同步完成，耗时: 6.55s
+2025-08-17 08:45:18 | INFO     | core.sync.sync_stock:worker:40 - [000018] 开始同步历史数据
+2025-08-17 08:45:19 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [10/5739] | 成功:10 失败:0 剩余:5729 | 当前:000010
+2025-08-17 08:45:21 | INFO     | core.sync.sync_stock:worker:50 - [000017] 同步完成，耗时: 5.47s
+2025-08-17 08:45:21 | INFO     | core.sync.sync_stock:worker:40 - [000019] 开始同步历史数据
+2025-08-17 08:45:21 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [11/5739] | 成功:11 失败:0 剩余:5728 | 当前:000013
+2025-08-17 08:45:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [12/5739] | 成功:12 失败:0 剩余:5727 | 当前:000011
+2025-08-17 08:45:24 | INFO     | core.sync.sync_stock:worker:50 - [000018] 同步完成，耗时: 6.36s
+2025-08-17 08:45:24 | INFO     | core.sync.sync_stock:worker:40 - [000020] 开始同步历史数据
+2025-08-17 08:45:25 | INFO     | core.sync.sync_stock:worker:50 - [000016] 同步完成，耗时: 9.13s
+2025-08-17 08:45:25 | INFO     | core.sync.sync_stock:worker:40 - [000021] 开始同步历史数据
+2025-08-17 08:45:27 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [13/5739] | 成功:13 失败:0 剩余:5726 | 当前:000015
+2025-08-17 08:45:29 | INFO     | core.sync.sync_stock:worker:50 - [000019] 同步完成，耗时: 7.28s
+2025-08-17 08:45:29 | INFO     | core.sync.sync_stock:worker:40 - [000023] 开始同步历史数据
+2025-08-17 08:45:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [14/5739] | 成功:14 失败:0 剩余:5725 | 当前:000012
+2025-08-17 08:45:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [15/5739] | 成功:15 失败:0 剩余:5724 | 当前:000014
+2025-08-17 08:45:31 | INFO     | core.sync.sync_stock:worker:50 - [000021] 同步完成，耗时: 6.13s
+2025-08-17 08:45:31 | INFO     | core.sync.sync_stock:worker:40 - [000024] 开始同步历史数据
+2025-08-17 08:45:32 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [16/5739] | 成功:16 失败:0 剩余:5723 | 当前:000017
+2025-08-17 08:45:33 | INFO     | core.sync.sync_stock:worker:50 - [000020] 同步完成，耗时: 8.63s
+2025-08-17 08:45:33 | INFO     | core.sync.sync_stock:worker:40 - [000025] 开始同步历史数据
+2025-08-17 08:45:35 | INFO     | core.sync.sync_stock:worker:50 - [000023] 同步完成，耗时: 6.59s
+2025-08-17 08:45:35 | INFO     | core.sync.sync_stock:worker:40 - [000026] 开始同步历史数据
+2025-08-17 08:45:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [17/5739] | 成功:17 失败:0 剩余:5722 | 当前:000018
+2025-08-17 08:45:37 | INFO     | core.sync.sync_stock:worker:50 - [000024] 同步完成，耗时: 6.43s
+2025-08-17 08:45:37 | INFO     | core.sync.sync_stock:worker:40 - [000027] 开始同步历史数据
+2025-08-17 08:45:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [18/5739] | 成功:18 失败:0 剩余:5721 | 当前:000016
+2025-08-17 08:45:41 | INFO     | core.sync.sync_stock:worker:50 - [000025] 同步完成，耗时: 7.68s
+2025-08-17 08:45:41 | INFO     | core.sync.sync_stock:worker:40 - [000028] 开始同步历史数据
+2025-08-17 08:45:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:73 - 进度 [19/5739] | 成功:19 失败:0 剩余:5720 | 当前:000019
+2025-08-17 08:45:43 | INFO     | core.sync.sync_stock:worker:50 - [000026] 同步完成，耗时: 7.74s
+2025-08-17 08:45:43 | INFO     | core.sync.sync_stock:worker:40 - [000029] 开始同步历史数据
+2025-08-17 08:45:43 | INFO     | core.sync.sync_stock:worker:50 - [000027] 同步完成，耗时: 5.96s
+2025-08-17 08:45:43 | INFO     | core.sync.sync_stock:worker:40 - [000030] 开始同步历史数据
+2025-08-17 08:45:47 | INFO     | core.sync.sync_stock:worker:50 - [000028] 同步完成，耗时: 6.52s
+2025-08-17 08:45:47 | INFO     | core.sync.sync_stock:worker:40 - [000031] 开始同步历史数据
+2025-08-17 08:47:30 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:36 - 准备同步 5739 个股票历史数据，最大并发数: 3
+2025-08-17 08:47:30 | INFO     | core.sync.sync_stock:worker:40 - [000001] 开始同步历史数据
+2025-08-17 08:47:30 | INFO     | core.sync.sync_stock:worker:40 - [000002] 开始同步历史数据
+2025-08-17 08:47:30 | INFO     | core.sync.sync_stock:worker:40 - [000003] 开始同步历史数据
+2025-08-17 08:47:34 | INFO     | core.sync.sync_stock:worker:50 - [000003] 同步完成，耗时: 3.32s
+2025-08-17 08:47:36 | INFO     | core.sync.sync_stock:worker:50 - [000001] 同步完成，耗时: 5.81s
+2025-08-17 08:47:36 | INFO     | core.sync.sync_stock:worker:50 - [000002] 同步完成，耗时: 6.11s
+2025-08-17 08:47:37 | INFO     | core.sync.sync_stock:worker:40 - [000004] 开始同步历史数据
+2025-08-17 08:47:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:75 - 进度 [1/5739] | 成功:1 失败:0 剩余:5738 | 当前:000003
+2025-08-17 08:47:39 | INFO     | core.sync.sync_stock:worker:40 - [000005] 开始同步历史数据
+2025-08-17 08:47:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:75 - 进度 [2/5739] | 成功:2 失败:0 剩余:5737 | 当前:000001
+2025-08-17 08:47:41 | INFO     | core.sync.sync_stock:worker:50 - [000004] 同步完成，耗时: 3.93s
+2025-08-17 08:47:41 | INFO     | core.sync.sync_stock:worker:40 - [000006] 开始同步历史数据
+2025-08-17 08:47:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:75 - 进度 [3/5739] | 成功:3 失败:0 剩余:5736 | 当前:000002
+2025-08-17 08:47:43 | INFO     | core.sync.sync_stock:worker:50 - [000005] 同步完成，耗时: 4.05s
+2025-08-17 08:47:45 | INFO     | core.sync.sync_stock:worker:40 - [000007] 开始同步历史数据
+2025-08-17 08:47:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:75 - 进度 [4/5739] | 成功:4 失败:0 剩余:5735 | 当前:000005
+2025-08-17 08:47:45 | INFO     | core.sync.sync_stock:worker:50 - [000006] 同步完成，耗时: 3.87s
+2025-08-17 08:47:46 | INFO     | core.sync.sync_stock:worker:40 - [000008] 开始同步历史数据
+2025-08-17 08:47:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:75 - 进度 [5/5739] | 成功:5 失败:0 剩余:5734 | 当前:000004
+2025-08-17 08:47:49 | INFO     | core.sync.sync_stock:worker:50 - [000007] 同步完成，耗时: 4.06s
+2025-08-17 08:47:50 | INFO     | core.sync.sync_stock:worker:50 - [000008] 同步完成，耗时: 4.26s
+2025-08-17 08:47:50 | INFO     | core.sync.sync_stock:worker:40 - [000009] 开始同步历史数据
+2025-08-17 08:47:52 | INFO     | core.sync.sync_stock:worker:40 - [000010] 开始同步历史数据
+2025-08-17 08:47:52 | INFO     | core.sync.sync_stock:worker:40 - [000011] 开始同步历史数据

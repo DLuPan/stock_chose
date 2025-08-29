@@ -1,0 +1,1 @@
+from .generate_stock_report_full import generate_report

@@ -1,0 +1,10 @@
+__pycache__
+.env
+__pycache__/stock_show.cpython-39.pyc
+__pycache__/rule_base.cpython-39.pyc
+__pycache__/stock_data_spider.cpython-39.pyc
+__pycache__/stock_rule3.cpython-39.pyc
+__pycache__/stock_show.cpython-39.pyc
+*.pyc
+stock_chose.egg-info
+*.egg-info
