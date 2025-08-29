@@ -19,3 +19,140 @@
 2025-08-29 16:51:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:179 - [000001] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
 2025-08-29 16:51:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:189 - [000001] 使用数据库最新日期后一天作为开始日期: 20250830
 2025-08-29 16:51:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:214 - [000001] 未获取到 20250830 至 20250831 的历史数据
+2025-08-29 17:16:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:189 - [000001] 使用数据库最新日期后一天作为开始日期: 20250830
+2025-08-29 17:16:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:214 - [000001] 未获取到 20250830 至 20250831 的历史数据
+2025-08-29 17:25:28 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - 开始同步股票历史数据，结束日期: 2025-08-29, 复权类型: hfq, 并发数: 5
+2025-08-29 17:25:29 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:44 - 从数据库获取到 5743 个股票代码
+2025-08-29 17:28:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - 开始同步股票历史数据，结束日期: 2025-08-29, 复权类型: hfq, 并发数: 5
+2025-08-29 17:28:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:44 - 从数据库获取到 5743 个股票代码
+2025-08-29 17:28:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:53 - 已存在 5743 个同步任务
+2025-08-29 17:28:01 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:70 - 创建了 0 个新同步任务
+2025-08-29 17:28:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:93 - 没有找到待处理或失败的同步任务，日期: 20250829
+2025-08-29 17:30:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - 开始同步股票历史数据，结束日期: 2025-08-29, 复权类型: hfq, 并发数: 5
+2025-08-29 17:30:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:44 - 从数据库获取到 5743 个股票代码
+2025-08-29 17:30:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:53 - 已存在 0 个同步任务
+2025-08-29 17:30:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:70 - 创建了 5743 个新同步任务
+2025-08-29 17:30:07 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:97 - 找到 500 个待处理的同步任务
+2025-08-29 17:30:41 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:115 - 准备同步 500 个股票历史数据，最大并发数: 5
+2025-08-29 17:30:41 | INFO     | core.sync.sync_stock:worker:123 - [000001] 开始同步历史数据
+2025-08-29 17:30:41 | INFO     | core.sync.sync_stock:worker:123 - [000002] 开始同步历史数据
+2025-08-29 17:30:41 | INFO     | core.sync.sync_stock:worker:123 - [000003] 开始同步历史数据
+2025-08-29 17:30:41 | INFO     | core.sync.sync_stock:worker:123 - [000004] 开始同步历史数据
+2025-08-29 17:30:41 | INFO     | core.sync.sync_stock:worker:123 - [000005] 开始同步历史数据
+2025-08-29 17:30:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:254 - [000001] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:30:42 | INFO     | core.sync.sync_stock:worker:152 - [000001] 同步完成，耗时: 1.03s，获取 0 条记录
+2025-08-29 17:30:42 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:264 - [000003] 使用数据库最新日期后一天作为开始日期: 20020427
+2025-08-29 17:30:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:289 - [000003] 未获取到 20020427 至 20250829 的历史数据
+2025-08-29 17:30:43 | INFO     | core.sync.sync_stock:worker:152 - [000003] 同步完成，耗时: 1.54s，获取 0 条记录
+2025-08-29 17:30:44 | INFO     | core.sync.sync_stock:worker:123 - [000006] 开始同步历史数据
+2025-08-29 17:30:44 | INFO     | core.sync.sync_stock:worker:123 - [000007] 开始同步历史数据
+2025-08-29 17:30:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:215 - 进度 [1/500] 0.2% | 成功:1 失败:0 | 耗时:3s 预估剩余:1616s | 当前:000003
+2025-08-29 17:30:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:215 - 进度 [2/500] 0.4% | 成功:2 失败:0 | 耗时:4s 预估剩余:947s | 当前:000001
+2025-08-29 17:35:02 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:34 - 开始同步股票历史数据，结束日期: 2025-08-29, 复权类型: hfq, 并发数: 5
+2025-08-29 17:35:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:44 - 从数据库获取到 5743 个股票代码
+2025-08-29 17:35:03 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:53 - 已存在 0 个同步任务
+2025-08-29 17:35:04 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:70 - 创建了 5743 个新同步任务
+2025-08-29 17:35:05 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:97 - 找到 500 个待处理的同步任务
+2025-08-29 17:42:43 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:32 - 开始同步历史数据，结束日期: 2025-08-29, 复权: hfq, 并发: 5
+2025-08-29 17:42:44 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:48 - 股票代码: 5743, 已有任务: 0
+2025-08-29 17:42:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:65 - 新增任务: 5743
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:92 - 待处理任务: 500
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:106 - [000001] 开始同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:106 - [000002] 开始同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:106 - [000003] 开始同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:106 - [000004] 开始同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:106 - [000005] 开始同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000001] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:119 - [000001] 完成，耗时: 0.32s，记录: 0
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:231 - [000005] 使用数据库最新日期后一天作为开始日期: 20240306
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:231 - [000003] 使用数据库最新日期后一天作为开始日期: 20020427
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000004] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000002] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:119 - [000004] 完成，耗时: 0.60s，记录: 0
+2025-08-29 17:42:46 | INFO     | core.sync.sync_stock:process_symbol:119 - [000002] 完成，耗时: 0.68s，记录: 0
+2025-08-29 17:42:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:256 - [000005] 未获取到 20240306 至 20250829 的历史数据
+2025-08-29 17:42:47 | INFO     | core.sync.sync_stock:process_symbol:119 - [000005] 完成，耗时: 0.72s，记录: 0
+2025-08-29 17:42:47 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:256 - [000003] 未获取到 20020427 至 20250829 的历史数据
+2025-08-29 17:42:47 | INFO     | core.sync.sync_stock:process_symbol:119 - [000003] 完成，耗时: 0.78s，记录: 0
+2025-08-29 17:42:48 | INFO     | core.sync.sync_stock:process_symbol:106 - [000006] 开始同步
+2025-08-29 17:42:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000006] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:48 | INFO     | core.sync.sync_stock:process_symbol:119 - [000006] 完成，耗时: 0.29s，记录: 0
+2025-08-29 17:42:48 | INFO     | core.sync.sync_stock:process_symbol:106 - [000007] 开始同步
+2025-08-29 17:42:48 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 1/500 (0.2%) | 成功:1 失败:0 | 耗时:3s 剩余:1333s
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000007] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:process_symbol:119 - [000007] 完成，耗时: 0.34s，记录: 0
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:process_symbol:106 - [000008] 开始同步
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 2/500 (0.4%) | 成功:2 失败:0 | 耗时:3s 剩余:781s
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000008] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:process_symbol:106 - [000009] 开始同步
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:process_symbol:119 - [000008] 完成，耗时: 0.36s，记录: 0
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000009] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:process_symbol:106 - [000010] 开始同步
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:process_symbol:119 - [000009] 完成，耗时: 0.28s，记录: 0
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 3/500 (0.6%) | 成功:3 失败:0 | 耗时:4s 剩余:591s
+2025-08-29 17:42:49 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000010] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:50 | INFO     | core.sync.sync_stock:process_symbol:119 - [000010] 完成，耗时: 0.29s，记录: 0
+2025-08-29 17:42:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 4/500 (0.8%) | 成功:4 失败:0 | 耗时:4s 剩余:502s
+2025-08-29 17:42:50 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 5/500 (1.0%) | 成功:5 失败:0 | 耗时:5s 剩余:449s
+2025-08-29 17:42:50 | INFO     | core.sync.sync_stock:process_symbol:106 - [000011] 开始同步
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000011] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:process_symbol:119 - [000011] 完成，耗时: 0.31s，记录: 0
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 6/500 (1.2%) | 成功:6 失败:0 | 耗时:5s 剩余:412s
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:process_symbol:106 - [000012] 开始同步
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000012] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:process_symbol:119 - [000012] 完成，耗时: 0.34s，记录: 0
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 7/500 (1.4%) | 成功:7 失败:0 | 耗时:6s 剩余:389s
+2025-08-29 17:42:51 | INFO     | core.sync.sync_stock:process_symbol:106 - [000013] 开始同步
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:231 - [000013] 使用数据库最新日期后一天作为开始日期: 20040429
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 8/500 (1.6%) | 成功:8 失败:0 | 耗时:6s 剩余:372s
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:256 - [000013] 未获取到 20040429 至 20250829 的历史数据
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:process_symbol:119 - [000013] 完成，耗时: 0.55s，记录: 0
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:process_symbol:106 - [000014] 开始同步
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:process_symbol:106 - [000015] 开始同步
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000014] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:process_symbol:119 - [000014] 完成，耗时: 0.34s，记录: 0
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:231 - [000015] 使用数据库最新日期后一天作为开始日期: 20010609
+2025-08-29 17:42:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 9/500 (1.8%) | 成功:9 失败:0 | 耗时:7s 剩余:359s
+2025-08-29 17:42:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:256 - [000015] 未获取到 20010609 至 20250829 的历史数据
+2025-08-29 17:42:53 | INFO     | core.sync.sync_stock:process_symbol:119 - [000015] 完成，耗时: 0.58s，记录: 0
+2025-08-29 17:42:53 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 10/500 (2.0%) | 成功:10 失败:0 | 耗时:7s 剩余:344s
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:106 - [000016] 开始同步
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:106 - [000017] 开始同步
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:106 - [000018] 开始同步
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000016] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000017] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:119 - [000016] 完成，耗时: 0.31s，记录: 0
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:231 - [000018] 使用数据库最新日期后一天作为开始日期: 20200107
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:119 - [000017] 完成，耗时: 0.32s，记录: 0
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 11/500 (2.2%) | 成功:11 失败:0 | 耗时:8s 剩余:373s
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:106 - [000019] 开始同步
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:256 - [000018] 未获取到 20200107 至 20250829 的历史数据
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:process_symbol:119 - [000018] 完成，耗时: 0.52s，记录: 0
+2025-08-29 17:42:54 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000019] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:55 | INFO     | core.sync.sync_stock:process_symbol:119 - [000019] 完成，耗时: 0.32s，记录: 0
+2025-08-29 17:42:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 12/500 (2.4%) | 成功:12 失败:0 | 耗时:9s 剩余:359s
+2025-08-29 17:42:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 13/500 (2.6%) | 成功:13 失败:0 | 耗时:9s 剩余:348s
+2025-08-29 17:42:55 | INFO     | core.sync.sync_stock:process_symbol:106 - [000020] 开始同步
+2025-08-29 17:42:55 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 14/500 (2.8%) | 成功:14 失败:0 | 耗时:10s 剩余:336s
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000020] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:process_symbol:119 - [000020] 完成，耗时: 0.34s，记录: 0
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:process_symbol:106 - [000021] 开始同步
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 15/500 (3.0%) | 成功:15 失败:0 | 耗时:10s 剩余:327s
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:221 - [000021] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:process_symbol:119 - [000021] 完成，耗时: 0.27s，记录: 0
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 16/500 (3.2%) | 成功:16 失败:0 | 耗时:11s 剩余:319s
+2025-08-29 17:42:56 | INFO     | core.sync.sync_stock:process_symbol:106 - [000023] 开始同步
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:process_symbol:106 - [000024] 开始同步
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 17/500 (3.4%) | 成功:17 失败:0 | 耗时:11s 剩余:312s
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:231 - [000024] 使用数据库最新日期后一天作为开始日期: 20151208
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:process_symbol:106 - [000025] 开始同步
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 18/500 (3.6%) | 成功:18 失败:0 | 耗时:11s 剩余:305s
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:256 - [000024] 未获取到 20151208 至 20250829 的历史数据
+2025-08-29 17:42:57 | INFO     | core.sync.sync_stock:process_symbol:119 - [000024] 完成，耗时: 0.56s，记录: 0
+2025-08-29 17:42:58 | INFO     | core.sync.sync_stock:process_symbol:106 - [000026] 开始同步
+2025-08-29 17:42:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 19/500 (3.8%) | 成功:19 失败:0 | 耗时:12s 剩余:300s
+2025-08-29 17:42:58 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 20/500 (4.0%) | 成功:20 失败:0 | 耗时:12s 剩余:295s
+2025-08-29 17:42:58 | INFO     | core.sync.sync_stock:process_symbol:106 - [000027] 开始同步
+2025-08-29 17:42:59 | INFO     | core.sync.sync_stock:process_symbol:106 - [000028] 开始同步
+2025-08-29 17:42:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 21/500 (4.2%) | 成功:21 失败:0 | 耗时:13s 剩余:299s
+2025-08-29 17:42:59 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist_all:182 - 进度 22/500 (4.4%) | 成功:22 失败:0 | 耗时:14s 剩余:295s

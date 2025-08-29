@@ -11,7 +11,7 @@ class StockSyncTaskDB(Base):
     __tablename__ = "stock_sync_task_data"
     date = Column(Date, primary_key=True)  # 同步日期
     symbol = Column(String(20), primary_key=True)  # 股票代码
-    status = Column(String(20))  # 同步状态 start, in_progress, completed, failed
+    status = Column(String(20))  # 同步状态 start,  completed, failed
     message = Column(String(500), nullable=True)  # 同步消息
     duration = Column(Float, nullable=True)  # 同步耗时（秒）
     start_time = Column(Date, nullable=True)  # 同步开始时间
