@@ -1,0 +1,21 @@
+2025-08-29 16:15:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:225 - Fetched 5743 stock records from API
+2025-08-29 16:16:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:290 - Committed batch 1, records: 500
+2025-08-29 16:17:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:290 - Committed batch 2, records: 500
+2025-08-29 16:19:00 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:290 - Committed batch 3, records: 500
+2025-08-29 16:20:22 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:290 - Committed batch 4, records: 500
+2025-08-29 16:21:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:290 - Committed batch 5, records: 500
+2025-08-29 16:22:52 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:290 - Committed batch 6, records: 500
+2025-08-29 16:24:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:225 - Fetched 5743 stock records from API
+2025-08-29 16:24:36 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:282 - Deleted all existing stock spot data
+2025-08-29 16:24:37 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:296 - Committed batch 1, records: 1000
+2025-08-29 16:24:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:296 - Committed batch 2, records: 1000
+2025-08-29 16:24:38 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:296 - Committed batch 3, records: 1000
+2025-08-29 16:24:39 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:296 - Committed batch 4, records: 1000
+2025-08-29 16:24:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:296 - Committed batch 5, records: 1000
+2025-08-29 16:24:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:296 - Committed batch 6, records: 743
+2025-08-29 16:24:40 | INFO     | core.sync.sync_stock:sync_stock_zh_a_spot_em:298 - Successfully synced 5743 stock records
+2025-08-29 16:29:31 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:219 - [000001] Deleted and inserted 8227 records for adjust type: 
+2025-08-29 16:30:12 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:219 - [000001] Deleted and inserted 8227 records for adjust type: hfq
+2025-08-29 16:51:24 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:179 - [000001] 最新数据日期 2025-08-29 已超过或等于结束日期 2025-08-29，跳过同步
+2025-08-29 16:51:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:189 - [000001] 使用数据库最新日期后一天作为开始日期: 20250830
+2025-08-29 16:51:45 | INFO     | core.sync.sync_stock:sync_stock_zh_a_hist:214 - [000001] 未获取到 20250830 至 20250831 的历史数据
