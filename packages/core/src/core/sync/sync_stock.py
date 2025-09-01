@@ -291,18 +291,57 @@ def sync_stock_zh_a_hist(
             elif isinstance(value, np.floating):
                 stock_item[key] = float(value)
 
-    # Save to database (new file per symbol/adjust)
-    db = get_hist_db_session(symbol)
+    # Save to database with batch operations
+    db = get_db_session()
     try:
-        # Insert new data (no need to delete since we're doing incremental sync)
-        for stock_item in stock_hist:
-            db_stock = StockHistoryDB(**stock_item)
-            db.merge(db_stock)  # Use merge to handle updates
-
-        db.commit()
-        log.info(
-            f"[{symbol}] 成功插入 {len(stock_hist)} 条历史记录，调整类型: {adjust}"
+        # Get existing dates for this symbol and adjust type
+        existing_records = (
+            db.query(StockHistoryDB.date)
+            .filter(StockHistoryDB.symbol == symbol, StockHistoryDB.adjust == adjust)
+            .all()
         )
+
+        existing_dates = {record[0] for record in existing_records}
+
+        # Separate records into updates and inserts
+        records_to_update = []
+        records_to_insert = []
+
+        for stock_item in stock_hist:
+            record_date = stock_item["date"]
+
+            if record_date in existing_dates:
+                records_to_update.append(stock_item)
+            else:
+                records_to_insert.append(stock_item)
+
+        # Batch insert new records
+        if records_to_insert:
+            insert_batch_size = 1000
+            for i in range(0, len(records_to_insert), insert_batch_size):
+                batch = records_to_insert[i : i + insert_batch_size]
+                db.bulk_insert_mappings(StockHistoryDB, batch)
+                db.commit()
+                log.info(f"[{symbol}] 批量插入 {len(batch)} 条新记录")
+
+        # Batch update existing records
+        if records_to_update:
+            update_batch_size = 500
+            for i in range(0, len(records_to_update), update_batch_size):
+                batch = records_to_update[i : i + update_batch_size]
+                for record in batch:
+                    db_stock = StockHistoryDB(**record)
+                    db.merge(db_stock)
+                db.commit()
+                log.info(f"[{symbol}] 批量更新 {len(batch)} 条现有记录")
+
+        total_processed = len(records_to_insert) + len(records_to_update)
+        log.info(
+            f"[{symbol}] 成功处理 {total_processed} 条历史记录 "
+            f"(新增: {len(records_to_insert)}, 更新: {len(records_to_update)}), "
+            f"调整类型: {adjust}"
+        )
+
     except Exception as e:
         db.rollback()
         log.error(f"[{symbol}] 数据库操作失败: {e}")

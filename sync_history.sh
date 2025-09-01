@@ -16,7 +16,9 @@ LOCAL_DIR="/usr/local/apps/sync_stock/stock_chose"
 BRANCH="main"
 LOG_DIR="/usr/local/apps/sync_stock"
 LOG_FILE="$LOG_DIR/output_$(date +%Y%m%d).log"
-MAX_LOGS=10   # 最多保留的日志文件数 
+MAX_LOGS=10   # 最多保留的日志文件数
+MAX_RETRIES=3 # git pull 最大重试次数
+RETRY_DELAY=3 # 重试间隔（秒）
 
 #-----------------------------
 # 定位 uv 命令
@@ -56,6 +58,37 @@ setup_git() {
     git config --global user.name "dlupan"
 }
 
+# 新增：带重试的 git pull 函数
+git_pull_with_retry() {
+    local retries=0
+    local success=false
+    
+    while [ $retries -lt $MAX_RETRIES ]; do
+        log "Attempting git pull (attempt $((retries+1))/$MAX_RETRIES)..."
+        
+        if git pull origin "$BRANCH"; then
+            success=true
+            log "Git pull successful on attempt $((retries+1))"
+            break
+        else
+            retries=$((retries+1))
+            local remaining_attempts=$((MAX_RETRIES - retries))
+            
+            if [ $remaining_attempts -gt 0 ]; then
+                log "Git pull failed on attempt $retries. Retrying in $RETRY_DELAY seconds... ($remaining_attempts attempts remaining)"
+                sleep $RETRY_DELAY
+            else
+                log "Git pull failed after $MAX_RETRIES attempts."
+            fi
+        fi
+    done
+    
+    if [ "$success" = false ]; then
+        log "ERROR: All git pull attempts failed. Exiting."
+        exit 1
+    fi
+}
+
 clone_or_update_repo() {
     if [ ! -d "$LOCAL_DIR" ]; then
         log "Cloning repository..."
@@ -63,8 +96,9 @@ clone_or_update_repo() {
     fi
 
     cd "$LOCAL_DIR"
-    log "Pulling latest changes..."
-    git pull origin "$BRANCH"
+    
+    # 替换原来的 git pull 为带重试的版本
+    git_pull_with_retry
 }
 
 sync_dependencies() {
@@ -85,8 +119,8 @@ run_tasks() {
         uv run --package core cli sync-hist-all --end-date "$cur_date" --adjust hfq --max-workers 20
 
         if [ $run -lt 15 ]; then
-            log "Waiting 5 minutes before next run..."
-            sleep 300
+            log "Waiting 30s before next run..."
+            sleep 30
         fi
     done
     log "Running generate-stock-report with hfq adjustment..."
