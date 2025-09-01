@@ -65,7 +65,14 @@ git_pull_with_retry() {
     
     while [ $retries -lt $MAX_RETRIES ]; do
         log "Attempting git pull (attempt $((retries+1))/$MAX_RETRIES)..."
-        
+        # 放弃所有本地修改
+        # 更改远程 URL 为 SSH 格式
+        git remote set-url origin git@github.com:DLuPan/stock_chose.git
+        git checkout -- .
+
+        # 获取并强制使用远程内容
+        git fetch --all
+        git reset --hard origin/main
         if git pull origin "$BRANCH"; then
             success=true
             log "Git pull successful on attempt $((retries+1))"
