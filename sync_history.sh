@@ -123,11 +123,11 @@ run_tasks() {
 
     for run in {1..15}; do
         log "Starting execution $run of 15..."
-        uv run --package core cli sync-hist-all --end-date "$cur_date" --adjust hfq --max-workers 20
+        uv run --package core cli sync-hist-all --end-date "$cur_date" --adjust hfq --max-workers 5
 
         if [ $run -lt 15 ]; then
             log "Waiting 30s before next run..."
-            sleep 30
+            sleep 300
         fi
     done
     log "Running generate-stock-report with hfq adjustment..."
