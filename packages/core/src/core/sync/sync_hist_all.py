@@ -1,6 +1,7 @@
 import datetime
 import time
 import random
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from core.models import (
     StockSpotDB,
@@ -9,6 +10,7 @@ from core.models import (
 from core.database import get_db_session, init_db
 from core.logger import log
 from .sync_hist import sync_stock_zh_a_hist
+from .sync_business_composition import sync_stock_business_composition
 
 # Initialize database on first run
 init_db()
@@ -60,6 +62,7 @@ def sync_stock_zh_a_hist_all(
     except Exception as e:
         db.rollback()
         log.error(f"初始化任务失败: {e}")
+        log.error(f"详细错误信息:\n{traceback.format_exc()}")
         raise
     finally:
         db.close()
@@ -86,6 +89,7 @@ def sync_stock_zh_a_hist_all(
 
     except Exception as e:
         log.error(f"获取任务失败: {e}")
+        log.error(f"详细错误信息:\n{traceback.format_exc()}")
         raise
     finally:
         db.close()
@@ -99,7 +103,7 @@ def sync_stock_zh_a_hist_all(
         log.info(f"[{symbol}] 开始同步")
 
         try:
-            # 执行同步
+            # 执行历史行情同步
             hist = sync_stock_zh_a_hist(
                 symbol=symbol,
                 period=period,
@@ -107,21 +111,25 @@ def sync_stock_zh_a_hist_all(
                 end_date=end_date,
                 adjust=adjust,
             )
+            
+            # 执行主营构成数据同步
+            composition = sync_stock_business_composition(symbol=symbol)
 
             elapsed = time.time() - start_time
-            log.info(f"[{symbol}] 完成，耗时: {elapsed:.2f}s，记录: {len(hist)}")
+            log.info(f"[{symbol}] 完成，耗时: {elapsed:.2f}s，历史行情: {len(hist)}条，主营构成: {len(composition)}条")
             time.sleep(random.uniform(1, 3))
 
-            return (symbol, True, None, elapsed, len(hist))
+            return (symbol, True, None, elapsed, len(hist), len(composition))
 
         except Exception as e:
             elapsed = time.time() - start_time
             log.error(f"[{symbol}] 失败，耗时: {elapsed:.2f}s，错误: {str(e)}")
+            log.error(f"[{symbol}] 详细错误信息:\n{traceback.format_exc()}")
             time.sleep(random.uniform(1, 3))
-            return (symbol, False, str(e), elapsed, 0)
+            return (symbol, False, str(e), elapsed, 0, 0)
 
     # 更新任务状态
-    def update_task_status(symbol, success, message, elapsed, records_count):
+    def update_task_status(symbol, success, message, elapsed, hist_records_count, composition_records_count):
         with get_db_session() as db:
             task = (
                 db.query(StockSyncTaskDB)
@@ -151,20 +159,21 @@ def sync_stock_zh_a_hist_all(
         for idx, future in enumerate(as_completed(futures), 1):
             symbol = futures[future]
             try:
-                symbol, ok, err, elapsed, records_count = future.result()
+                symbol, ok, err, elapsed, hist_records_count, composition_records_count = future.result()
                 if ok:
                     success += 1
                 else:
                     fail += 1
 
                 # 更新任务状态
-                message = f"成功，{records_count}条记录" if ok else f"失败: {err[:100]}"
-                update_task_status(symbol, ok, message, elapsed, records_count)
+                message = f"成功，历史行情:{hist_records_count}条，主营构成:{composition_records_count}条" if ok else f"失败: {err[:100]}"
+                update_task_status(symbol, ok, message, elapsed, hist_records_count, composition_records_count)
 
             except Exception as e:
                 fail += 1
                 log.error(f"[{symbol}] 执行异常: {e}")
-                update_task_status(symbol, False, f"执行异常: {e}", 0, 0)
+                log.error(f"[{symbol}] 详细错误信息:\n{traceback.format_exc()}")
+                update_task_status(symbol, False, f"执行异常: {e}", 0, 0, 0)
 
             # 进度日志
             progress = (idx / len(symbols)) * 100

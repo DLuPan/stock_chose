@@ -21,13 +21,13 @@ from core.models import Base
 init_db()
 
 # 保留文件以保持向后兼容性，但实际功能已拆分到独立文件中
-__all__ = [
-    "sync_stock_zh_a_spot_em",
-    "sync_stock_zh_a_hist",
-    "sync_stock_zh_a_hist_all",
-]
+__all__ = ['sync_stock_zh_a_spot_em', 'sync_stock_zh_a_hist', 'sync_stock_zh_a_hist_all', 
+           'sync_stock_business_composition', 'sync_all_stock_business_compositions',
+           'sync_stock_news', 'sync_all_stock_news']
 
 # 从其他模块导入函数以保持向后兼容性
 from .sync_spot import sync_stock_zh_a_spot_em
 from .sync_hist import sync_stock_zh_a_hist
 from .sync_hist_all import sync_stock_zh_a_hist_all
+from .sync_business_composition import sync_stock_business_composition, sync_all_stock_business_compositions
+from .sync_stock_news import sync_stock_news, sync_all_stock_news

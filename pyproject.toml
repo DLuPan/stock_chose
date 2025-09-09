@@ -11,6 +11,7 @@ dependencies = [
     "mysql-connector-python>=9.4.0",
     "pydantic>=2.11.7",
     "pymysql>=1.1.2",
+    "schedule>=1.2.2",
     "sqlalchemy>=2.0.43",
     "typer>=0.16.0",
 ]
@@ -21,6 +22,7 @@ members = [
     "packages/core",
     "packages/bot",
     "packages/tools",
+    "packages/trading-grid",
 ]
 
 [tool.setuptools.packages.find]

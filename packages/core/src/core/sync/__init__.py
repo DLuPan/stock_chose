@@ -2,3 +2,11 @@
 from .sync_spot import sync_stock_zh_a_spot_em
 from .sync_hist import sync_stock_zh_a_hist
 from .sync_hist_all import sync_stock_zh_a_hist_all
+from .sync_business_composition import sync_stock_business_composition, sync_all_stock_business_compositions
+from .sync_stock_news import sync_stock_news, sync_all_stock_news
+from .sync_financial_debt import sync_stock_financial_debt, sync_all_stock_financial_debts
+from .sync_research_report import sync_stock_research_report, sync_all_stock_research_reports
+from .sync_financial_abstract import sync_stock_financial_abstract, sync_all_stock_financial_abstracts
+from .sync_financial_analysis import sync_stock_financial_analysis, sync_all_stock_financial_analyses
+from .sync_gdhs import sync_stock_gdhs, sync_all_stock_gdhs
+from .sync_main_holder import sync_stock_main_holder, sync_all_stock_main_holders

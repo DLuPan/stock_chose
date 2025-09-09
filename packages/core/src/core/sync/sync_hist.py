@@ -7,6 +7,21 @@ from core.database import get_db_session, get_hist_db_session
 from core.logger import log
 
 
+def format_stock_symbol(symbol: str) -> str:
+    """
+    Remove exchange prefix from stock symbol if present
+    
+    Args:
+        symbol: Stock symbol with or without exchange prefix (e.g., SH600004 or 600004)
+        
+    Returns:
+        Stock symbol without exchange prefix (e.g., 600004)
+    """
+    if symbol.startswith(("SH", "SZ", "BJ")):
+        return symbol[2:]
+    return symbol
+
+
 def sync_stock_zh_a_hist(
     symbol: str = "000001",
     period: str = "daily",
@@ -14,16 +29,19 @@ def sync_stock_zh_a_hist(
     end_date: str = "20500101",
     adjust: str = "none",
 ) -> List[Dict]:
+    # Remove exchange prefix from symbol for akshare API
+    formatted_symbol = format_stock_symbol(symbol)
+    
     # Convert date strings to datetime objects for comparison
     start_date_dt = datetime.datetime.strptime(start_date, "%Y%m%d").date()
     end_date_dt = datetime.datetime.strptime(end_date, "%Y%m%d").date()
 
     # Check the latest date in database for this symbol and adjust type
-    db = get_hist_db_session(symbol)
+    db = get_hist_db_session(formatted_symbol)
     try:
         latest_record = (
             db.query(StockHistoryDB.date)
-            .filter(StockHistoryDB.symbol == symbol, StockHistoryDB.adjust == adjust)
+            .filter(StockHistoryDB.symbol == formatted_symbol, StockHistoryDB.adjust == adjust)
             .order_by(StockHistoryDB.date.desc())
             .first()
         )
@@ -33,7 +51,7 @@ def sync_stock_zh_a_hist(
             # If latest date is already beyond end_date, skip sync
             if latest_date >= end_date_dt:
                 log.info(
-                    f"[{symbol}] 最新数据日期 {latest_date} 已超过或等于结束日期 {end_date_dt}，跳过同步"
+                    f"[{formatted_symbol}] 最新数据日期 {latest_date} 已超过或等于结束日期 {end_date_dt}，跳过同步"
                 )
                 return []
 
@@ -43,7 +61,7 @@ def sync_stock_zh_a_hist(
                 start_date = new_start_date.strftime("%Y%m%d")
                 start_date_dt = new_start_date
                 log.info(
-                    f"[{symbol}] 使用数据库最新日期后一天作为开始日期: {start_date}"
+                    f"[{formatted_symbol}] 使用数据库最新日期后一天作为开始日期: {start_date}"
                 )
 
     finally:
@@ -52,13 +70,13 @@ def sync_stock_zh_a_hist(
     # If start_date is after end_date, skip sync
     if start_date_dt > end_date_dt:
         log.info(
-            f"[{symbol}] 开始日期 {start_date_dt} 已超过结束日期 {end_date_dt}，跳过同步"
+            f"[{formatted_symbol}] 开始日期 {start_date_dt} 已超过结束日期 {end_date_dt}，跳过同步"
         )
         return []
 
     # Get historical stock data using akshare
     stock_hist_df = ak.stock_zh_a_hist(
-        symbol=symbol,
+        symbol=formatted_symbol,
         period=period,
         start_date=start_date,
         end_date=end_date,
@@ -67,7 +85,7 @@ def sync_stock_zh_a_hist(
 
     # If no data returned, skip database operations
     if stock_hist_df.empty:
-        log.info(f"[{symbol}] 未获取到 {start_date} 至 {end_date} 的历史数据")
+        log.info(f"[{formatted_symbol}] 未获取到 {start_date} 至 {end_date} 的历史数据")
         return []
 
     # Rename columns to English
@@ -104,62 +122,29 @@ def sync_stock_zh_a_hist(
                 stock_item[key] = int(value)
             elif isinstance(value, np.floating):
                 stock_item[key] = float(value)
+            elif isinstance(value, np.bool_):
+                stock_item[key] = bool(value)
 
-    # Save to database with batch operations
-    db = get_db_session()
+    # Save to database
+    db = get_hist_db_session(formatted_symbol)
     try:
-        # Get existing dates for this symbol and adjust type
-        existing_records = (
-            db.query(StockHistoryDB.date)
-            .filter(StockHistoryDB.symbol == symbol, StockHistoryDB.adjust == adjust)
-            .all()
-        )
+        # Batch insert data
+        batch_size = 500
+        for i in range(0, len(stock_hist), batch_size):
+            batch = stock_hist[i : i + batch_size]
+            db.bulk_insert_mappings(StockHistoryDB, batch)
+            db.commit()
+            log.info(
+                f"[{formatted_symbol}] 批量插入第 {i//batch_size + 1} 批数据，记录数: {len(batch)}"
+            )
 
-        existing_dates = {record[0] for record in existing_records}
-
-        # Separate records into updates and inserts
-        records_to_update = []
-        records_to_insert = []
-
-        for stock_item in stock_hist:
-            record_date = stock_item["date"]
-
-            if record_date in existing_dates:
-                records_to_update.append(stock_item)
-            else:
-                records_to_insert.append(stock_item)
-
-        # Batch insert new records
-        if records_to_insert:
-            insert_batch_size = 1000
-            for i in range(0, len(records_to_insert), insert_batch_size):
-                batch = records_to_insert[i : i + insert_batch_size]
-                db.bulk_insert_mappings(StockHistoryDB, batch)
-                db.commit()
-                log.info(f"[{symbol}] 批量插入 {len(batch)} 条新记录")
-
-        # Batch update existing records
-        if records_to_update:
-            update_batch_size = 500
-            for i in range(0, len(records_to_update), update_batch_size):
-                batch = records_to_update[i : i + update_batch_size]
-                for record in batch:
-                    db_stock = StockHistoryDB(**record)
-                    db.merge(db_stock)
-                db.commit()
-                log.info(f"[{symbol}] 批量更新 {len(batch)} 条现有记录")
-
-        total_processed = len(records_to_insert) + len(records_to_update)
-        log.info(
-            f"[{symbol}] 成功处理 {total_processed} 条历史记录 "
-            f"(新增: {len(records_to_insert)}, 更新: {len(records_to_update)}), "
-            f"调整类型: {adjust}"
-        )
+        log.info(f"[{formatted_symbol}] 成功同步 {len(stock_hist)} 条历史数据")
+        return stock_hist
 
     except Exception as e:
         db.rollback()
-        log.error(f"[{symbol}] 数据库操作失败: {e}")
+        log.error(f"[{formatted_symbol}] 数据库操作失败: {e}")
         raise
+
     finally:
         db.close()
-    return stock_hist

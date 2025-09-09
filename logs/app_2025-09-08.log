@@ -488,3 +488,1413 @@
 2025-09-08 16:44:34 | INFO     | core.sync.sync_hist_all:process_symbol:99 - [000409] 开始同步
 2025-09-08 16:44:35 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000409] 使用数据库最新日期后一天作为开始日期: 20250906
 2025-09-08 16:44:35 | INFO     | core.sync.sync_hist_all:process_symbol:99 - [000410] 开始同步
+2025-09-08 16:53:51 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:26 - 开始同步历史数据，结束日期: 2025-09-08, 复权: hfq, 并发: 5
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:42 - 股票代码: 5746, 已有任务: 5746
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:59 - 新增任务: 0
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:86 - 待处理任务: 500
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000156] 开始同步
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000157] 开始同步
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000158] 开始同步
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000159] 开始同步
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000166] 开始同步
+2025-09-08 16:53:52 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000156] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:53 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000166] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:53 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000157] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:53 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000158] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:53 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000159] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000156] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000156] 失败，耗时: 0.99s，错误: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000159] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000159] 失败，耗时: 1.11s，错误: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000166] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000157] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000166] 失败，耗时: 1.20s，错误: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000157] 失败，耗时: 1.21s，错误: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000158] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:53 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000158] 失败，耗时: 1.21s，错误: 'zygcfx'
+2025-09-08 16:53:54 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000301] 开始同步
+2025-09-08 16:53:55 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000301] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:55 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000333] 开始同步
+2025-09-08 16:53:55 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000333] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:55 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000338] 开始同步
+2025-09-08 16:53:55 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000338] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:55 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000400] 开始同步
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000333] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000333] 失败，耗时: 0.74s，错误: 'zygcfx'
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000301] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000301] 失败，耗时: 1.30s，错误: 'zygcfx'
+2025-09-08 16:53:56 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000401] 开始同步
+2025-09-08 16:53:56 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000400] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000338] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000338] 失败，耗时: 0.79s，错误: 'zygcfx'
+2025-09-08 16:53:56 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000401] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000400] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:56 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000400] 失败，耗时: 0.89s，错误: 'zygcfx'
+2025-09-08 16:53:57 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000402] 开始同步
+2025-09-08 16:53:57 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000401] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:57 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000401] 失败，耗时: 1.02s，错误: 'zygcfx'
+2025-09-08 16:53:57 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000402] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:58 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000402] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:58 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000402] 失败，耗时: 0.88s，错误: 'zygcfx'
+2025-09-08 16:53:58 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000403] 开始同步
+2025-09-08 16:53:58 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000404] 开始同步
+2025-09-08 16:53:58 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000403] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:58 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000404] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:53:59 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000403] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:59 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000403] 失败，耗时: 0.78s，错误: 'zygcfx'
+2025-09-08 16:53:59 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000405] 开始同步
+2025-09-08 16:53:59 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000404] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:53:59 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000404] 失败，耗时: 0.74s，错误: 'zygcfx'
+2025-09-08 16:53:59 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000406] 开始同步
+2025-09-08 16:53:59 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000405] 使用数据库最新日期后一天作为开始日期: 20030426
+2025-09-08 16:53:59 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000406] 使用数据库最新日期后一天作为开始日期: 20060407
+2025-09-08 16:53:59 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:70 - [000405] 未获取到 20030426 至 20250908 的历史数据
+2025-09-08 16:54:00 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000407] 开始同步
+2025-09-08 16:54:00 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:70 - [000406] 未获取到 20060407 至 20250908 的历史数据
+2025-09-08 16:54:00 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000405] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:00 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000405] 失败，耗时: 1.14s，错误: 'zygcfx'
+2025-09-08 16:54:00 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000407] 使用数据库最新日期后一天作为开始日期: 20250906
+2025-09-08 16:54:00 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000406] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:00 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000406] 失败，耗时: 1.15s，错误: 'zygcfx'
+2025-09-08 16:54:00 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000408] 开始同步
+2025-09-08 16:54:01 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000408] 使用数据库最新日期后一天作为开始日期: 20250906
+2025-09-08 16:54:01 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:139 - [000407] 批量插入 1 条新记录
+2025-09-08 16:54:01 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:153 - [000407] 成功处理 1 条历史记录 (新增: 1, 更新: 0), 调整类型: hfq
+2025-09-08 16:54:01 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000409] 开始同步
+2025-09-08 16:54:02 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000407] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:02 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000407] 失败，耗时: 2.04s，错误: 'zygcfx'
+2025-09-08 16:54:02 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000409] 使用数据库最新日期后一天作为开始日期: 20250906
+2025-09-08 16:54:02 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000410] 开始同步
+2025-09-08 16:54:02 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:139 - [000408] 批量插入 1 条新记录
+2025-09-08 16:54:02 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:153 - [000408] 成功处理 1 条历史记录 (新增: 1, 更新: 0), 调整类型: hfq
+2025-09-08 16:54:03 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000410] 使用数据库最新日期后一天作为开始日期: 20250906
+2025-09-08 16:54:03 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000411] 开始同步
+2025-09-08 16:54:03 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000408] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:03 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000408] 失败，耗时: 2.33s，错误: 'zygcfx'
+2025-09-08 16:54:03 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000411] 使用数据库最新日期后一天作为开始日期: 20250906
+2025-09-08 16:54:03 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:139 - [000409] 批量插入 1 条新记录
+2025-09-08 16:54:03 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:153 - [000409] 成功处理 1 条历史记录 (新增: 1, 更新: 0), 调整类型: hfq
+2025-09-08 16:54:04 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000409] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:139 - [000410] 批量插入 1 条新记录
+2025-09-08 16:54:04 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000409] 失败，耗时: 2.44s，错误: 'zygcfx'
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:153 - [000410] 成功处理 1 条历史记录 (新增: 1, 更新: 0), 调整类型: hfq
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000412] 开始同步
+2025-09-08 16:54:04 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000410] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:04 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000410] 失败，耗时: 1.87s，错误: 'zygcfx'
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000412] 使用数据库最新日期后一天作为开始日期: 20030426
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:139 - [000411] 批量插入 1 条新记录
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:153 - [000411] 成功处理 1 条历史记录 (新增: 1, 更新: 0), 调整类型: hfq
+2025-09-08 16:54:04 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000413] 开始同步
+2025-09-08 16:54:05 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:70 - [000412] 未获取到 20030426 至 20250908 的历史数据
+2025-09-08 16:54:05 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000411] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:05 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000411] 失败，耗时: 2.02s，错误: 'zygcfx'
+2025-09-08 16:54:05 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000413] 使用数据库最新日期后一天作为开始日期: 20240815
+2025-09-08 16:54:05 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000415] 开始同步
+2025-09-08 16:54:05 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000412] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:05 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000412] 失败，耗时: 1.22s，错误: 'zygcfx'
+2025-09-08 16:54:05 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:70 - [000413] 未获取到 20240815 至 20250908 的历史数据
+2025-09-08 16:54:05 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000415] 使用数据库最新日期后一天作为开始日期: 20250906
+2025-09-08 16:54:06 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000413] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:06 | ERROR    | core.sync.sync_hist_all:process_symbol:123 - [000413] 失败，耗时: 1.38s，错误: 'zygcfx'
+2025-09-08 16:54:06 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000416] 开始同步
+2025-09-08 16:54:06 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:45 - [000416] 使用数据库最新日期后一天作为开始日期: 20240425
+2025-09-08 16:54:54 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:26 - 开始同步历史数据，结束日期: 2025-09-08, 复权: hfq, 并发: 1
+2025-09-08 16:54:55 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:42 - 股票代码: 5746, 已有任务: 5746
+2025-09-08 16:54:55 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:59 - 新增任务: 0
+2025-09-08 16:54:55 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:86 - 待处理任务: 500
+2025-09-08 16:54:56 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000156] 开始同步
+2025-09-08 16:54:56 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000156] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:54:56 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000156] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:54:56 | ERROR    | core.sync.sync_hist_all:process_symbol:125 - [000156] 失败，耗时: 0.80s，错误: 'zygcfx'
+2025-09-08 16:54:59 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000157] 开始同步
+2025-09-08 16:54:59 | INFO     | core.sync.sync_hist_all:sync_stock_zh_a_hist_all:201 - 进度 1/500 (0.2%) | 成功:0 失败:1 | 耗时:4s 剩余:1907s
+2025-09-08 16:55:00 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000157] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:55:00 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000157] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:55:00 | ERROR    | core.sync.sync_hist_all:process_symbol:125 - [000157] 失败，耗时: 1.10s，错误: 'zygcfx'
+2025-09-08 16:55:02 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000158] 开始同步
+2025-09-08 16:55:03 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000158] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:55:03 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000158] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:55:03 | ERROR    | core.sync.sync_hist_all:process_symbol:125 - [000158] 失败，耗时: 1.06s，错误: 'zygcfx'
+2025-09-08 16:55:06 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000159] 开始同步
+2025-09-08 16:55:06 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000159] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:55:07 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000159] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:55:07 | ERROR    | core.sync.sync_hist_all:process_symbol:125 - [000159] 失败，耗时: 1.06s，错误: 'zygcfx'
+2025-09-08 16:55:09 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000166] 开始同步
+2025-09-08 16:55:10 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000166] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:55:10 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000166] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:55:10 | ERROR    | core.sync.sync_hist_all:process_symbol:125 - [000166] 失败，耗时: 1.17s，错误: 'zygcfx'
+2025-09-08 16:55:12 | INFO     | core.sync.sync_hist_all:process_symbol:100 - [000301] 开始同步
+2025-09-08 16:55:13 | INFO     | core.sync.sync_hist:sync_stock_zh_a_hist:35 - [000301] 最新数据日期 2025-09-08 已超过或等于结束日期 2025-09-08，跳过同步
+2025-09-08 16:55:13 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [000301] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 16:55:13 | ERROR    | core.sync.sync_hist_all:process_symbol:125 - [000301] 失败，耗时: 0.72s，错误: 'zygcfx'
+2025-09-08 16:58:59 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:112 - [688041] 获取主营构成数据失败: 'zygcfx'
+2025-09-08 17:06:08 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:06:08 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:06:10 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:141 - [SH688041] 数据库操作失败: (mysql.connector.errors.DatabaseError) 1366 (HY000): Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/4xp6)
+2025-09-08 17:06:10 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:142 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 1366 (HY000): Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.DatabaseError: (mysql.connector.errors.DatabaseError) 1366 (HY000): Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/4xp6)
+
+2025-09-08 17:06:10 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:150 - [SH688041] 获取主营构成数据失败: (mysql.connector.errors.DatabaseError) 1366 (HY000): Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/4xp6)
+2025-09-08 17:06:10 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:151 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 1366 (HY000): Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.DatabaseError: (mysql.connector.errors.DatabaseError) 1366 (HY000): Incorrect integer value: '高端处理器' for column 'main_composition' at row 1
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/4xp6)
+
+2025-09-08 17:07:51 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:07:51 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:07:52 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:141 - [SH688041] 数据库操作失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:07:52 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:142 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:07:52 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:150 - [SH688041] 获取主营构成数据失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:07:52 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:151 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:09:29 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:09:29 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:09:29 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:141 - [SH688041] 数据库操作失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:09:29 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:142 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:09:29 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:150 - [SH688041] 获取主营构成数据失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:09:29 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:151 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:09:52 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:09:52 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:09:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:141 - [SH688041] 数据库操作失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:09:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:142 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:09:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:150 - [SH688041] 获取主营构成数据失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:09:53 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:151 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:10:29 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:10:30 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:10:31 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:137 - [SH688041] 成功同步 73 条主营构成数据
+2025-09-08 17:15:09 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:15:10 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:15:11 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:141 - [SH688041] 数据库操作失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:15:11 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:142 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:15:11 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:150 - [SH688041] 获取主营构成数据失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:15:11 | ERROR    | core.sync.sync_business_composition:sync_stock_business_composition:151 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_business_composition.py", line 136, in sync_stock_business_composition
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041-2025-06-30-按产品分类-高端处理器' for key 'stock_business_composition.PRIMARY'
+[SQL: INSERT INTO stock_business_composition (symbol, report_date, category_type, main_composition, main_income, income_ratio, main_cost, cost_ratio, main_profit, profit_ratio, gross_margin) VALUES (%(symbol)s, %(report_date)s, %(category_type)s, %(main_composition)s, %(main_income)s, %(income_ratio)s, %(main_cost)s, %(cost_ratio)s, %(main_profit)s, %(profit_ratio)s, %(gross_margin)s)]
+[parameters: [{'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 5449573753.52, 'income_ratio': 0.997317, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3271907734.8, 'profit_ratio': 0.995539, 'gross_margin': 0.600397}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按产品分类', 'main_composition': '其他(补充)', 'main_income': 14661303.63, 'income_ratio': 0.002683, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 14661303.63, 'profit_ratio': 0.004461, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2025, 6, 30), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 5464235057.15, 'income_ratio': 1.0, 'main_cost': 2177666018.72, 'cost_ratio': 1.0, 'main_profit': 3286569038.43, 'profit_ratio': 1.0, 'gross_margin': 0.601469}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路产品', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '', 'main_composition': '集成电路技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '高端处理器', 'main_income': 9134299079.32, 'income_ratio': 0.99696, 'main_cost': 3315922378.41, 'cost_ratio': 0.997567, 'main_profit': 5818376700.91, 'profit_ratio': 0.996615, 'gross_margin': 0.636981}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按产品分类', 'main_composition': '技术服务', 'main_income': 27849056.6, 'income_ratio': 0.00304, 'main_cost': 8086970.8, 'cost_ratio': 0.002433, 'main_profit': 19762085.8, 'profit_ratio': 0.003385, 'gross_margin': 0.709614}, {'symbol': '688041', 'report_date': datetime.date(2024, 12, 31), 'category_type': '按地区分类', 'main_composition': '境内(含港澳台地区)', 'main_income': 9162148135.92, 'income_ratio': 1.0, 'main_cost': 3324009349.21, 'cost_ratio': 1.0, 'main_profit': 5838138786.71, 'profit_ratio': 1.0, 'gross_margin': 0.637202}  ... displaying 10 of 73 total bound parameter sets ...  {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '华北', 'main_income': 47539900.0, 'income_ratio': 0.985254, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}, {'symbol': '688041', 'report_date': datetime.date(2018, 12, 31), 'category_type': '按地区分类', 'main_composition': '其他(补充)', 'main_income': 711500.0, 'income_ratio': 0.014746, 'main_cost': 0.0, 'cost_ratio': 0.0, 'main_profit': 0.0, 'profit_ratio': 0.0, 'gross_margin': 0.0}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:16:29 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:16:30 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:16:31 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:137 - [SH688041] 成功同步 73 条主营构成数据
+2025-09-08 17:17:08 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:56 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:17:09 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:61 - [SH688041] 获取到 73 条主营构成数据
+2025-09-08 17:17:10 | INFO     | core.sync.sync_business_composition:sync_stock_business_composition:139 - [SH688041] 成功同步 73 条主营构成数据
+2025-09-08 17:17:39 | INFO     | core.sync.sync_stock_news:sync_stock_news:26 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:17:40 | INFO     | core.sync.sync_stock_news:sync_stock_news:31 - [SH688041] 获取到 96 条新闻数据
+2025-09-08 17:18:05 | INFO     | core.sync.sync_stock_news:sync_stock_news:86 - [SH688041] 成功同步 96 条新闻数据
+2025-09-08 17:19:44 | INFO     | core.sync.sync_stock_news:sync_stock_news:26 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:19:44 | INFO     | core.sync.sync_stock_news:sync_stock_news:31 - [SH688041] 获取到 96 条新闻数据
+2025-09-08 17:19:45 | INFO     | core.sync.sync_stock_news:sync_stock_news:91 - [SH688041] 成功同步 96 条新闻数据
+2025-09-08 17:20:52 | INFO     | core.sync.sync_stock_news:sync_stock_news:26 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:20:53 | INFO     | core.sync.sync_stock_news:sync_stock_news:31 - [SH688041] 获取到 96 条新闻数据
+2025-09-08 17:20:53 | ERROR    | core.sync.sync_stock_news:sync_stock_news:93 - [SH688041] 数据库操作失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: [{'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：2025年半年度净利润约12.01亿元，同比增加40.78%', 'content': '海光信息（SH 688041，收盘价：142.46元）8月5日晚间发布半年度业绩报告称，2025年上半年营业收入约54.64', 'publish_time': Timestamp('2025-08-05 18:40:42'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508053476613180.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：将向产业生态伙伴开放CPU能力', 'content': '广网北京9月5日消息（记者齐智颖实习记者刘子瑶）央广财经记者从海光信息（688041.SH方面获悉，该公司将开放CPU', 'publish_time': Timestamp('2025-09-05 18:10:57'), 'source': '央广财经', 'link': 'http://finance.eastmoney.com/a/202509053506239525.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪市上半年丨消费筑基、科技引领！沪市公司净利增长1.1%', 'content': '海光信息（688041.SH）的高端处理器产品涉及的新兴人工智能大模型产业逐渐增多，带动上半年净利润首次突破10亿元。', 'publish_time': Timestamp('2025-09-01 09:07:52'), 'source': '中国经营报', 'link': 'http://finance.eastmoney.com/a/202509013500586366.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪指续创十年新高，创业板突破2700点！稀土永磁、白酒、AI算力等板块领涨', 'content': '（688041.SH）、中科曙光（603019.SH）、新易盛（300502.SZ）均涨超8%。', 'publish_time': Timestamp('2025-08-25 13:29:48'), 'source': '红星资本局', 'link': 'http://finance.eastmoney.com/a/202508253493440392.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '十年扎根高端计算，海光C86迈进“可选、可信、可用”新时代', 'content': '海光信息（688041.SH），第二个十年悄然开启。而起手式，或许可以从一场活动看出端倪。', 'publish_time': Timestamp('2025-08-27 11:58:46'), 'source': '时代周报', 'link': 'http://finance.eastmoney.com/a/202508273496141550.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': 'A股五年变迁：电子板块市值“逼宫”银行 能否跑出中国版“英伟达”？', 'content': '）单日暴涨20%、市值激增近千亿元，一举超越多家头部金融股；海光信息（688041', 'publish_time': Timestamp('2025-08-24 16:39:19'), 'source': '第一财经', 'link': 'http://finance.eastmoney.com/a/202508243492773762.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息拟1160亿元换股吸收合并中科曙光 换股定价高于现金选择权引发股东“吐槽”', 'content': '6月9日，国内算力产业最大合并案落锤，海光信息（SH688041，股价135.50元，市值3149亿元）拟1160亿元换股吸收合并中科曙光', 'publish_time': Timestamp('2025-06-11 21:40:08'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202506113428019075.html'}  ... displaying 10 of 96 total bound parameter sets ...  {'symbol': '688041', 'keyword': 'SH688041', 'title': '多家外资机构加入看多中国股市阵营，科创综指ETF天弘（589860）早盘飘红，相关联接基金正式获批', 'content': '是绝对重仓的方向，在电子板块的重仓股包括国产算力芯片龙头海光信息（688041.SH）和寒武纪-U（688256.SH），', 'publish_time': Timestamp('2025-03-12 13:10:55'), 'source': '21世纪经济报道', 'link': 'http://finance.eastmoney.com/a/202503123343521331.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '券商评级一周速览：159只个股获券商关注，赢合科技目标涨幅达122.85%', 'content': '看，有29只个股获得多家券商关注，券商关注数量排名居前的个股是海光信息（688041.SH）、比亚迪', 'publish_time': Timestamp('2025-03-09 12:02:36'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202503093340457919.html'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:20:53 | ERROR    | core.sync.sync_stock_news:sync_stock_news:94 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_stock_news.py", line 88, in sync_stock_news
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: [{'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：2025年半年度净利润约12.01亿元，同比增加40.78%', 'content': '海光信息（SH 688041，收盘价：142.46元）8月5日晚间发布半年度业绩报告称，2025年上半年营业收入约54.64', 'publish_time': Timestamp('2025-08-05 18:40:42'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508053476613180.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：将向产业生态伙伴开放CPU能力', 'content': '广网北京9月5日消息（记者齐智颖实习记者刘子瑶）央广财经记者从海光信息（688041.SH方面获悉，该公司将开放CPU', 'publish_time': Timestamp('2025-09-05 18:10:57'), 'source': '央广财经', 'link': 'http://finance.eastmoney.com/a/202509053506239525.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪市上半年丨消费筑基、科技引领！沪市公司净利增长1.1%', 'content': '海光信息（688041.SH）的高端处理器产品涉及的新兴人工智能大模型产业逐渐增多，带动上半年净利润首次突破10亿元。', 'publish_time': Timestamp('2025-09-01 09:07:52'), 'source': '中国经营报', 'link': 'http://finance.eastmoney.com/a/202509013500586366.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪指续创十年新高，创业板突破2700点！稀土永磁、白酒、AI算力等板块领涨', 'content': '（688041.SH）、中科曙光（603019.SH）、新易盛（300502.SZ）均涨超8%。', 'publish_time': Timestamp('2025-08-25 13:29:48'), 'source': '红星资本局', 'link': 'http://finance.eastmoney.com/a/202508253493440392.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '十年扎根高端计算，海光C86迈进“可选、可信、可用”新时代', 'content': '海光信息（688041.SH），第二个十年悄然开启。而起手式，或许可以从一场活动看出端倪。', 'publish_time': Timestamp('2025-08-27 11:58:46'), 'source': '时代周报', 'link': 'http://finance.eastmoney.com/a/202508273496141550.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': 'A股五年变迁：电子板块市值“逼宫”银行 能否跑出中国版“英伟达”？', 'content': '）单日暴涨20%、市值激增近千亿元，一举超越多家头部金融股；海光信息（688041', 'publish_time': Timestamp('2025-08-24 16:39:19'), 'source': '第一财经', 'link': 'http://finance.eastmoney.com/a/202508243492773762.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息拟1160亿元换股吸收合并中科曙光 换股定价高于现金选择权引发股东“吐槽”', 'content': '6月9日，国内算力产业最大合并案落锤，海光信息（SH688041，股价135.50元，市值3149亿元）拟1160亿元换股吸收合并中科曙光', 'publish_time': Timestamp('2025-06-11 21:40:08'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202506113428019075.html'}  ... displaying 10 of 96 total bound parameter sets ...  {'symbol': '688041', 'keyword': 'SH688041', 'title': '多家外资机构加入看多中国股市阵营，科创综指ETF天弘（589860）早盘飘红，相关联接基金正式获批', 'content': '是绝对重仓的方向，在电子板块的重仓股包括国产算力芯片龙头海光信息（688041.SH）和寒武纪-U（688256.SH），', 'publish_time': Timestamp('2025-03-12 13:10:55'), 'source': '21世纪经济报道', 'link': 'http://finance.eastmoney.com/a/202503123343521331.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '券商评级一周速览：159只个股获券商关注，赢合科技目标涨幅达122.85%', 'content': '看，有29只个股获得多家券商关注，券商关注数量排名居前的个股是海光信息（688041.SH）、比亚迪', 'publish_time': Timestamp('2025-03-09 12:02:36'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202503093340457919.html'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:20:53 | ERROR    | core.sync.sync_stock_news:sync_stock_news:102 - [SH688041] 获取新闻数据失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: [{'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：2025年半年度净利润约12.01亿元，同比增加40.78%', 'content': '海光信息（SH 688041，收盘价：142.46元）8月5日晚间发布半年度业绩报告称，2025年上半年营业收入约54.64', 'publish_time': Timestamp('2025-08-05 18:40:42'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508053476613180.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：将向产业生态伙伴开放CPU能力', 'content': '广网北京9月5日消息（记者齐智颖实习记者刘子瑶）央广财经记者从海光信息（688041.SH方面获悉，该公司将开放CPU', 'publish_time': Timestamp('2025-09-05 18:10:57'), 'source': '央广财经', 'link': 'http://finance.eastmoney.com/a/202509053506239525.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪市上半年丨消费筑基、科技引领！沪市公司净利增长1.1%', 'content': '海光信息（688041.SH）的高端处理器产品涉及的新兴人工智能大模型产业逐渐增多，带动上半年净利润首次突破10亿元。', 'publish_time': Timestamp('2025-09-01 09:07:52'), 'source': '中国经营报', 'link': 'http://finance.eastmoney.com/a/202509013500586366.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪指续创十年新高，创业板突破2700点！稀土永磁、白酒、AI算力等板块领涨', 'content': '（688041.SH）、中科曙光（603019.SH）、新易盛（300502.SZ）均涨超8%。', 'publish_time': Timestamp('2025-08-25 13:29:48'), 'source': '红星资本局', 'link': 'http://finance.eastmoney.com/a/202508253493440392.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '十年扎根高端计算，海光C86迈进“可选、可信、可用”新时代', 'content': '海光信息（688041.SH），第二个十年悄然开启。而起手式，或许可以从一场活动看出端倪。', 'publish_time': Timestamp('2025-08-27 11:58:46'), 'source': '时代周报', 'link': 'http://finance.eastmoney.com/a/202508273496141550.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': 'A股五年变迁：电子板块市值“逼宫”银行 能否跑出中国版“英伟达”？', 'content': '）单日暴涨20%、市值激增近千亿元，一举超越多家头部金融股；海光信息（688041', 'publish_time': Timestamp('2025-08-24 16:39:19'), 'source': '第一财经', 'link': 'http://finance.eastmoney.com/a/202508243492773762.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息拟1160亿元换股吸收合并中科曙光 换股定价高于现金选择权引发股东“吐槽”', 'content': '6月9日，国内算力产业最大合并案落锤，海光信息（SH688041，股价135.50元，市值3149亿元）拟1160亿元换股吸收合并中科曙光', 'publish_time': Timestamp('2025-06-11 21:40:08'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202506113428019075.html'}  ... displaying 10 of 96 total bound parameter sets ...  {'symbol': '688041', 'keyword': 'SH688041', 'title': '多家外资机构加入看多中国股市阵营，科创综指ETF天弘（589860）早盘飘红，相关联接基金正式获批', 'content': '是绝对重仓的方向，在电子板块的重仓股包括国产算力芯片龙头海光信息（688041.SH）和寒武纪-U（688256.SH），', 'publish_time': Timestamp('2025-03-12 13:10:55'), 'source': '21世纪经济报道', 'link': 'http://finance.eastmoney.com/a/202503123343521331.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '券商评级一周速览：159只个股获券商关注，赢合科技目标涨幅达122.85%', 'content': '看，有29只个股获得多家券商关注，券商关注数量排名居前的个股是海光信息（688041.SH）、比亚迪', 'publish_time': Timestamp('2025-03-09 12:02:36'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202503093340457919.html'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:20:53 | ERROR    | core.sync.sync_stock_news:sync_stock_news:103 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_stock_news.py", line 88, in sync_stock_news
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1936, in _exec_single_context
+    self.dialect.do_executemany(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 948, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 473, in executemany
+    return self.execute(cast(str, stmt))
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: [{'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：2025年半年度净利润约12.01亿元，同比增加40.78%', 'content': '海光信息（SH 688041，收盘价：142.46元）8月5日晚间发布半年度业绩报告称，2025年上半年营业收入约54.64', 'publish_time': Timestamp('2025-08-05 18:40:42'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508053476613180.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：将向产业生态伙伴开放CPU能力', 'content': '广网北京9月5日消息（记者齐智颖实习记者刘子瑶）央广财经记者从海光信息（688041.SH方面获悉，该公司将开放CPU', 'publish_time': Timestamp('2025-09-05 18:10:57'), 'source': '央广财经', 'link': 'http://finance.eastmoney.com/a/202509053506239525.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪市上半年丨消费筑基、科技引领！沪市公司净利增长1.1%', 'content': '海光信息（688041.SH）的高端处理器产品涉及的新兴人工智能大模型产业逐渐增多，带动上半年净利润首次突破10亿元。', 'publish_time': Timestamp('2025-09-01 09:07:52'), 'source': '中国经营报', 'link': 'http://finance.eastmoney.com/a/202509013500586366.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '沪指续创十年新高，创业板突破2700点！稀土永磁、白酒、AI算力等板块领涨', 'content': '（688041.SH）、中科曙光（603019.SH）、新易盛（300502.SZ）均涨超8%。', 'publish_time': Timestamp('2025-08-25 13:29:48'), 'source': '红星资本局', 'link': 'http://finance.eastmoney.com/a/202508253493440392.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '十年扎根高端计算，海光C86迈进“可选、可信、可用”新时代', 'content': '海光信息（688041.SH），第二个十年悄然开启。而起手式，或许可以从一场活动看出端倪。', 'publish_time': Timestamp('2025-08-27 11:58:46'), 'source': '时代周报', 'link': 'http://finance.eastmoney.com/a/202508273496141550.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': 'A股五年变迁：电子板块市值“逼宫”银行 能否跑出中国版“英伟达”？', 'content': '）单日暴涨20%、市值激增近千亿元，一举超越多家头部金融股；海光信息（688041', 'publish_time': Timestamp('2025-08-24 16:39:19'), 'source': '第一财经', 'link': 'http://finance.eastmoney.com/a/202508243492773762.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息拟1160亿元换股吸收合并中科曙光 换股定价高于现金选择权引发股东“吐槽”', 'content': '6月9日，国内算力产业最大合并案落锤，海光信息（SH688041，股价135.50元，市值3149亿元）拟1160亿元换股吸收合并中科曙光', 'publish_time': Timestamp('2025-06-11 21:40:08'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202506113428019075.html'}  ... displaying 10 of 96 total bound parameter sets ...  {'symbol': '688041', 'keyword': 'SH688041', 'title': '多家外资机构加入看多中国股市阵营，科创综指ETF天弘（589860）早盘飘红，相关联接基金正式获批', 'content': '是绝对重仓的方向，在电子板块的重仓股包括国产算力芯片龙头海光信息（688041.SH）和寒武纪-U（688256.SH），', 'publish_time': Timestamp('2025-03-12 13:10:55'), 'source': '21世纪经济报道', 'link': 'http://finance.eastmoney.com/a/202503123343521331.html'}, {'symbol': '688041', 'keyword': 'SH688041', 'title': '券商评级一周速览：159只个股获券商关注，赢合科技目标涨幅达122.85%', 'content': '看，有29只个股获得多家券商关注，券商关注数量排名居前的个股是海光信息（688041.SH）、比亚迪', 'publish_time': Timestamp('2025-03-09 12:02:36'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202503093340457919.html'}]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:21:17 | INFO     | core.sync.sync_stock_news:sync_stock_news:26 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:21:17 | INFO     | core.sync.sync_stock_news:sync_stock_news:31 - [SH688041] 获取到 96 条新闻数据
+2025-09-08 17:21:18 | ERROR    | core.sync.sync_stock_news:sync_stock_news:93 - [SH688041] 数据库操作失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:21:18 | ERROR    | core.sync.sync_stock_news:sync_stock_news:94 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_stock_news.py", line 88, in sync_stock_news
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:21:18 | ERROR    | core.sync.sync_stock_news:sync_stock_news:102 - [SH688041] 获取新闻数据失败: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-08 17:21:18 | ERROR    | core.sync.sync_stock_news:sync_stock_news:103 - [SH688041] 详细错误信息:
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\wings\Documents\Github\stock_chose\packages\core\src\core\sync\sync_stock_news.py", line 88, in sync_stock_news
+    db.commit()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4481, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "D:\wings\Documents\Github\stock_chose\.venv\lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '688041' for key 'stock_news_data.PRIMARY'
+[SQL: INSERT INTO stock_news_data (symbol, keyword, title, content, publish_time, source, link) VALUES (%(symbol)s, %(keyword)s, %(title)s, %(content)s, %(publish_time)s, %(source)s, %(link)s)]
+[parameters: {'symbol': '688041', 'keyword': 'SH688041', 'title': '海光信息：约14.38亿股限售股8月12日解禁', 'content': '海光信息（SH 688041，收盘价：142.58元）8月4日晚间发布公告称，公司限售股份约14.38亿股将于2025', 'publish_time': Timestamp('2025-08-04 18:52:07'), 'source': '每日经济新闻', 'link': 'http://finance.eastmoney.com/a/202508043475473670.html'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-09-08 17:21:36 | INFO     | core.sync.sync_stock_news:sync_stock_news:26 - 股票代码已从 688041 格式化为 SH688041
+2025-09-08 17:21:36 | INFO     | core.sync.sync_stock_news:sync_stock_news:31 - [SH688041] 获取到 96 条新闻数据
+2025-09-08 17:21:57 | INFO     | core.sync.sync_stock_news:sync_stock_news:89 - [SH688041] 成功同步 96 条新闻数据
