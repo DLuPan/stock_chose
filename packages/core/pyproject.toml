@@ -1,21 +1,21 @@
 [project]
-name = "core"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
 authors = [
-    { name = "丁鲁攀", email = "1164764881@qq.com" }
+  {name = "丁鲁攀", email = "1164764881@qq.com"},
 ]
-requires-python = ">=3.9"
 dependencies = []
+description = "Add your description here"
+name = "core"
+readme = "README.md"
+requires-python = ">=3.9"
+version = "0.1.0"
 
 [project.scripts]
+cli = "core.cli:app"
 core = "core:main"
-version = "core.cli:version"
 sync-all = "core.cli:sync_all"
 sync-hist = "core.cli:main"
-cli = "core.cli:app"
+version = "core.cli:version"
 
 [build-system]
-requires = ["hatchling"]
 build-backend = "hatchling.build"
+requires = ["hatchling"]

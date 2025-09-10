@@ -35,7 +35,7 @@ crontab -l
 
 # 数据结构
 
-项目使用 SQLite 数据库，主要表结构如下：
+项目使用 MySQL 数据库，主要表结构如下：
 
 ## stock_spot_data（股票现价快照）
 - sync_data: 数据同步日期
@@ -78,12 +78,6 @@ crontab -l
 - change_amount: 涨跌额（元）
 - turnover: 换手率（%）
 
-## stock_business_data（主营业务信息）
-- symbol: 股票代码（主键）
-- main_business: 主营业务
-- product_type: 产品类型
-- product_name: 产品名称
-- business_scope: 经营范围
 
 ## stock_business_composition（主营业务构成）
 - symbol: 股票代码（主键）

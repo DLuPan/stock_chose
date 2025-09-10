@@ -7,13 +7,16 @@ requires-python = ">=3.9"
 dependencies = [
     "akshare>=1.17.34",
     "dotenv>=0.9.9",
+    "fastapi>=0.116.1",
     "loguru>=0.7.3",
     "mysql-connector-python>=9.4.0",
     "pydantic>=2.11.7",
     "pymysql>=1.1.2",
+    "pyyaml>=6.0.2",
     "schedule>=1.2.2",
     "sqlalchemy>=2.0.43",
     "typer>=0.16.0",
+    "uvicorn>=0.35.0",
 ]
 
 

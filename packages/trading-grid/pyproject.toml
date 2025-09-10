@@ -1,17 +1,17 @@
 [project]
-name = "trading-grid"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
 authors = [
-    { name = "丁鲁攀", email = "1164764881@qq.com" }
+  {name = "丁鲁攀", email = "1164764881@qq.com"},
 ]
-requires-python = ">=3.9"
 dependencies = []
+description = "Add your description here"
+name = "trading-grid"
+readme = "README.md"
+requires-python = ">=3.9"
+version = "0.1.0"
 
 [project.scripts]
-trading-grid = "trading_grid:main"
+cli = "trading_grid.cli:app"
 
 [build-system]
-requires = ["hatchling"]
 build-backend = "hatchling.build"
+requires = ["hatchling"]

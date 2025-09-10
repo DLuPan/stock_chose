@@ -1,0 +1,5 @@
+# 配置文件决定启用哪些因子
+factors:
+  - volatility
+  - pe_ratio
+  - liquidity
