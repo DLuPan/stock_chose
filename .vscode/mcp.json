@@ -1,0 +1,12 @@
+{
+	"servers": {
+		"notion-tasks": {
+			"type": "stdio",
+			"command": "${workspaceFolder}/.venv/bin/python3",
+			"args": [
+				"mcp/notion_mcp_service.py"
+			],
+		}
+	},
+	"inputs": []
+}

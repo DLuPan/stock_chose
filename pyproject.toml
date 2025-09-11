@@ -3,13 +3,15 @@ name = "stock-chose"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
     "akshare>=1.17.34",
     "dotenv>=0.9.9",
     "fastapi>=0.116.1",
     "loguru>=0.7.3",
+    "mcp>=1.13.1",
     "mysql-connector-python>=9.4.0",
+    "notion-client>=2.5.0",
     "pydantic>=2.11.7",
     "pymysql>=1.1.2",
     "pyyaml>=6.0.2",
