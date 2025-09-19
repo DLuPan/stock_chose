@@ -111,15 +111,12 @@ def sync_stock_zh_a_hist_all(
                 end_date=end_date,
                 adjust=adjust,
             )
-            
-            # 执行主营构成数据同步
-            composition = sync_stock_business_composition(symbol=symbol)
 
             elapsed = time.time() - start_time
-            log.info(f"[{symbol}] 完成，耗时: {elapsed:.2f}s，历史行情: {len(hist)}条，主营构成: {len(composition)}条")
+            log.info(f"[{symbol}] 完成，耗时: {elapsed:.2f}s，历史行情: {len(hist)}条")
             time.sleep(random.uniform(1, 3))
 
-            return (symbol, True, None, elapsed, len(hist), len(composition))
+            return (symbol, True, None, elapsed, len(hist), 0)
 
         except Exception as e:
             elapsed = time.time() - start_time
@@ -129,7 +126,9 @@ def sync_stock_zh_a_hist_all(
             return (symbol, False, str(e), elapsed, 0, 0)
 
     # 更新任务状态
-    def update_task_status(symbol, success, message, elapsed, hist_records_count, composition_records_count):
+    def update_task_status(
+        symbol, success, message, elapsed, hist_records_count, composition_records_count
+    ):
         with get_db_session() as db:
             task = (
                 db.query(StockSyncTaskDB)
@@ -159,15 +158,33 @@ def sync_stock_zh_a_hist_all(
         for idx, future in enumerate(as_completed(futures), 1):
             symbol = futures[future]
             try:
-                symbol, ok, err, elapsed, hist_records_count, composition_records_count = future.result()
+                (
+                    symbol,
+                    ok,
+                    err,
+                    elapsed,
+                    hist_records_count,
+                    composition_records_count,
+                ) = future.result()
                 if ok:
                     success += 1
                 else:
                     fail += 1
 
                 # 更新任务状态
-                message = f"成功，历史行情:{hist_records_count}条，主营构成:{composition_records_count}条" if ok else f"失败: {err[:100]}"
-                update_task_status(symbol, ok, message, elapsed, hist_records_count, composition_records_count)
+                message = (
+                    f"成功，历史行情:{hist_records_count}条"
+                    if ok
+                    else f"失败: {err[:100]}"
+                )
+                update_task_status(
+                    symbol,
+                    ok,
+                    message,
+                    elapsed,
+                    hist_records_count,
+                    composition_records_count,
+                )
 
             except Exception as e:
                 fail += 1
