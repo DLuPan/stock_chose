@@ -1,33 +1,33 @@
 [project]
-name = "stock-chose"
-version = "0.1.0"
+dependencies = [
+  "akshare>=1.17.34",
+  "dotenv>=0.9.9",
+  "fastapi>=0.116.1",
+  "loguru>=0.7.3",
+  "mcp>=1.13.1",
+  "mysql-connector-python>=9.4.0",
+  "notion-client>=2.5.0",
+  "pydantic>=2.11.7",
+  "pymysql>=1.1.2",
+  "pytest>=8.4.2",
+  "pyyaml>=6.0.2",
+  "schedule>=1.2.2",
+  "sqlalchemy>=2.0.43",
+  "typer>=0.16.0",
+  "uvicorn>=0.35.0",
+]
 description = "Add your description here"
+name = "stock-chose"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-    "akshare>=1.17.34",
-    "dotenv>=0.9.9",
-    "fastapi>=0.116.1",
-    "loguru>=0.7.3",
-    "mcp>=1.13.1",
-    "mysql-connector-python>=9.4.0",
-    "notion-client>=2.5.0",
-    "pydantic>=2.11.7",
-    "pymysql>=1.1.2",
-    "pyyaml>=6.0.2",
-    "schedule>=1.2.2",
-    "sqlalchemy>=2.0.43",
-    "typer>=0.16.0",
-    "uvicorn>=0.35.0",
-]
-
+version = "0.1.0"
 
 [tool.uv.workspace]
 members = [
-    "packages/core",
-    "packages/bot",
-    "packages/tools",
-    "packages/trading-grid",
+  "packages/core",
+  "packages/bot",
+  "packages/tools",
+  "packages/trading-grid",
 ]
 
 [tool.setuptools.packages.find]

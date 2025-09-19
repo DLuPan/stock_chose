@@ -1,0 +1,38 @@
+enabled_factors:
+  - pe_ratio
+  - volatility
+  - volume
+  - trend
+  - price_range
+  - market_cap
+  - turnover
+
+pe_ratio:
+  max_pe: 50.0
+
+volatility:
+  min_volatility: 0.05
+  max_volatility: 0.50
+  lookback_days: 180
+
+volume:
+  min_volume: 5000
+  lookback_days: 180
+
+trend:
+  min_trend: -0.3
+  max_trend: 0.3
+  lookback_days: 180
+
+price_range:
+  min_price: 5.0
+  max_price: 100.0
+
+market_cap:
+  min_market_cap: 50.0
+  max_market_cap: 1000.0
+
+turnover:
+  min_turnover: 0.01
+  max_turnover: 0.05
+  lookback_days: 180
